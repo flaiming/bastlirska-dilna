@@ -17,5 +17,6 @@ Každé téma dostane vlastní kartu s funkčním návrhem, přípravou vedoucí
 | 11 | Pájecí dílna a vlastní výrobek | K rozpracování |
 | 12 | Závěrečná technická výzva | K rozpracování |
 | 13 | [Věž a most ze špaget](13_vez_a_most_ze_spaget.md) | Návrh; plánováno jako 2. lekce (út 20. 10. 2026, skupina A) |
+| 14 | [Zvuková dílna: krabicová kytara a další](14_zvukova_dilna.md) | Návrh; kandidát na lekce 5–7 |
 
 Pro nové téma zkopírovat [šablonu](SABLONA.md), vybrat konkrétní funkční variantu a vyzkoušet ji před nákupem celé sady. Společné suroviny a nářadí vést v [nákupním základu](../NAKUPNI_ZAKLAD.md), aby se stejné věci nenakupovaly opakovaně. Množství pro konkrétní lekci zůstává v její kartě.

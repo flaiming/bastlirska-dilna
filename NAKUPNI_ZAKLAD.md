@@ -14,6 +14,7 @@ Před každým nákupem nejprve projít tento seznam.
 - **Pájení:** 1 mikropájka, 1 trafopájka, cín, kalafuna, pájecí kapalina, univerzální pájivá pole, krabice různých drátů, odizolovací kleště.
 - **Plošné spoje:** cuprexitové desky a leptací roztok.
 - **Gumičky:** hodně kusů 30 mm a 60 mm a různé menší (zbytek z autíček). Nekupovat.
+- **Kelímky:** 30 kusů (zamýšleno na kreslícího vibrobota, viz karta 05).
 - **CD:** několik starých CD (vznášedla, viz karta 02).
 - **Vibrobot:** 20 kartáčů (koupeno), krabička různých šroubků na excentry. Dokoupit motorky a vypínače.
 - **Mechanika (zbytky z autíček):** brčka, špejle, plastelína, asi 5 balení kancelářských sponek včetně velkých.

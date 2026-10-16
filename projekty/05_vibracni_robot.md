@@ -85,6 +85,17 @@ Počítáno na **20 robotů** (17 dětí + rezerva).
 - **Snazší varianta:** vedoucí předpájí vodiče k motorku; dítě pájí jen vypínač.
 - **Rozšíření:** na kartáč připevnit fixy jako nožky a robot kreslí po papíře; nebo postavit „arénu“ a hrát robotí fotbal s pingpongovým míčkem.
 
+## Kreslící varianta z kelímku
+
+Skladem je 30 kelímků. Kelímek se otočí dnem vzhůru, kolem okraje se izolepou připevní 3–4 fixy hroty dolů jako nožičky (víčka sundaná, izolepu ne tavné lepidlo, aby šly fixy vyndat). Na dno kelímku se přilepí motor s excentrem a držák baterií. Robot se postaví na velký papír (balicí papír, role) a kreslí čmáranice; podle polohy motoru a počtu nožiček kreslí kruhy, smyčky nebo jezdí rovně.
+
+Možnosti zařazení:
+- **Výběr v lekci 4:** každé dítě si vybere kartáč, nebo kelímek. Stejný motor, držák i pájení, nic navíc se nekupuje.
+- **Samostatná lekce „Vibrobot II“:** děti si postaví druhého robota úplně samy (opakování pájení bez pomoci). Potřeba další sada motor + držák + vypínač + baterie, orientačně 900 Kč na 20 robotů.
+- **Rozšíření pro rychlé děti v lekci 4:** 2–3 kelímkové roboty z rezervních motorů.
+
+Fixy: vypratelné, 3–4 na robota (asi 60–80 ks na skupinu, nebo děti přinesou vlastní). Papír chránit podložkou, fixy prosakují.
+
 ## Bezpečnost
 
 Excentr se točí rychle a je zvenku přístupný: dlouhé vlasy svázat, prsty mimo, před manipulací robota vypnout. Zablokovaný motorek se zahřívá, takže vypnout. Pájení stejně jako u hlavolamu (pájka ve stojánku, brýle, větrání, umýt ruce). Tavné pistole: děti lepí samy (ze školy jsou zvyklé), ale jen u horkého stolu vedle vedoucího; pistole vždy zpět do stojánku, nesahat na trysku ani na čerstvé lepidlo, při popálení chladit pod studenou tekoucí vodou. Baterie nezkratovat.

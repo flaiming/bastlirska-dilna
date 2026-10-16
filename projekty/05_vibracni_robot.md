@@ -21,8 +21,8 @@ Dítě postaví robota z kartáče, motorku s excentrem a baterie. Excentr (záv
 - **Kartáč:** 10× kartáč na boty (asi 15 × 5 × 4 cm, jemné štětiny) a 10× rýžák (větší, tuhé štětiny). V každé skupině půlka dětí s každým druhem, na konci srovnání.
 - **Motorek:** [DC motor 3–5 V, 17–18 000 ot/min z Dratek.cz](https://dratek.cz/arduino-platforma/2987-dc-motor-3-5v-17-18000rpm.html) (hřídel 2 mm, tělo 20 × 27 mm, 25 Kč), přilepený nebo přichycený stahovací páskou u **jednoho konce** kartáče, hřídel přesahuje přes okraj.
 - **Excentr:** vlastní výroba vedoucím (viz příprava), šroubek přilepený na hřídel.
-- **Místo pro excentr:** hřídel **nesmí přečnívat přes okraj kartáče**. Robot se pak při nárazu do překážky odrazí a excentr se o nic nezasekne (ověřeno na prototypu 16. 10. 2026). Motor proto leží na hřbetu kartáče na **podložce**, aby se šroubek točil volně nad kartáčem: hřídel musí být výš než poloměr otáčení šroubku. Podložka: špalík, kus korku, 2–3 slepená víčka nebo vrstvená pěnová páska; výšku podle vzorku.
-- **Napájení:** držák 2× AA na hřbetu kartáče (oboustranná pěnová páska). Pokud vzorek s rýžákem nepojede, zkusit 3× AA (4,5 V).
+- **Místo pro excentr:** hřídel **nesmí přečnívat přes okraj kartáče**. Robot se pak při nárazu do překážky odrazí a excentr se o nic nezasekne (ověřeno na prototypu 16. 10. 2026). Motor proto leží na hřbetu kartáče na **podložce**, aby se šroubek točil volně nad kartáčem: hřídel musí být výš než poloměr otáčení šroubku. Podložka: špalík, kus korku nebo 2–3 slepená víčka; výšku podle vzorku.
+- **Napájení:** držák 2× AA přilepený tavným lepidlem na hřbet kartáče. Pokud vzorek s rýžákem nepojede, zkusit 3× AA (4,5 V).
 - **Vypínač:** malý kolébkový vypínač, přilepený navrch kartáče.
 - **Zdobení:** děti robotovi dodělají oči, tykadla, ocásek. Není to jen ozdoba: každá přidaná věc mění rozložení váhy, a tím i směr jízdy (ověřeno na prototypu). Zdobení je proto součást ladění: „Přidej tykadlo vlevo, co se stane?“ Ozdoby nesmí zasahovat k excentru.
 
@@ -55,8 +55,7 @@ Počítáno na **20 robotů** (17 dětí + rezerva).
 | Baterie AA | 2 | 40 + rezerva | Koupit | Při 3× AA o polovinu víc. |
 | Šroubky různých velikostí | 1 | asi 25 | Skladem (krabička šroubků) | Na excentry; nekupovat. |
 | [Pastorek 9 zubů, otvor 1,9 mm (Techfun)](https://techfun.cz/produkt/ozubene-kolecko-pro-dc-motorky-9-zubu/) | 1 | 22 + pár navíc | Koupit | 5 Kč/ks; nalisovat na hřídel, šroubek lepit na něj. |
-| Tavné lepidlo | – | několik tyčinek | Skladem | Excentry a motorek; obsluhuje vedoucí. |
-| Oboustranná pěnová páska | kousek | 1 role | Koupit | Držák a vypínač na kartáč. |
+| Tavné lepidlo | – | několik tyčinek | Skladem | Excentry dělá vedoucí předem; motor, podložku, držák, vypínač a ozdoby lepí děti. |
 | Stahovací pásky | 1–2 | 1 balení | Koupit / skladem | Pojistka motorku. |
 | Lanko | 20 cm | asi 4 m | Skladem | |
 | Plastelína | kousek | – | Skladem | Ladění: přidávání závaží na kartáč (ne na hřídel). |
@@ -71,7 +70,7 @@ Počítáno na **20 robotů** (17 dětí + rezerva).
 | --- | --- |
 | 0–10 min | Ukázka vzorku. Proč se kartáč hýbe? Motorek bez excentru vs. s excentrem v ruce: cítit kmitání. Připomenout pravidla pájení. |
 | 10–70 min | **Stanoviště** (2 rotace po ~30 min): ① **pájení u vedoucího:** vodiče držáku a lanka k vypínači a k motorku (4 spoje) · ② **příprava kartáče:** vybrat druh kartáče a excentr, rozmyslet umístění, přilepit držák a vypínač. Kdo čeká, jde k Voltíkovi. |
-| 70–80 min | Kompletace: přichytit motorek (stahovací páska + vedoucí zajistí tavnou pistolí), první jízda. |
+| 70–80 min | Kompletace: přichytit motorek (tavná pistole, případně pojistit stahovací páskou), první jízda. |
 | 80–105 min | **Zdobení, ladění a závody:** oči, tykadla a ocásek; pozorovat, jak ozdoby mění jízdu. Změnit jednu věc (poloha motorku, velikost excentru, ozdoba nebo plastelína na jedné straně) a porovnat. Závod rovně, závod v kruhu, srovnání kartáč na boty vs. rýžák. |
 | 105–120 min | Úklid, co pomohlo robotovi jet rovně. |
 
@@ -88,7 +87,7 @@ Počítáno na **20 robotů** (17 dětí + rezerva).
 
 ## Bezpečnost
 
-Excentr se točí rychle a je zvenku přístupný: dlouhé vlasy svázat, prsty mimo, před manipulací robota vypnout. Zablokovaný motorek se zahřívá, takže vypnout. Pájení stejně jako u hlavolamu (pájka ve stojánku, brýle, větrání, umýt ruce). Tavnou pistoli obsluhuje vedoucí. Baterie nezkratovat.
+Excentr se točí rychle a je zvenku přístupný: dlouhé vlasy svázat, prsty mimo, před manipulací robota vypnout. Zablokovaný motorek se zahřívá, takže vypnout. Pájení stejně jako u hlavolamu (pájka ve stojánku, brýle, větrání, umýt ruce). Tavné pistole: děti lepí samy (ze školy jsou zvyklé), ale jen u horkého stolu vedle vedoucího; pistole vždy zpět do stojánku, nesahat na trysku ani na čerstvé lepidlo, při popálení chladit pod studenou tekoucí vodou. Baterie nezkratovat.
 
 ## Inspirace a zdroje
 

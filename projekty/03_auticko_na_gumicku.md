@@ -13,7 +13,7 @@ Dítě postaví autíčko bez elektrického pohonu. Při natočení zadní nápr
 
 - Podvozek z pevnější vlnité lepenky přibližně 20 × 8 cm.
 - Dvě osy ze špejlí vedou ve dvou rovnoběžných kouscích brčka připevněných napříč ke spodku podvozku. Osy se musí v brčkách volně otáčet.
-- Na koncích os jsou čtyři stejně velká víčka. Otvory musejí být co nejblíže středu; na špejli mají držet pevně. Kde to nestačí, vedoucí spoj zajistí malou kapkou tavného lepidla mimo brčko.
+- Na koncích os jsou čtyři stejně velká víčka. Otvory musejí být co nejblíže středu; na špejli mají držet pevně. Kde to nestačí, děti spoj zajistí malou kapkou tavného lepidla mimo brčko.
 - Jeden konec delší gumičky je upevněn uprostřed zadní osy, druhý ke kancelářské sponce jako háčku na přední části podvozku. Gumička běží pod podvozkem volně mezi osami.
 - Roztočením zadních kol proti směru zamýšlené jízdy se gumička navine na zadní osu. Správný směr ověřit na vzorku; při opačném navinutí auto pojede dozadu.
 
@@ -39,9 +39,9 @@ Počítáno na **18 hotových autíček a materiál přibližně na dvě náhrad
 | Delší pevnější gumička | 1 kus | 20 kusů | Koupit alespoň 40 kusů kvůli volbě délky a prasknutí |
 | Kancelářská sponka na přední háček | 1 kus | 20 kusů | Ze zásoby nebo koupit balení |
 | Páska na upevnění brček a háčku | podle potřeby | několik rolí | Společná zásoba pro další projekty |
-| Tavné lepidlo na kola, jen pokud je potřeba | podle potřeby | několik tyčinek | Společná zásoba; používá vedoucí |
+| Tavné lepidlo na kola, jen pokud je potřeba | podle potřeby | několik tyčinek | Společná zásoba; lepí děti |
 
-**Vratné vybavení pro jednu skupinu:** přibližně 10 pravítek, 5 nůžek, několik fixů, 2 tavné pistole se stojánkem pro vedoucího, 1 svinovací metr a případně kleště na úpravu sponek. Vrtání víček a zkracování špejlí udělá vedoucí před lekcí.
+**Vratné vybavení pro jednu skupinu:** přibližně 10 pravítek, 5 nůžek, několik fixů, 3 školní tavné pistole a vlastní Parkside vedoucího, 1 svinovací metr a případně kleště na úpravu sponek. Vrtání víček a zkracování špejlí udělá vedoucí před lekcí.
 
 **Nekupovat naslepo:** hotová kola, konkrétní průměr brček ani velkou zásobu gumiček. První vzorek ukáže, jestli víčka pevně drží na osách a zda se gumička vejde pod podvozek.
 
@@ -69,7 +69,7 @@ Počítáno na **18 hotových autíček a materiál přibližně na dvě náhrad
 
 ## Bezpečnost
 
-Ostré konce špejlí zastřihnout nebo přelepit. Otvory do víček dělá předem vedoucí. Tavnou pistoli obsluhuje vedoucí; děti se nedotýkají horké trysky ani čerstvého lepidla. Gumičku nenatahovat směrem k obličeji a auto pouštět jen na vyznačené dráze po zemi.
+Ostré konce špejlí zastřihnout nebo přelepit. Otvory do víček dělá předem vedoucí. Tavné pistole: děti lepí samy (ze školy jsou zvyklé), ale jen u horkého stolu vedle vedoucího; pistole vždy zpět do stojánku, nesahat na trysku ani na čerstvé lepidlo, při popálení chladit pod studenou tekoucí vodou. Gumičku nenatahovat směrem k obličeji a auto pouštět jen na vyznačené dráze po zemi.
 
 ## Inspirace a zdroje
 

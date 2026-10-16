@@ -30,12 +30,12 @@ Podrobnosti v kartách [06](projekty/06_drateny_hlavolam.md) a [05](projekty/05_
 | [Kolébkový vypínač 15 × 10,5 mm](https://dratek.cz/arduino-platforma/7699-kolebkovy-vypinac-ac-3a-250v.html) | Dratek | 22 | 4,80 | 106 | Vibrobot; množstevní cena od 10 ks. |
 | [Baterie AA alkalické, 4 ks](https://dratek.cz/arduino-platforma/232354-geti-baterie-aa-alkalicka-4-kusy.html) | Dratek / supermarket | 22 balení | 39,20 | 862 | 88 článků; v supermarketu ve velkém balení často levněji. |
 | [Pastorek 9 zubů, otvor 1,9 mm](https://techfun.cz/produkt/ozubene-kolecko-pro-dc-motorky-9-zubu/) | Techfun | 25 | 5 | 125 | Podklad excentru; jiný e-shop = další poštovné. Náhrada: zdrsnit hřídel. |
-| Oboustranná pěnová páska, stahovací pásky | papírnictví / hobby | 1 + 1 | – | ~100 | Vibrobot. |
+| Stahovací pásky | papírnictví / hobby | 1 balení | – | ~30 | Vibrobot, pojistka motoru; jinak se lepí tavnou pistolí. |
 | Pohyblivá očička, chlupaté (plyšové) drátky | papírnictví / hobby | asi 50 + 1 balení | – | ~100 | Zdobení vibrobotů; sponky na tykadla skladem. |
 | Holý drát 1,5–2 mm (měď, nebo pozink ze zásoby) | krabice drátů / hobby | asi 16 m | – | – | Hlavolam; pozink se zkouší, zda jde pájet. |
 | Prkýnka asi 25 × 8 cm | skladem | 20 | – | – | Podstavce hlavolamu; dráha se přišroubuje. |
 
-**Celkem orientačně 2 400 Kč**; objednávka ze tří obchodů (Dratek, Laskakit, Techfun), tedy třikrát poštovné. Na Laskakitu je skladem i [kolébkový vypínač za 5 Kč](https://www.laskakit.cz/prepinac-kolebkovy-3a-250vac/), dá se tedy vzít tam místo z Dratku. Motor 130 a box 2× AA tam teď nemají (naskladnění cca 15. 11.). + poštovné, z rozpočtu asi 7 800 Kč na pololetí.
+**Celkem orientačně 2 300 Kč**; objednávka ze tří obchodů (Dratek, Laskakit, Techfun), tedy třikrát poštovné. Na Laskakitu je skladem i [kolébkový vypínač za 5 Kč](https://www.laskakit.cz/prepinac-kolebkovy-3a-250vac/), dá se tedy vzít tam místo z Dratku. Motor 130 a box 2× AA tam teď nemají (naskladnění cca 15. 11.). + poštovné, z rozpočtu asi 7 800 Kč na pololetí.
 
 Alternativa pro vibrobota: [box 2× AA s krytem a vypínačem](https://dratek.cz/arduino-platforma/122962-bateriovy-box-2x-aa-s-krytem-a-on-off-prepinacem.html) (20 Kč od 10 ks, skladem 69). Baterie z něj při vibracích nevypadnou a nepotřebuje zvláštní vypínač, ale děti pak pájí jen dva spoje u motoru. [Box 2× AA s vodiči](https://dratek.cz/arduino-platforma/932-bateriovy-box-3v.html) není skladem.
 
@@ -51,7 +51,7 @@ Alternativa pro vibrobota: [box 2× AA s krytem a vypínačem](https://dratek.cz
 | Kancelářské sponky | 1 malé balení, přibližně 100 kusů | Háčky, jednoduché kontakty a mechanické spoje. |
 | Papírová páska a pevnější lepicí páska | po 2 rolích | Konstrukce, dočasné upevnění a značení; spotřebu ověřit po první skupině. |
 | Oboustranná páska | 1–2 role | Uchycení lehkých dílů a motorů; před použitím ověřit držení na konkrétním podkladu. |
-| Tavné lepicí tyčinky | 1 běžné balení | Pevné spoje na podvozcích; průměr musí sedět do školních pistolí i do Parkside (ověřit, zda jsou všechny na stejný průměr). |
+| Tavné lepicí tyčinky | několik balení (lepí se skoro všechno) | Pevné spoje na podvozcích; průměr musí sedět do školních pistolí i do Parkside (ověřit, zda jsou všechny na stejný průměr). |
 | Provázek | 1 klubko | Balónková raketa a další konstrukční pokusy. |
 
 Víčka, karton a odřezky lze získat bez nákupu. U brček a víček rozhoduje vzájemná kompatibilita se špejlí; před větší objednávkou stačí ověřit jednu sadu na funkčním autíčku.
@@ -64,7 +64,7 @@ Víčka, karton a odřezky lze získat bez nákupu. U brček a víček rozhoduje
 | Dětské nůžky | 5–10 | Podle toho, zda děti pracují samostatně nebo ve dvojicích. |
 | Fixy, tužky, metr | přibližně 10 fixů/tužek + 1 metr | Značení dílů a měření pokusů. |
 | Malé kleště a štípací kleště | po 2–3 kusech | Tvarování sponky a drátu; počet upravit podle zvolené lekce. |
-| Tavné pistole a stojánky | 3 školní + 1 vlastní | Zajištěno: 3 pistole se půjčují od školy (jedna obvykle nefunguje úplně), vedoucí nosí vlastní malou akumulátorovou Parkside. Stojí na „horkém stole“ u pájení, kde na ně vedoucí dohlíží. |
+| Tavné pistole a stojánky | 3 školní + 1 vlastní | Zajištěno: 3 pistole se půjčují od školy (jedna obvykle nefunguje úplně), vedoucí nosí vlastní malou akumulátorovou Parkside. Lepí všechny děti (ze školy jsou zvyklé); pistole stojí na „horkém stole“ u pájení, kde na ně vedoucí dohlíží. |
 | Krabičky nebo popsané sáčky | přibližně 10 pracovních sad + několik pro společný sklad | Připravené díly pro děti a oddělené zbytky pro druhou skupinu. |
 
 Vrtání víček, zkracování špejlí a další přípravu ostrými nástroji dělá vedoucí před lekcí. Nákup nářadí je potřeba určit podle skutečného vybavení školy.

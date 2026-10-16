@@ -59,7 +59,7 @@ Počítáno na **20 hlavolamů** (17 dětí + rezerva).
 | Vruty do dřeva s podložkou | 2 | asi 45 | Skladem (krabička šroubků) | Stažení konce dráhy a lanka k prkýnku. |
 | Izolepa | kousky | 1–2 role | Skladem / koupit | Konce dráhy, rukojeť, izolace spojů. |
 | Cín s kalafunou | – | – | Skladem | |
-| Tavné lepidlo | – | několik tyčinek | Skladem | Zajištění dráhy v podstavci; obsluhuje vedoucí. |
+| Tavné lepidlo | – | několik tyčinek | Skladem | Zajištění dráhy v podstavci; lepí děti u horkého stolu. |
 
 **Vratné vybavení:** mikropájka a trafopájka se stojánky, kleště a štípačky (2–3 sady), odizolovací kleště, multimetr na hledání chyb, Voltík I a II.
 
@@ -73,7 +73,7 @@ Při 7–8 dětech 3 skupinky po 2–3; vedoucí sedí u pájení.
 | 15–43 min | **Rotace 1** |
 | 43–71 min | **Rotace 2** |
 | 71–99 min | **Rotace 3** |
-| 99–112 min | **Kompletace:** dráha do podstavce (vedoucí zalepí tavnou pistolí), drát od bzučáku omotat kolem konce dráhy pod podstavcem, nasadit očko, vyzkoušet. |
+| 99–112 min | **Kompletace:** dráha do podstavce (děti zalepí tavnou pistolí, vedoucí hlídá), drát od bzučáku omotat kolem konce dráhy pod podstavcem, nasadit očko, vyzkoušet. |
 | 112–120 min | Kdo projde dráhu bez pípnutí? Úklid. |
 
 **Stanoviště:**
@@ -93,7 +93,7 @@ Při 7–8 dětech 3 skupinky po 2–3; vedoucí sedí u pájení.
 
 ## Bezpečnost
 
-Pájka: hrot má přes 300 °C; pájka vždy ve stojánku, kabel mimo dosah rukou, pod spoj podložka. Děti pájí jen u stolu s vedoucím a mají brýle (cín může odprsknout). Kalafuna kouří: větrat, nedýchat přímo nad spojem. Po pájení umýt ruce. Při popálení chladit pod tekoucí studenou vodou. Trafopájka jen vedoucí. Konce drátů jsou ostré: zastřihnout a ohnout dovnitř. Baterie nezkratovat: držák nikdy nespojit napřímo bez bzučáku.
+Pájka: hrot má přes 300 °C; pájka vždy ve stojánku, kabel mimo dosah rukou, pod spoj podložka. Děti pájí jen u stolu s vedoucím a mají brýle (cín může odprsknout). Kalafuna kouří: větrat, nedýchat přímo nad spojem. Po pájení umýt ruce. Při popálení chladit pod tekoucí studenou vodou. Trafopájka jen vedoucí. Tavné pistole: děti lepí samy (ze školy jsou zvyklé), ale jen u horkého stolu vedle vedoucího; pistole vždy zpět do stojánku, nesahat na trysku ani na čerstvé lepidlo, při popálení chladit pod studenou tekoucí vodou. Konce drátů jsou ostré: zastřihnout a ohnout dovnitř. Baterie nezkratovat: držák nikdy nespojit napřímo bez bzučáku.
 
 ## Inspirace a zdroje
 

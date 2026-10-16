@@ -13,6 +13,7 @@ Před každým nákupem nejprve projít tento seznam.
 - **Součástky:** rezistory, kondenzátory, tranzistory, hodně různých LED, fotorezistory (LDR), různé vypínače, 2 malé fotovoltaické panely, různé baterie.
 - **Pájení:** 1 mikropájka, 1 trafopájka, cín, kalafuna, pájecí kapalina, univerzální pájivá pole, krabice různých drátů, odizolovací kleště.
 - **Plošné spoje:** cuprexitové desky a leptací roztok.
+- **Gumičky:** hodně kusů 30 mm a 60 mm a různé menší (zbytek z autíček). Nekupovat.
 - **CD:** několik starých CD (vznášedla, viz karta 02).
 - **Vibrobot:** 20 kartáčů (koupeno), krabička různých šroubků na excentry. Dokoupit motorky a vypínače.
 - **Mechanika (zbytky z autíček):** brčka, špejle, plastelína, asi 5 balení kancelářských sponek včetně velkých.
@@ -101,6 +102,6 @@ Pro klasický **NE555** uvádí výrobce napájecí rozsah od **4,5 V**; držák
 | Víčka | 80 + rezerva | doplnit | doplnit | Sbírat a otestovat |
 | Špejle | 50 | doplnit | doplnit | Zkontrolovat zásobu |
 | Brčka | 40 úseků | doplnit | doplnit | Ověřit s osou |
-| Gumičky | 40–50 | doplnit | doplnit | Ověřit délku na vzorku |
+| Gumičky | 40–50 | hodně (30 a 60 mm + menší) | 0 | Skladem po autíčkách |
 
 Po každé lekci zapsat skutečnou spotřebu a doplnit pouze chybějící položky. Údaje z projektových karet rozšiřují tento přehled, ale nevytvářejí samostatný druhý nákup stejného materiálu.

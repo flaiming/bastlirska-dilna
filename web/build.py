@@ -24,7 +24,7 @@ PLAN = [
     {"n": "4", "title": "Vibrobot z kartáče", "card": "05", "status": "prep",
      "note": "Prototyp funguje. Pájení k motorku a vypínači, zdobení a závody."},
     {"n": "5–7", "title": "Podle hlasování dětí", "card": None, "status": "idea",
-     "note": "Balónky a vznášedlo z CD (karta 02), zvuková dílna s krabicovou kytarou (karta 14), alarm se spouští z kolíčku, světlo na tmu, blikač, vlastní plošný spoj…"},
+     "note": "Balónky a vznášedlo z CD (karta 02), zvuková dílna s gumičkovou kytarou (karta 14), alarm se spouští z kolíčku, světlo na tmu, blikač, vlastní plošný spoj…"},
 ]
 
 # Úterky do konce 1. pololetí (bez 17. 11. a 29. 12.).
@@ -35,6 +35,8 @@ DATES = ["2026-10-20", "2026-10-27", "2026-11-03", "2026-11-10", "2026-11-24",
 LINKS = [
     {"t": "Sponkový vypínač a spoušť alarmu", "u": "https://claude.ai/artifact/VuQKH2Ey1gEcUX36jZB9fk",
      "d": "Nákresy a schémata"},
+    {"t": "Gumičková kytara", "u": "https://claude.ai/artifact/SURE8AGbzg35AcmUMBMCwv",
+     "d": "Nákresy a míry"},
     {"t": "DC motor 18 000 ot/min (Dratek)", "u": "https://dratek.cz/arduino-platforma/2987-dc-motor-3-5v-17-18000rpm.html",
      "d": "Vibrobot, 25 Kč"},
     {"t": "Držák 2× AA DPS DIL (Dratek)", "u": "https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html",

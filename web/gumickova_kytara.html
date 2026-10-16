@@ -1,0 +1,562 @@
+<title>Gumičková kytara</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root {
+  --bg: #eef1ec;
+  --sheet: #ffffff;
+  --ink: #1d2721;
+  --muted: #5a6960;
+  --line: #d3dbd4;
+  --soft: #e3e9e2;
+  --accent: #b9470f;
+  --accent-soft: #f6e3d6;
+  --card: #d9b98a;
+  --card-edge: #9c7a4b;
+  --card-in: #f3e7d3;
+  --wood: #c98f4e;
+  --wood-edge: #7f5523;
+  --wire: #6f7b84;
+  --band: #2d5f8f;
+  --hole: #3b2f22;
+  --glue: #f4f1e6;
+  --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141a17; --sheet: #1c2420; --ink: #e5ebe6; --muted: #9db0a4; --line: #33403a; --soft: #26302b;
+  --accent: #f08a4b; --accent-soft: #3a2619;
+  --card: #8a6c45; --card-edge: #c9a978; --card-in: #2e271e;
+  --wood: #b9844a; --wood-edge: #e0b27a; --wire: #aab6be; --band: #7fb2e5; --hole: #0c0a08; --glue: #4a4a40;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #141a17; --sheet: #1c2420; --ink: #e5ebe6; --muted: #9db0a4; --line: #33403a; --soft: #26302b;
+  --accent: #f08a4b; --accent-soft: #3a2619;
+  --card: #8a6c45; --card-edge: #c9a978; --card-in: #2e271e;
+  --wood: #b9844a; --wood-edge: #e0b27a; --wire: #aab6be; --band: #7fb2e5; --hole: #0c0a08; --glue: #4a4a40;
+  color-scheme: dark }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.55 var(--body); margin: 0; }
+.wrap { max-width: 980px; margin: 0 auto; padding-top: 24px; padding-bottom: 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font: 800 clamp(1.8rem, 5vw, 2.6rem)/1.05 var(--display); margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 { font: 700 1.3rem/1.2 var(--display); margin: 36px 0 10px; }
+p.lead { color: var(--muted); margin: 0 0 18px; max-width: 70ch; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 18px 0 8px; }
+.fact { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.fact b { display: block; font-family: var(--display); font-size: 1.05rem; }
+.fact span { color: var(--muted); font-size: 0.92rem; }
+figure { margin: 22px 0; background: var(--sheet); border: 1px solid var(--line); border-radius: 12px; padding: 14px 14px 10px; }
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.scroll svg { display: block; width: 100%; min-width: 680px; height: auto; color: var(--ink); }
+figcaption { color: var(--muted); font-size: 0.93rem; margin-top: 8px; max-width: 75ch; }
+figcaption b { color: var(--ink); }
+svg text { fill: currentColor; font-family: var(--body); font-size: 13px; }
+svg .small { font-size: 11.5px; }
+svg .title { font-family: var(--display); font-weight: 700; font-size: 15px; }
+svg .acc { fill: var(--accent); }
+svg .mut { fill: var(--muted); }
+.box-out { fill: var(--card); stroke: var(--card-edge); stroke-width: 1.5; }
+.box-in { fill: var(--card-in); stroke: var(--card-edge); stroke-width: 1; }
+.cap { fill: var(--card-edge); }
+.hidden { fill: none; stroke: var(--card-edge); stroke-width: 1.2; stroke-dasharray: 5 4; }
+.hole { fill: var(--hole); }
+.wood { fill: var(--wood); stroke: var(--wood-edge); stroke-width: 1; }
+.wire { fill: none; stroke: var(--wire); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+.wire-dot { fill: var(--wire); }
+.band { fill: none; stroke: var(--band); stroke-width: 1.6; stroke-linecap: round; }
+.melody { fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; }
+.melody-fat { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.lead-line { fill: none; stroke: var(--muted); stroke-width: 1; }
+.dim { fill: none; stroke: var(--muted); stroke-width: 1; }
+.arrow { fill: none; stroke: var(--accent); stroke-width: 2; }
+.score { fill: none; stroke: var(--ink); stroke-width: 1.2; stroke-dasharray: 6 4; }
+.glue { fill: var(--glue); stroke: var(--card-edge); stroke-width: 0.8; }
+.air { fill: none; stroke: var(--band); stroke-width: 1; stroke-dasharray: 2 4; opacity: .8; }
+table { border-collapse: collapse; width: 100%; background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; font-size: 0.95rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--soft); font-family: var(--display); font-weight: 600; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tablewrap { overflow-x: auto; }
+.note { background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
+ul { padding-left: 1.2em; }
+</style>
+
+<div class="wrap">
+  <h1>Gumičková kytara</h1>
+  <p class="lead">Kartonová „věžka“ (úzký hranol 24 × 7 × 5 cm) se třemi gumičkovými strunami, šesti pražci ze špejlí a ladicími klikami z velkých kancelářských sponek. Nákresy pro Bastlířskou dílnu, 3.–5. třída. Všechny míry jsou výchozí. Délku krabice upravit podle gumiček změřených na vzorku.</p>
+
+  <div class="facts">
+    <div class="fact"><b>Kmitající délka 15 cm</b><span>od kobylky k prahu; pražce dělají stupnici do–re–mi–fa–sol–la–do</span></div>
+    <div class="fact"><b>Gumička 60 mm, natažená asi 3,3×</b><span>rozpětí sloupek–kolík 19,5 cm; tah asi 5 N na strunu</span></div>
+    <div class="fact"><b>Klika ze sponky</b><span>nadzvednout, otočit, zamáčknout hrot. Drží v jakékoli poloze.</span></div>
+    <div class="fact"><b>Otvor Ø 3,5 cm</b><span>vzduch v krabici zesiluje tóny kolem 300 Hz, tedy právě tóny strun</span></div>
+  </div>
+
+  <h2>1. Pohled shora</h2>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 880 440" role="img" aria-label="Pohled shora na gumičkovou kytaru">
+      <!-- dimension: vibrating length -->
+      <line class="dim" x1="220" y1="52" x2="670" y2="52"/>
+      <line class="dim" x1="220" y1="44" x2="220" y2="86"/>
+      <line class="dim" x1="670" y1="44" x2="670" y2="86"/>
+      <text x="445" y="44" text-anchor="middle">kmitající délka L = 15 cm (práh → kobylka)</text>
+
+      <!-- box -->
+      <rect class="cap" x="64" y="90" width="6" height="210"/>
+      <rect class="cap" x="790" y="90" width="6" height="210"/>
+      <rect class="box-out" x="70" y="90" width="720" height="210"/>
+      <!-- hidden blocks under deck -->
+      <rect class="hidden" x="72" y="99" width="118" height="192"/>
+      <rect class="hidden" x="700" y="99" width="88" height="192"/>
+      <!-- sound hole -->
+      <circle class="hole" cx="557.5" cy="195" r="52.5"/>
+
+      <!-- nut -->
+      <rect x="205" y="93" width="30" height="204" fill="var(--card-in)" stroke="var(--card-edge)"/>
+      <rect class="wood" x="215.5" y="93" width="9" height="204" rx="4"/>
+      <!-- bridge -->
+      <rect x="655" y="93" width="30" height="204" fill="var(--card-in)" stroke="var(--card-edge)"/>
+      <rect class="wood" x="665.5" y="93" width="9" height="204" rx="4"/>
+      <!-- frets -->
+      <g>
+        <rect class="wood" x="263.5" y="96" width="9" height="198" rx="4"/>
+        <rect class="wood" x="308.5" y="96" width="9" height="198" rx="4"/>
+        <rect class="wood" x="329.5" y="96" width="9" height="198" rx="4"/>
+        <rect class="wood" x="365.5" y="96" width="9" height="198" rx="4"/>
+        <rect class="wood" x="398.5" y="96" width="9" height="198" rx="4"/>
+        <rect class="wood" x="440.5" y="96" width="9" height="198" rx="4"/>
+      </g>
+      <g class="small" text-anchor="middle">
+        <text x="268" y="82">1</text><text x="313" y="82">2</text><text x="334" y="82">3</text>
+        <text x="370" y="82">4</text><text x="403" y="82">5</text><text x="445" y="82">6</text>
+      </g>
+
+      <!-- tail posts -->
+      <g>
+        <circle class="wood" cx="745" cy="141" r="5"/>
+        <circle class="wood" cx="745" cy="195" r="5"/>
+        <circle class="wood" cx="745" cy="249" r="5"/>
+      </g>
+
+      <!-- strings: two strands each -->
+      <!-- far drone y=141, peg at x=160 -->
+      <path class="band" d="M160 138.5 L745 138.5 M160 143.5 L745 143.5"/>
+      <!-- middle drone y=195, peg at x=115 -->
+      <path class="band" d="M115 192.5 L745 192.5 M115 197.5 L745 197.5"/>
+      <!-- melody y=249, peg at x=160 -->
+      <path class="melody" d="M160 246.5 L745 246.5 M160 251.5 L745 251.5"/>
+      <!-- loops around posts -->
+      <circle cx="745" cy="141" r="7.5" class="band"/>
+      <circle cx="745" cy="195" r="7.5" class="band"/>
+      <circle cx="745" cy="249" r="7.5" class="melody"/>
+
+      <!-- pegs (crank) seen from above -->
+      <g>
+        <circle cx="160" cy="141" r="7.5" class="band"/>
+        <circle cx="115" cy="195" r="7.5" class="band"/>
+        <circle cx="160" cy="249" r="7.5" class="melody"/>
+        <path class="wire" d="M160 141 L115 141"/><circle class="wire-dot" cx="115" cy="141" r="4.5"/>
+        <path class="wire" d="M115 195 L79 195"/><circle class="wire-dot" cx="79" cy="195" r="4.5"/>
+        <path class="wire" d="M160 249 L115 249"/><circle class="wire-dot" cx="115" cy="249" r="4.5"/>
+        <circle class="wire-dot" cx="160" cy="141" r="2.5"/>
+        <circle class="wire-dot" cx="115" cy="195" r="2.5"/>
+        <circle class="wire-dot" cx="160" cy="249" r="2.5"/>
+      </g>
+
+      <!-- width dimension -->
+      <line class="dim" x1="826" y1="90" x2="826" y2="300"/>
+      <line class="dim" x1="818" y1="90" x2="834" y2="90"/><line class="dim" x1="818" y1="300" x2="834" y2="300"/>
+      <text x="836" y="186">7 cm</text><text class="small mut" x="690" y="314">čísla: cm od hrany u hráče</text>
+      <!-- string spacing -->
+      <text class="small mut" x="760" y="145">5,3</text>
+      <text class="small mut" x="760" y="199">3,5</text>
+      <text class="small mut" x="760" y="253">1,7</text>
+
+      <!-- total length -->
+      <line class="dim" x1="70" y1="322" x2="790" y2="322"/>
+      <line class="dim" x1="70" y1="314" x2="70" y2="330"/><line class="dim" x1="790" y1="314" x2="790" y2="330"/>
+      <text x="430" y="317" text-anchor="middle">24 cm (+ čela)</text>
+
+      <!-- labels -->
+      <path class="lead-line" d="M137 262 L120 360"/>
+      <text x="70" y="376">ladicí kliky ze sponky</text>
+      <text class="small mut" x="70" y="392">prostřední o 1,5 cm dál,</text>
+      <text class="small mut" x="70" y="406">ramena míří dozadu</text>
+
+      <path class="lead-line" d="M220 297 L235 360"/>
+      <text x="205" y="376">práh</text>
+      <text class="small mut" x="205" y="392">19 cm od konce</text>
+
+      <path class="lead-line" d="M356 290 L350 360"/>
+      <text x="310" y="376">pražce 1–6 (špejle)</text>
+      <text class="small mut" x="310" y="392">vzdálenosti od prahu</text>
+      <text class="small mut" x="310" y="406">viz tabulka níže</text>
+
+      <path class="lead-line" d="M540 245 L520 360"/>
+      <text x="470" y="376">rezonanční otvor Ø 3,5 cm</text>
+      <text class="small mut" x="470" y="392">střed 7,75 cm od konce</text>
+
+      <path class="lead-line" d="M670 297 L668 360"/>
+      <text x="640" y="376">kobylka</text>
+      <text class="small mut" x="640" y="392">4 cm od konce</text>
+
+      <path class="lead-line" d="M745 257 L770 360"/>
+      <text x="735" y="376">sloupky</text>
+      <text class="small mut" x="735" y="392">špejle 1,5 cm</text>
+      <text class="small mut" x="735" y="406">od konce</text>
+
+      <text class="acc" x="470" y="275" font-weight="700">melodická struna (u tebe)</text>
+      <text class="small" x="470" y="133">doprovodné (bordunové) struny</text>
+      <text class="small mut" x="80" y="116">destička</text>
+      <text class="small mut" x="704" y="116">destička</text>
+      <text class="title" x="70" y="24">Pohled shora: hlava vlevo, struník vpravo, hráč sedí u spodní hrany</text>
+    </svg>
+    </div>
+    <figcaption><b>Kudy vede gumička:</b> smyčka je nasazená na ladicí kliku (vlevo), vede přes práh, nad pražci a nad otvorem, přes kobylku a je zaháknutá za sloupek ze špejle (vpravo). Gumička má vždy <b>dvě vlákna</b>; po natažení je prstem srovnat, aby byla stejně napnutá. Čárkovaně jsou destičky přilepené zespodu desky, ve kterých drží kliky a sloupky.</figcaption>
+  </figure>
+
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Pražec</th><th>Tón (prázdná struna = do)</th><th class="num">Od prahu</th><th class="num">Od konce krabice u struníku</th><th>Podíl délky L</th></tr></thead>
+    <tbody>
+      <tr><td>0 (prázdná)</td><td>do</td><td class="num">0</td><td class="num">19,0 cm</td><td>–</td></tr>
+      <tr><td>1</td><td>re</td><td class="num">1,6 cm</td><td class="num">17,4 cm</td><td>1/9 L</td></tr>
+      <tr><td>2</td><td>mi</td><td class="num">3,1 cm</td><td class="num">15,9 cm</td><td>1/5 L</td></tr>
+      <tr><td>3</td><td>fa</td><td class="num">3,8 cm</td><td class="num">15,2 cm</td><td>1/4 L</td></tr>
+      <tr><td>4</td><td>sol</td><td class="num">5,0 cm</td><td class="num">14,0 cm</td><td>1/3 L</td></tr>
+      <tr><td>5</td><td>la</td><td class="num">6,1 cm</td><td class="num">12,9 cm</td><td>2/5 L</td></tr>
+      <tr><td>6</td><td>do (o oktávu výš)</td><td class="num">7,5 cm</td><td class="num">11,5 cm</td><td>1/2 L</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="lead" style="margin-top:8px">Při jiné délce L se pražce přepočítají přes sloupec „podíl“: pražec 6 je vždy v polovině, pražec 4 ve třetině. Tón <i>si</i> je vynechaný (mezera k pražci 6 by byla jen 5 mm). Óda na radost: 2 2 3 4 | 4 3 2 1 | 0 0 1 2 | 2 1 1.</p>
+
+  <h2>2. Pohled z boku (řez podél melodické struny)</h2>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 880 380" role="img" aria-label="Řez kytarou z boku">
+      <text class="title" x="70" y="24">Řez z boku: výšky ve skutečném měřítku</text>
+      <!-- interior (side wall behind) -->
+      <rect class="box-in" x="70" y="162" width="720" height="126"/>
+      <path class="air" d="M300 225 q30 -14 60 0 t60 0 t60 0"/>
+      <path class="air" d="M300 245 q30 -14 60 0 t60 0 t60 0"/>
+      <text class="small" x="300" y="272">vzduch uvnitř se rozkmitá a „dýchá“ otvorem</text>
+      <!-- bottom -->
+      <rect class="box-out" x="70" y="288" width="720" height="12"/>
+      <!-- caps -->
+      <rect class="cap" x="64" y="150" width="6" height="150"/>
+      <rect class="cap" x="790" y="150" width="6" height="150"/>
+      <!-- deck with hole gap -->
+      <rect class="box-out" x="70" y="150" width="435" height="12"/>
+      <rect class="box-out" x="610" y="150" width="180" height="12"/>
+      <!-- blocks under deck -->
+      <rect class="box-out" x="70" y="162" width="120" height="12"/>
+      <rect class="box-out" x="70" y="174" width="120" height="12"/>
+      <rect class="box-out" x="700" y="162" width="90" height="12"/>
+      <rect class="box-out" x="700" y="174" width="90" height="12"/>
+
+      <!-- tail post -->
+      <rect class="wood" x="740.5" y="105" width="9" height="120" rx="3"/>
+      <ellipse class="glue" cx="745" cy="148" rx="13" ry="4"/>
+      <!-- bridge -->
+      <rect class="box-out" x="655" y="126" width="30" height="12"/>
+      <rect class="box-out" x="655" y="138" width="30" height="12"/>
+      <circle class="wood" cx="670" cy="121.5" r="4.5"/>
+      <!-- nut -->
+      <rect class="box-out" x="205" y="126" width="30" height="12"/>
+      <rect class="box-out" x="205" y="138" width="30" height="12"/>
+      <circle class="wood" cx="220" cy="121.5" r="4.5"/>
+      <!-- frets -->
+      <g>
+        <circle class="wood" cx="268" cy="145.5" r="4.5"/><circle class="wood" cx="313" cy="145.5" r="4.5"/>
+        <circle class="wood" cx="334" cy="145.5" r="4.5"/><circle class="wood" cx="370" cy="145.5" r="4.5"/>
+        <circle class="wood" cx="403" cy="145.5" r="4.5"/><circle class="wood" cx="445" cy="145.5" r="4.5"/>
+      </g>
+      <!-- crank peg -->
+      <path class="wire" d="M160 240 L160 126 L115 126 L115 156"/>
+      <!-- string -->
+      <path class="melody-fat" d="M745 138 L670 117 L220 117 L160 140"/>
+      <ellipse cx="745" cy="138" rx="8" ry="3" class="melody"/>
+      <ellipse cx="160" cy="140" rx="7" ry="3" class="melody"/>
+      <ellipse cx="160" cy="135" rx="7" ry="3" class="melody"/>
+
+      <!-- compression arrows -->
+      <path class="arrow" d="M30 110 L58 110 M50 104 L58 110 L50 116"/>
+      <path class="arrow" d="M850 110 L822 110 M830 104 L822 110 L830 116"/>
+      <text class="small acc" x="14" y="98">tah strun</text>
+      <text class="small acc" x="806" y="98">asi 15 N</text>
+
+      <!-- height dims -->
+      <line class="dim" x1="40" y1="150" x2="40" y2="300"/>
+      <line class="dim" x1="34" y1="150" x2="46" y2="150"/><line class="dim" x1="34" y1="300" x2="46" y2="300"/>
+      <text x="10" y="230">5 cm</text>
+      <line class="dim" x1="645" y1="117" x2="645" y2="150"/>
+      <text class="small" x="640" y="140" text-anchor="end">11 mm</text>
+
+      <!-- labels -->
+      <path class="lead-line" d="M137 126 L120 70"/>
+      <text x="70" y="62">klika: rameno 8 mm nad deskou,</text>
+      <text class="small mut" x="70" y="78">hrot zapíchnutý 2 mm do desky</text>
+      <path class="lead-line" d="M220 112 L236 96"/>
+      <text x="232" y="90">práh</text>
+      <path class="lead-line" d="M334 140 L345 96"/>
+      <text x="330" y="90">pražce (1 špejle, 3 mm)</text>
+      <path class="lead-line" d="M557 150 L560 96"/>
+      <text x="520" y="90">otvor</text>
+      <path class="lead-line" d="M670 117 L650 70"/>
+      <text x="545" y="62">kobylka: proužek 2× + špejle</text>
+      <path class="lead-line" d="M745 105 L800 70"/>
+      <text x="790" y="62">sloupek</text>
+      <path class="lead-line" d="M130 186 L120 330"/>
+      <text x="70" y="346">destička ze 2 vrstev lepenky (drží kliku)</text>
+      <path class="lead-line" d="M400 300 L400 330"/>
+      <text x="330" y="346">dno a boky: jeden přehnutý pruh (U)</text>
+      <path class="lead-line" d="M745 186 L740 330"/>
+      <text x="620" y="346">sloupek prochází deskou i destičkou</text>
+      <text class="small mut" x="330" y="364">deska: vlnitá lepenka, vlny podél délky (je tužší)</text>
+    </svg>
+    </div>
+    <figcaption><b>Proč hranol, a ne plochá deska:</b> tři napnuté gumičky tlačí konce krabice k sobě silou asi 15 N. Samotný karton by se prohnul a struny by povolily. Plochá deska navíc hraje tiše, protože vzduch obtéká z přední strany na zadní a zvuk se ruší. Uzavřený hranol je tuhý a vzduch uvnitř funguje jako zesilovač. Kobylka a práh jsou 11 mm vysoké, pražce 3 mm, takže struna je 8 mm nad pražci a nebzučí.</figcaption>
+  </figure>
+
+  <h2>3. Ladicí klika ze sponky</h2>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 880 450" role="img" aria-label="Detail ladicí kliky ze sponky">
+      <text class="title" x="30" y="24">Detail kliky (měřítko asi 2 : 1)</text>
+      <!-- deck section -->
+      <rect class="box-out" x="30" y="138" width="330" height="24"/>
+      <rect class="box-out" x="30" y="162" width="330" height="24"/>
+      <rect class="box-out" x="30" y="186" width="330" height="24"/>
+      <text class="small" x="250" y="155">deska</text>
+      <text class="small" x="250" y="179">destička</text>
+      <text class="small" x="250" y="203">destička</text>
+      <!-- band leaving to nut (right side) -->
+      <path class="melody-fat" d="M130 128 L360 92"/>
+      <path class="melody-fat" d="M130 122 L360 86"/>
+      <text class="acc" x="300" y="76">k prahu</text>
+      <!-- wraps -->
+      <ellipse cx="120" cy="131" rx="14" ry="5" class="melody"/>
+      <ellipse cx="120" cy="124" rx="14" ry="5" class="melody"/>
+      <!-- crank: shaft x=120, arm to left -->
+      <path class="wire" d="M120 318 L120 90 L30 90 L30 150" style="stroke-width:5"/>
+      <!-- dims -->
+      <line class="dim" x1="30" y1="62" x2="120" y2="62"/>
+      <line class="dim" x1="30" y1="56" x2="30" y2="68"/><line class="dim" x1="120" y1="56" x2="120" y2="68"/>
+      <text class="small" x="50" y="54">15 mm</text>
+      <line class="dim" x1="14" y1="90" x2="14" y2="150"/>
+      <text class="small" x="38" y="114">hrot</text><text class="small" x="38" y="128">10 mm</text>
+      <line class="dim" x1="200" y1="90" x2="200" y2="138"/>
+      <text class="small" x="206" y="134">8 mm</text>
+      <line class="dim" x1="150" y1="138" x2="150" y2="318"/>
+      <text class="small" x="156" y="260">30 mm pod deskou</text>
+      <text class="small mut" x="156" y="276">(volně visí do krabice)</text>
+      <path class="lead-line" d="M30 152 L60 236"/>
+      <text class="small" x="40" y="250">hrot drží</text>
+      <text class="small" x="40" y="264">v kartonu</text>
+      <text class="small mut" x="30" y="352">drát: rozevřená velká sponka (asi 1–1,2 mm),</text>
+      <text class="small mut" x="30" y="368">nebo pozinkovaný drát 1,5 mm ze zásoby; celkem asi 65 mm</text>
+
+      <!-- steps -->
+      <g transform="translate(430 40)">
+        <text class="title" x="0" y="0">Ladění ve třech krocích</text>
+        <!-- step 1 -->
+        <g transform="translate(0 30)">
+          <rect class="box-out" x="0" y="80" width="130" height="14"/>
+          <path class="wire" d="M70 100 L70 40 L30 40 L30 70"/>
+          <path class="arrow" d="M100 70 L100 40 M94 48 L100 40 L106 48"/>
+          <text x="0" y="122">1 Nadzvedni</text>
+          <text class="small mut" x="0" y="138">o 3 mm, hrot vyjde</text>
+        </g>
+        <!-- step 2: top view rotation -->
+        <g transform="translate(150 30)">
+          <circle cx="65" cy="60" r="34" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+          <path class="wire" d="M65 60 L35 40"/><circle class="wire-dot" cx="35" cy="40" r="4"/>
+          <circle class="wire-dot" cx="65" cy="60" r="3"/>
+          <path class="arrow" d="M100 60 A35 35 0 0 1 65 95 M73 101 L65 95 L73 88"/>
+          <path class="melody-fat" d="M70 60 L135 60"/>
+          <text x="0" y="122">2 Otoč</text>
+          <text class="small mut" x="0" y="138">gumička se navine,</text>
+          <text class="small mut" x="0" y="152">tón stoupá</text>
+        </g>
+        <!-- step 3 -->
+        <g transform="translate(300 30)">
+          <rect class="box-out" x="0" y="80" width="130" height="14"/>
+          <path class="wire" d="M70 100 L70 52 L30 52 L30 86"/>
+          <path class="arrow" d="M100 40 L100 70 M94 62 L100 70 L106 62"/>
+          <text x="0" y="122">3 Zamáčkni</text>
+          <text class="small mut" x="0" y="138">hrot do kartonu,</text>
+          <text class="small mut" x="0" y="152">rameno dozadu</text>
+        </g>
+      </g>
+
+      <!-- girth hitch -->
+      <g transform="translate(430 262)">
+        <text class="title" x="0" y="0">Navlečení gumičky (předtím, než klika jde do díry)</text>
+        <circle class="wire-dot" cx="80" cy="80" r="6"/>
+        <path class="melody" d="M80 66 C 100 66, 104 94, 80 94 C 60 94, 56 66, 80 66" style="stroke-width:3"/>
+        <path class="melody" d="M97 74 L300 74 M97 86 L300 86" style="stroke-width:2.4"/>
+        <path class="melody" d="M300 74 a6 6 0 0 1 0 12" style="stroke-width:2.4"/>
+        <text class="small" x="140" y="66">obě vlákna jdou k prahu a ke sloupku</text>
+        <text class="small" x="0" y="124">Smyčku gumičky obtočit kolem drátu a druhý konec gumičky jí provléknout</text>
+        <text class="small" x="0" y="140">(stejně jako při řetízku z gumiček) a utáhnout. Pak se při otáčení kliky</text>
+        <text class="small" x="0" y="156">gumička jistě navíjí a neprokluzuje.</text>
+      </g>
+    </svg>
+    </div>
+    <figcaption><b>Proč to drží:</b> gumička se navíjí na tenký drát (poloměr asi 1 mm), takže točivý moment je malý, asi 5 N·mm. Na konci ramene 15 mm stačí síla asi 0,35 N, a tu zapíchnutý hrot snadno udrží. Špejle (poloměr 1,5 mm) volně v kartonu se naopak vrací, protože tření v díře je zhruba stejně velké jako tah gumičky. Šroubek drží jen ve dřevě a prkýnka jsou určená pro hlavolam.</figcaption>
+  </figure>
+
+  <h2>4. Pražec a kobylka</h2>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 880 380" role="img" aria-label="Detail pražce a kobylky">
+      <text class="title" x="30" y="24">Hraní na pražec (měřítko 2 : 1, kobylka je mimo obrázek vpravo)</text>
+      <!-- deck -->
+      <rect class="box-out" x="20" y="250" width="540" height="24"/>
+      <!-- nut: 2 layers + skewer -->
+      <rect class="box-out" x="30" y="226" width="60" height="24"/>
+      <rect class="box-out" x="30" y="202" width="60" height="24"/>
+      <circle class="wood" cx="60" cy="193" r="9"/>
+      <!-- frets -->
+      <circle class="wood" cx="156" cy="241" r="9"/>
+      <circle class="wood" cx="246" cy="241" r="9"/>
+      <circle class="wood" cx="288" cy="241" r="9"/>
+      <circle class="wood" cx="360" cy="241" r="9"/>
+      <circle class="wood" cx="426" cy="241" r="9"/>
+      <g class="small" text-anchor="middle"><text x="156" y="292">1</text><text x="246" y="292">2</text><text x="288" y="292">3</text><text x="360" y="292">4</text><text x="426" y="292">5</text></g>
+      <!-- glue under frets -->
+      <ellipse class="glue" cx="156" cy="250" rx="12" ry="3"/><ellipse class="glue" cx="246" cy="250" rx="12" ry="3"/>
+      <ellipse class="glue" cx="288" cy="250" rx="12" ry="3"/><ellipse class="glue" cx="360" cy="250" rx="12" ry="3"/>
+      <ellipse class="glue" cx="426" cy="250" rx="12" ry="3"/>
+      <!-- string pressed on fret 3 -->
+      <path class="melody-fat" d="M60 184 L278 229 L288 232 L560 213"/>
+      <!-- vibration hint -->
+      <path class="melody" d="M300 222 Q 430 196 560 202" style="stroke-dasharray:4 4; opacity:.7"/>
+      <path class="melody" d="M300 240 Q 430 232 560 224" style="stroke-dasharray:4 4; opacity:.7"/>
+      <!-- noter -->
+      <path d="M280 226 L360 110" stroke="var(--wood-edge)" stroke-width="11" stroke-linecap="round"/>
+      <path d="M280 226 L360 110" stroke="var(--wood)" stroke-width="8" stroke-linecap="round"/>
+      <text x="330" y="96">hmatítko (8 cm špejle) nebo prst</text>
+      <text class="small mut" x="330" y="112">tlačit těsně před pražcem (u prahu)</text>
+      <!-- labels -->
+      <text class="small mut" x="110" y="176">tady nekmitá</text>
+      <text class="acc" x="430" y="186" font-weight="700">kmitá jen tahle část →</text>
+      <text class="small acc" x="430" y="166">pražec 3 až kobylka = tón fa</text>
+      <!-- open string height at fret 1 -->
+            <text class="small mut" x="20" y="320">práh: proužek 7 × 2 cm přeložený (2 vrstvy = 8 mm) + špejle = 11 mm</text>
+      <text class="small mut" x="20" y="336">pražec: jedna špejle 7 cm, položená do tenké housenky lepidla</text>
+      <text class="small mut" x="20" y="352">nezmáčknutá struna je 8 mm nad pražci; zmáčknutím se natáhne jen asi o 1 mm</text>
+
+      <!-- bridge front view -->
+      <g transform="translate(600 0)">
+        <text class="title" x="0" y="24">Kobylka zepředu</text>
+        <rect class="box-out" x="0" y="250" width="240" height="24"/>
+        <rect class="box-out" x="15" y="226" width="210" height="12"/>
+        <rect class="box-out" x="15" y="238" width="210" height="12"/>
+        <rect class="wood" x="15" y="217" width="210" height="9" rx="4"/>
+        <!-- strings: two strands each, end-on -->
+        <g>
+          <circle cx="63" cy="212" r="3" fill="var(--band)"/><circle cx="70" cy="212" r="3" fill="var(--band)"/>
+          <circle cx="117" cy="212" r="3" fill="var(--band)"/><circle cx="124" cy="212" r="3" fill="var(--band)"/>
+          <circle cx="171" cy="212" r="3" fill="var(--accent)"/><circle cx="178" cy="212" r="3" fill="var(--accent)"/>
+        </g>
+        <line class="dim" x1="66" y1="190" x2="120" y2="190"/><text class="small" x="74" y="184">1,8 cm</text>
+        <text class="small acc" x="150" y="196">melodická</text>
+        <path class="lead-line" d="M200 222 L230 150"/>
+        <text class="small" x="150" y="132">špejle 7 cm</text>
+        <path class="lead-line" d="M30 232 L20 150"/>
+        <text class="small" x="0" y="132">proužek přeložený</text>
+        <text class="small" x="0" y="146">napůl, lepený</text>
+        <text class="small mut" x="0" y="300">Struny drží na špejli třením;</text>
+        <text class="small mut" x="0" y="316">místa označit fixou. Když sjíždějí,</text>
+        <text class="small mut" x="0" y="332">dát mezi ně kapku lepidla</text>
+        <text class="small mut" x="0" y="348">jako zarážku.</text>
+      </g>
+    </svg>
+    </div>
+    <figcaption><b>Jak funguje pražec:</b> hmatítko přitlačí gumičku k pražci. Kmitá pak jen úsek od pražce ke kobylce. Kratší úsek dává vyšší tón, pražec 6 v polovině délky zahraje stejný tón o oktávu výš. Kobylka předává chvění desce, a ta rozkmitá vzduch, proto je kytara hlasitější než gumička natažená mezi prsty.</figcaption>
+  </figure>
+
+  <h2>5. Díly z kartonu (příprava vedoucího)</h2>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 880 500" role="img" aria-label="Střih dílů z vlnité lepenky">
+      <text class="title" x="30" y="24">Díly na jednu kytaru (1 cm = 12 px), vlny lepenky vždy podél dlouhé strany</text>
+      <!-- U blank 24x17 -->
+      <g transform="translate(30 50)">
+        <rect class="box-out" x="0" y="0" width="288" height="204"/>
+        <line class="score" x1="0" y1="60" x2="288" y2="60"/>
+        <line class="score" x1="0" y1="144" x2="288" y2="144"/>
+        <text x="110" y="34">bok 5 cm</text><text x="110" y="108">dno 7 cm</text><text x="110" y="180">bok 5 cm</text>
+        <text class="small" x="0" y="224">U: 24 × 17 cm, 2 rýhy (čárkovaně), ohnout nahoru</text>
+        <path class="arrow" d="M20 120 L90 120 M82 114 L90 120 L82 126" style="stroke:var(--card-edge)"/>
+        <text class="small mut" x="10" y="138">směr vln</text>
+      </g>
+      <!-- deck 24x7 -->
+      <g transform="translate(360 50)">
+        <rect class="box-out" x="0" y="0" width="288" height="84"/>
+        <circle class="hole" cx="195" cy="42" r="21"/>
+        <!-- marks (deck seen from top; head left) -->
+        <g fill="var(--ink)">
+          <circle cx="36" cy="20" r="2.5"/><circle cx="18" cy="42" r="2.5"/><circle cx="36" cy="64" r="2.5"/>
+          <circle cx="270" cy="20" r="2.5"/><circle cx="270" cy="42" r="2.5"/><circle cx="270" cy="64" r="2.5"/>
+        </g>
+        <g stroke="var(--muted)" stroke-width="1">
+          <line x1="60" y1="4" x2="60" y2="80"/><line x1="240" y1="4" x2="240" y2="80"/>
+        </g>
+        <text class="small" x="0" y="104">deska 24 × 7 cm, otvor Ø 3,5 cm (vyřízne vedoucí)</text>
+        <text class="small mut" x="0" y="120">tečky: díry pro kliky (vlevo) a sloupky (vpravo)</text>
+        <text class="small mut" x="0" y="136">čáry: práh (19 cm) a kobylka (4 cm od pravého konce)</text>
+      </g>
+      <!-- small parts -->
+      <g transform="translate(360 220)">
+        <rect class="box-out" x="0" y="0" width="72" height="96"/>
+        <line class="score" x1="0" y1="48" x2="72" y2="48"/>
+        <text class="small" x="0" y="116">destička u hlavy</text>
+        <text class="small mut" x="0" y="131">6 × 8 → na 6 × 4</text>
+
+        <rect class="box-out" x="125" y="0" width="72" height="72"/>
+        <line class="score" x1="125" y1="36" x2="197" y2="36"/>
+        <text class="small" x="125" y="116">u struníku</text>
+        <text class="small mut" x="125" y="131">6 × 6 → na 6 × 3</text>
+
+        <rect class="box-out" x="250" y="0" width="84" height="66"/>
+        <text class="small" x="250" y="116">2× čelo 7 × 5,5</text>
+        <text class="small mut" x="250" y="131">zvenku na konce</text>
+
+        <rect class="box-out" x="375" y="0" width="84" height="24"/>
+        <line class="score" x1="375" y1="12" x2="459" y2="12"/>
+        <rect class="box-out" x="375" y="34" width="84" height="24"/>
+        <line class="score" x1="375" y1="46" x2="459" y2="46"/>
+        <text class="small" x="375" y="116">2× proužek 7 × 2</text>
+        <text class="small mut" x="375" y="131">přeložit na 7 × 1</text>
+      </g>
+      <g transform="translate(30 410)">
+        <text class="small" x="0" y="0">Destičky jsou užší (6 cm), aby se po přilepení na rub desky vešly mezi boky.</text>
+        <text class="small" x="0" y="18">Ze špejlí: 6 × 7 cm pražce, 2 × 7 cm na kobylku a práh, 3 × 4 cm sloupky, 1 × 8 cm hmatítko</text>
+        <text class="small" x="0" y="36">(asi 3 špejle na kytaru). Ostré konce zastřihnout.</text>
+        <text class="small mut" x="0" y="62">Náhrada za U a desku: krabice od alobalu nebo potravinové fólie (asi 30 × 5 × 5 cm). Kovovou pilku odstranit kleštěmi a hranu přelepit.</text>
+      </g>
+    </svg>
+    </div>
+    <figcaption><b>Příprava na 20 kytar:</b> díly vyřezává vedoucí odlamovacím nožem podle pravítka a rýhuje tupou stranou nože. Pruh ve tvaru U se ohýbá podél vln, a tak se ohne čistě. Drobné díly (destičky, proužky) si mohou děti stříhat samy nůžkami podle narýsovaných čar.</figcaption>
+  </figure>
+
+  <h2>Délka krabice podle gumičky</h2>
+  <p>Gumičku položit složenou naplocho a změřit délku <b>F</b>. Nasazená mezi dva body se natáhne na rozpětí <b>s ≈ 3,2 × F</b> (asi trojnásobek, se zálohou do přetržení, které u kancelářských gumiček bývá kolem 6–8×).</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th class="num">F naplocho</th><th class="num">Rozpětí sloupek–kolík</th><th class="num">Kmitající délka L</th><th class="num">Délka krabice</th><th>Poznámka</th></tr></thead>
+    <tbody>
+      <tr><td class="num">60 mm</td><td class="num">19,5 cm</td><td class="num">15 cm</td><td class="num">24 cm</td><td>výchozí návrh na tomto listu</td></tr>
+      <tr><td class="num">75 mm</td><td class="num">24 cm</td><td class="num">19,5 cm</td><td class="num">28,5 cm</td><td>pražce přepočítat podílem L</td></tr>
+      <tr><td class="num">90 mm</td><td class="num">29 cm</td><td class="num">24 cm</td><td class="num">33 cm</td><td>krabice od fólie, pokud je 60 mm průměr</td></tr>
+      <tr><td class="num">30 mm</td><td class="num">asi 10 cm</td><td class="num">–</td><td class="num">–</td><td>na celou strunu nestačí; jen pokusy a příčná „cvrnkací“ struna</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><b>Ověřit na vzorku:</b> skutečnou délku F, zda gumička 60 mm na 19,5 cm vydrží přes noc (nepraská, nepovoluje), jak vysoko zní (odhad 200–250 Hz, tedy kolem tónů g až h), zda hrot kliky drží po 10 přeladěních a jestli struna na pražcích nebzučí.</div>
+</div>

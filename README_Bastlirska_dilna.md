@@ -32,7 +32,7 @@ Plán kombinuje mechaniku, elektřinu, jednoduché pohony a pokusy. Jde o zásob
 11. **Pájecí dílna a vlastní výrobek** – až po nácviku bezpečné práce a podle možností skupiny.
 12. **Závěrečná technická výzva** – děti využijí naučené postupy pro vlastní řešení.
 13. **Věž a most ze špaget** – stavitelská výzva ve dvojicích; proč drží trojúhelník a jak zátěž ovlivní konstrukci.
-14. **Zvuková dílna** – krabicová kytara z gumiček, kelímkový telefon, brčková píšťalka; zvuk je chvění.
+14. **Zvuková dílna** – gumičková kytara z kartonu s pražci a ladicími klikami, kelímkový telefon, brčková píšťalka; zvuk je chvění.
 
 U vibrobotů stojí za vyzkoušení kartáčkový robot, robot na šikmých nožkách, kreslící varianta nebo jednoduchý 3D tištěný podvozek. Předtištěná základna může dětem usnadnit stavbu, ale prostor pro změny mají tvořit nožky, vyvážení a umístění motorku. Konkrétní podobu lekce ještě vybrat.
 

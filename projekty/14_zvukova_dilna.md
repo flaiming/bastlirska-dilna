@@ -89,6 +89,24 @@ Při jiné délce L se pražce přepočítají zlomky výše.
 
 **Ladění:** 1) kliku nadzvednout o 3 mm (hrot vyjde), 2) otočit (gumička se navine, tón stoupá), 3) zamáčknout hrot do kartonu, rameno směrem dozadu, ne nad gumičku.
 
+### Varianta k vyzkoušení: dřevěné špalíky a ladění šroubovákem (nápad vedoucího)
+
+Do obou konců kartonového těla se zevnitř vlepí (tavnou pistolí) **dřevěný špalík**, např. kus laťky 2 × 2 cm, 6 cm dlouhý. Do špalíků se skrz desku zašroubují vruty a gumičky se ladí **křížovým šroubovákem nebo imbusem** podle hlavy vrutu. Špalíky navíc zpevní konce, takže tah strun karton nezmáčkne.
+
+Dvě možnosti, obě vyzkoušet na vzorku:
+
+- **A) Svislý vrut jako kolík (doporučená k vyzkoušení):** vrut zašroubovaný shora skrz desku do špalíku, gumička na něm uvázaná smyčkou (provléknutá sama sebou) **na hladké části dříku pod hlavou**. Otočením se gumička navine, tón stoupá. Vrut se přitom zavrtá asi o 1,5 mm na otáčku; vrut 30 mm tedy dá rozsah zhruba 15 otáček, což na naladění bohatě stačí. Tření závitu ve dřevě drží napětí gumičky samo. **Riziko:** závit vrutu může gumičku prořezat, proto smyčka musí být na hladké části (vruty s částečným závitem), nebo navléknout na dřík kousek izolace z drátu.
+- **B) Vodorovný napínací vrut:** vrut zašroubovaný do čela špalíku podélně se strunou, gumička zaháknutá za hlavou. Zašroubováním se hlava posune dál od kobylky a struna se napne (jako jemné ladění u houslí). Gumičku šetří (neodírá se o závit), ale rozsah je malý: 10 otáček = asi 1,5 cm. Hrubé naladění se pak dělá výběrem gumičky.
+
+Prakticky:
+- Díry pro vruty předvrtá vedoucí (vrták asi 2 mm), aby děti šroubovaly rukou.
+- Vruty z krabičky šroubků: na všechny kolíky stejný typ hlavy, aby stačil jeden šroubovák na stůl. Imbusové vruty do dřeva jsou méně běžné; křížové (PH/PZ) stačí.
+- Šroubováky: 3–4 na skupinu; doma se kytara ladí běžným šroubovákem.
+- Laťka 2 × 2 cm: asi 2,5 m na 20 kytar (hobby market, kolem 50 Kč); nařezat předem. Prkýnka ze zásoby jsou určená pro hlavolam.
+- Konec u kobylky může mít místo sloupků ze špejle pevné vruty (zaháknutí struny), což je pevnější než špejle v kartonu.
+
+**Ověřit na vzorku:** jestli svislý vrut gumičku neprořízne, jestli se smyčka při otáčení navíjí a neprokluzuje, kolik otáček je potřeba na naladění a jestli karton u špalíku nepraská.
+
 ### Postup stavby pro děti (50 min)
 
 Každé dítě dostane sáček: U, deska s otvorem a značkami, 2 čela, 2 destičky, 2 proužky, 3 kliky, 3 sloupky, 8 kousků špejle 7 cm, hmatítko, 3 gumičky + 1 náhradní.

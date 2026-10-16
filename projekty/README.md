@@ -5,7 +5,7 @@ Každé téma dostane vlastní kartu s funkčním návrhem, přípravou vedoucí
 | Číslo | Téma | Stav |
 | --- | --- | --- |
 | 01 | Elektrická detektivka a Voltík | K rozpracování |
-| 02 | Pokusy s balónky, vzduchem a statickou elektřinou | K rozpracování |
+| 02 | [Balónky: statická elektřina, vzduch a vznášedlo z CD](02_pokusy_s_balonky.md) | Návrh; kandidát na lekce 5–7 |
 | 03 | [Autíčko na gumičku](03_auticko_na_gumicku.md) | Odučeno oběma skupinám (říjen 2026) |
 | 04 | Balónkové nebo vrtulové autíčko | Balónkový pohon vyzkoušen v rámci lekce 03 |
 | 05 | [Vibrační robot](05_vibracni_robot.md) | Návrh; kartáče koupeny, čeká na vzorek; 4. lekce |

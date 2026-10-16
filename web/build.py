@@ -24,7 +24,7 @@ PLAN = [
     {"n": "4", "title": "Vibrobot z kartáče", "card": "05", "status": "prep",
      "note": "Prototyp funguje. Pájení k motorku a vypínači, zdobení a závody."},
     {"n": "5–7", "title": "Podle hlasování dětí", "card": None, "status": "idea",
-     "note": "Alarm se spouští z kolíčku, světlo na tmu, blikač, vlastní plošný spoj…"},
+     "note": "Balónky a vznášedlo z CD (karta 02), alarm se spouští z kolíčku, světlo na tmu, blikač, vlastní plošný spoj…"},
 ]
 
 # Úterky do konce 1. pololetí (bez 17. 11. a 29. 12.).

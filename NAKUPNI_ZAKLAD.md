@@ -13,6 +13,7 @@ Před každým nákupem nejprve projít tento seznam.
 - **Součástky:** rezistory, kondenzátory, tranzistory, hodně různých LED, fotorezistory (LDR), různé vypínače, 2 malé fotovoltaické panely, různé baterie.
 - **Pájení:** 1 mikropájka, 1 trafopájka, cín, kalafuna, pájecí kapalina, univerzální pájivá pole, krabice různých drátů, odizolovací kleště.
 - **Plošné spoje:** cuprexitové desky a leptací roztok.
+- **CD:** několik starých CD (vznášedla, viz karta 02).
 - **Vibrobot:** 20 kartáčů (koupeno), krabička různých šroubků na excentry. Dokoupit motorky a vypínače.
 - **Mechanika (zbytky z autíček):** brčka, špejle, plastelína, asi 5 balení kancelářských sponek včetně velkých.
 

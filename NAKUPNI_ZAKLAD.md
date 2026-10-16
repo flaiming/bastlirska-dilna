@@ -51,7 +51,7 @@ Alternativa pro vibrobota: [box 2× AA s krytem a vypínačem](https://dratek.cz
 | Kancelářské sponky | 1 malé balení, přibližně 100 kusů | Háčky, jednoduché kontakty a mechanické spoje. |
 | Papírová páska a pevnější lepicí páska | po 2 rolích | Konstrukce, dočasné upevnění a značení; spotřebu ověřit po první skupině. |
 | Oboustranná páska | 1–2 role | Uchycení lehkých dílů a motorů; před použitím ověřit držení na konkrétním podkladu. |
-| Tavné lepicí tyčinky | 1 běžné balení | Pevné spoje na podvozcích; typ musí sedět do již používaných pistolí. |
+| Tavné lepicí tyčinky | 1 běžné balení | Pevné spoje na podvozcích; průměr musí sedět do školních pistolí i do Parkside (ověřit, zda jsou všechny na stejný průměr). |
 | Provázek | 1 klubko | Balónková raketa a další konstrukční pokusy. |
 
 Víčka, karton a odřezky lze získat bez nákupu. U brček a víček rozhoduje vzájemná kompatibilita se špejlí; před větší objednávkou stačí ověřit jednu sadu na funkčním autíčku.
@@ -64,7 +64,7 @@ Víčka, karton a odřezky lze získat bez nákupu. U brček a víček rozhoduje
 | Dětské nůžky | 5–10 | Podle toho, zda děti pracují samostatně nebo ve dvojicích. |
 | Fixy, tužky, metr | přibližně 10 fixů/tužek + 1 metr | Značení dílů a měření pokusů. |
 | Malé kleště a štípací kleště | po 2–3 kusech | Tvarování sponky a drátu; počet upravit podle zvolené lekce. |
-| Tavné pistole a stojánky | 2 sady | Používá vedoucí; nejprve zjistit, co už je k dispozici. |
+| Tavné pistole a stojánky | 3 školní + 1 vlastní | Zajištěno: 3 pistole se půjčují od školy (jedna obvykle nefunguje úplně), vedoucí nosí vlastní malou akumulátorovou Parkside. Stojí na „horkém stole“ u pájení, kde na ně vedoucí dohlíží. |
 | Krabičky nebo popsané sáčky | přibližně 10 pracovních sad + několik pro společný sklad | Připravené díly pro děti a oddělené zbytky pro druhou skupinu. |
 
 Vrtání víček, zkracování špejlí a další přípravu ostrými nástroji dělá vedoucí před lekcí. Nákup nářadí je potřeba určit podle skutečného vybavení školy.

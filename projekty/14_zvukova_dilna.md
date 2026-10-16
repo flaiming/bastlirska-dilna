@@ -22,7 +22,36 @@ Využívá hlavně zásoby: gumičky 60 mm, karton, špejle, velké kancelářsk
 
 **Nákresy** (pohled shora, řez z boku, ladicí klika, pražec a kobylka, střih dílů): [stránka s nákresy](https://claude.ai/artifact/SURE8AGbzg35AcmUMBMCwv) (zdroj `web/gumickova_kytara.html`).
 
-### Proč ne krabice: rozbor
+### Základní varianta: gumičky obtočené kolem malé krabičky (doporučeno jako první krok)
+
+Nejjednodušší a osvědčená cesta (podle ukázek, které vedoucí našel): gumičky se **natáhnou kolem celé krabičky**. Odpadají kolíky i uchycení, gumička drží sama sebou. Rozhoduje jen velikost krabičky: **obvod krabičky v podélném směru musí být asi 2,5–3× delší než gumička složená naplocho.** Pro gumičku 60 mm se tedy hodí malá krabička (od čaje, sýra, kapesníčků, plastová krabička od jídla), ne krabice od bot.
+
+```
+          kobylka (špejle / pastelka / dřevěná špachtle)
+              │                      │
+     ┌────────╪──────────────────────╪────────┐
+     │════════╪══════════════════════╪════════│  ← gumičky obtočené
+     │════════╪══════  ( O )  ═══════╪════════│    kolem celé krabičky
+     │════════╪══════════════════════╪════════│
+     └────────╪──────────────────────╪────────┘
+              │                      │
+     krk: rulička od papírových utěrek (volitelně)
+```
+
+1. Do víka vystřihnout otvor (kruh nebo ovál).
+2. Natáhnout 3–5 gumiček kolem krabičky podélně. Různě tlusté gumičky = různé tóny.
+3. Pod gumičky na obou koncích otvoru zasunout **kobylky**: špejli, pastelku nebo dřevěnou špachtli, přilepit tavnou pistolí. Struny se zvednou nad víko a krabička začne znít.
+4. **Ladění bez kolíků:** kobylku dát **šikmo**: každá struna má jinou kmitající délku, a tedy jiný tón. Posouváním šikmé kobylky děti naladí stupnici. Druhou možností je jedna kobylka rovně a pod každou strunu zvlášť kousek špejle v jiném místě.
+5. **Krk:** rulička od papírových utěrek vlepená do boku krabičky. Je to hlavně na vzhled a na držení; rozšíření, ne nutnost.
+6. **Pokusy:** plastová (průhledná) vs. kartonová krabička: která hraje hlasitěji? S otvorem vs. bez otvoru. Tlustá vs. tenká gumička na stejné délce.
+
+Stavba trvá asi 15–20 minut, takže zbude čas na ladění, pokusy a koncert. **Pro lekci doporučeno jako hlavní stavba.** Konstrukce níže (věžka s pražci a laděním) je „kytara 2.0“: pro rychlé děti nebo jako samostatný projekt, až ji vedoucí vyzkouší.
+
+Materiál navíc: malé krabičky (20 ks, děti přinesou z domu), ruličky od papírových utěrek (volitelně), dřevěné špachtle nebo pastelky na kobylky (jinak špejle ze zásoby).
+
+### Kytara 2.0: věžka s pražci a laděním (k vyzkoušení)
+
+#### Proč ne velká krabice: rozbor
 
 Gumička 60 mm (měřeno složená naplocho) má obvod 12 cm. Mezi dva body se dá bezpečně natáhnout zhruba na **3× až 3,5×**, tedy na **rozpětí asi 18–21 cm**. Kancelářské gumičky praskají kolem 6–8× a nad 4× už jsou tvrdé a švihají. Na krabici od bot (30 cm a víc) proto gumička nedosáhne, nebo je těsně před prasknutím. Gumička 30 mm dá rozpětí jen asi 10 cm a na celou strunu nestačí.
 

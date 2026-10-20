@@ -18,7 +18,7 @@ PLAN = [
     {"n": "1", "title": "Autíčko na gumičku", "card": "03", "status": "done",
      "note": "Odučeno oběma skupinám; zbyl čas i na balónkový pohon."},
     {"n": "2", "title": "Věž a most ze špaget", "card": "13", "status": "next",
-     "note": "Stavitelská výzva ve dvojicích + hlasování dětí, kam dál."},
+     "note": "Skupina A 20. 10. (jen 4 děti): věže zabraly celé dvě hodiny, mosty se nestihly. Skupina B 27. 10.: dokoupit plastelínu."},
     {"n": "3", "title": "Elektrická dílna I: drátěný hlavolam", "card": "06", "status": "prep",
      "note": "První pájení. Stanoviště: pájení · stavba hlavolamu · Voltík."},
     {"n": "4", "title": "Vibrobot z kartáče", "card": "05", "status": "prep",

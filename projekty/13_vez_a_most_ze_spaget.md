@@ -1,6 +1,6 @@
 # 13 Věž a most ze špaget
 
-**Stav:** návrh; před lekcí vyzkoušet pevnost špaget a spojů z plastelíny  
+**Stav:** skupina A odučena 20. 10. 2026 (jen věže); upraveno pro skupinu B (27. 10.): bez rozcvičky jednotlivě, věže vyplní celou lekci  
 **Pro koho:** 3.–5. třída; skupina A 9 dětí, skupina B 8 dětí, obvykle chybí 1–2  
 **Délka:** přibližně 120 minut  
 **Co si děti odnesou:** nic. Stavby se na konci rozeberou, plastelína se vrátí do zásoby. Lze vyfotit vítězné stavby.
@@ -13,7 +13,7 @@ Proti autíčku jde o jiný typ práce: děti nestaví podle vzoru, ale samy nav
 
 ## Organizace: dvojice
 
-- **Rozcvička jednotlivě**, aby si každý osahal materiál.
+- **Hned ve dvojicích, bez rozcvičky jednotlivě.** Vyzkoušeno se skupinou A 20. 10.: když si každý nejdřív slepil vlastní čtverec a trojúhelník, začal na něm stavět sám a do dvojic se pak přecházelo těžko.
 - **Obě výzvy ve dvojicích.** Stavba ze špaget potřebuje víc rukou: jeden drží, druhý spojuje. Dvojice se také musí domluvit na plánu a na konci se porovnávají 3–4 stavby, ne 8 roztříštěných pokusů.
 - Když přijde lichý počet dětí, vznikne jedna trojice. Při 7 dětech jsou to 2 dvojice + 1 trojice, při 8 dětech 4 dvojice.
 - Dvojice určuje vedoucí: starší s mladším, nebo podle toho, kdo spolu minule dobře pracoval. Pro výzvu 2 lze dvojice přeházet.
@@ -33,9 +33,9 @@ Počítáno na 1 lekci pro obě skupiny, tedy přibližně 8 dvojic celkem.
 
 | Položka | Na dvojici | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | ---: | --- | --- |
-| Nevařené špagety (klasická tloušťka, ne tenké „spaghettini“) | přibližně 1/4 balení 500 g | 3–4 balení po 500 g | Koupit | Hodně se jich zlomí; raději víc. Zbytky použít příště. |
-| Plastelína | 1 větší hrouda | podle zásoby | Skladem | Zbyla z autíček; po lekci vrátit do zásoby. |
-| Papírová lepicí páska | 1 m na výzvu | 2 role | Skladem | Omezené množství nutí přemýšlet; lze odměřit předem a nalepit na okraj lavice. |
+| Nevařené špagety (klasická tloušťka, ne tenké „spaghettini“) | přibližně 1/8 balení 500 g | 1–2 balení po 500 g | Skladem | 20. 10. spotřebovaly 2 dvojice na věže jen půl balení. Koupena 4 balení, zbývá 3,5. |
+| Plastelína | 1 velká hrouda | podle zásoby + dokoupit | Skladem, dokoupit | Spojů je hodně a plastelíny padne víc, než se zdá; skupině A jí 20. 10. na 2 dvojice šlo docela dost. Dokoupit před skupinou B (27. 10.), ta může mít až 4 dvojice. Po lekci vrátit do zásoby. |
+| Papírová lepicí páska | 1 m na výzvu | 2 role | Skladem | Omezené množství nutí přemýšlet; lze odměřit předem a nalepit na okraj lavice. Zásoba stačí. |
 | Kancelářské sponky | 2–3 | 1 balení | Skladem | Háček pro kelímek na mostě. |
 | Lehký kelímek na zátěž | 1 | 4–5 vratných | Zajistit | Plastový nebo papírový. |
 | Zátěž: mince, kostky, matky nebo rýže | podle potřeby | 1 sada | Zajistit | Mince dobře počítat; rýži lze vážit na kuchyňské váze. |
@@ -47,13 +47,19 @@ Počítáno na 1 lekci pro obě skupiny, tedy přibližně 8 dvojic celkem.
 
 | Čas | Co dělají děti a vedoucí |
 | --- | --- |
-| 0–15 min | **Rozcvička jednotlivě:** každý slepí čtverec ze 4 špaget a trojúhelník ze 3. Zkusí jemně zmáčknout roh: čtverec se zkřiví, trojúhelník drží. Pak přidají do čtverce úhlopříčku. Zkusit zlomit jednu špagetu a svazek pěti špaget slepený páskou. |
-| 15–55 min | **Výzva 1, nejvyšší věž (dvojice):** věž musí stát sama, bez přilepení ke stolu, a 10 sekund unést mandarinku na vrcholu. Asi 25 minut stavba, pak společné měření. Vedoucí během stavby obchází a ptá se „kde se to kroutí?“. |
-| 55–95 min | **Výzva 2, most (dvojice):** most přes mezeru mezi lavicemi, uprostřed zavěšený kelímek. Asi 25 minut stavba, pak postupné zatěžování, dokud most nepovolí. Zapsat, kolik unesl. |
-| 95–110 min | **Druhý pokus:** každá dvojice podle toho, co viděla u ostatních, opraví nebo přestaví most a znovu ho zatíží. Porovnat, o kolik se zlepšili. |
-| 110–120 min | Úklid úlomků a plastelíny. Krátké shrnutí: kde kolem sebe vidíme trojúhelníky (jeřáb, stožár elektrického vedení, krov střechy, železniční most). |
+Vyzkoušeno 20. 10.: **věže samy vyplnily celé dvě hodiny**, na mosty nezbyl čas. Lekce je proto jen o věžích; most je samostatná výzva na jindy (viz níže).
+
+| Čas | Co dělají děti a vedoucí |
+| --- | --- |
+| 0–10 min | Rozdělení do dvojic, rozdání sad materiálu, pravidla na tabuli. Žádná ukázka čtverce a trojúhelníku předem; rovnou se staví. |
+| 10–50 min | **Věž, 1. pokus (dvojice):** co nejvyšší věž, stojí sama bez přilepení ke stolu. Vedoucí obchází a ptá se „kde se to kroutí?“; teprve u konkrétní kroutící se stěny ukáže, že trojúhelník nebo úhlopříčka drží. |
+| 50–65 min | **Měření:** výška a zátěž (mandarinka nebo kelímek se zátěží) **na nejvyšším bodě**, 10 sekund. Krátké porovnání: proč jedna věž drží a druhá ne. |
+| 65–105 min | **Věž, 2. pokus:** přestavět nebo vylepšit podle toho, co fungovalo u ostatních. Znovu změřit výšku i zátěž. |
+| 105–120 min | Úklid úlomků a plastelíny. Krátké shrnutí: kde kolem sebe vidíme trojúhelníky (jeřáb, stožár elektrického vedení, krov střechy, železniční most). |
 
 Pokud zbude čas, jako u autíček: **zemětřesný test** věží, kdy se s lavicí jemně třese, nebo věž bez plastelíny jen s páskou.
+
+**Most jako samostatná výzva (jiná lekce nebo náhradní program):** most přes mezeru mezi lavicemi, uprostřed zavěšený kelímek. Asi 25 minut stavba, pak postupné zatěžování, dokud most nepovolí; druhý pokus podle toho, co se osvědčilo u ostatních. Děti, které věže stavěly už ve škole, chtěly právě mosty.
 
 ## Tipy při stavbě a když to nefunguje
 
@@ -74,6 +80,9 @@ Výzva vychází ze známé „spaghetti marshmallow challenge“ (věž ze špa
 
 ## Po lekci
 
-- **Vzorek před lekcí:** zapsat, jakou tloušťku špaget a velikost spojů jsme použili a kolik vydržel zkušební most.
-- **Skupina A:** výška nejlepší věže, zátěž nejlepšího mostu, spotřeba špaget, co zdržovalo; upravit pro skupinu B.
-- **Skupina B:** výsledky a finální úpravy.
+- **Skupina A, 20. 10. 2026:** slabá účast, jen 4 děti (ostatní asi nemocní), tedy 2 dvojice. Stihly se jen věže, zabraly celé dvě hodiny.
+- **Rozcvička jednotlivě nefungovala:** každý si slepil čtverec a trojúhelník a pak na nich začal stavět sám; přejít ke stavbě ve dvojici bylo těžké. Příště ji vynechat a začít rovnou stavět ve dvojicích (postup výše je upravený).
+- **Zájem:** ze začátku je to moc nebavilo, pak se do toho dostali a docela je to bavilo. Někteří už stavění ze špaget dělali ve škole a chtěli raději mosty.
+- **Soutěž:** nakonec soupeřili o nejvyšší věž a o největší nosnost. Nosnost se neměřila na špici, ale na plošině uprostřed věže, kam šlo něco položit. Příště předem říct, kde se zátěž pokládá (na nejvyšší bod), aby výška a nosnost šly dohromady.
+- **Výsledky:** nejvyšší věž měřila 112 cm.
+- **Spotřeba:** špaget jen půl balení 500 g celkem (koupena 4, zbývá 3,5). Plastelíny šlo docela dost, dokoupit. Lepicí pásky je dost.

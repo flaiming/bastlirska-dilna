@@ -8,7 +8,7 @@ Pracovní přehled školního kroužku pro děti 3.–5. třídy. Děti staví j
 | --- | --- |
 | Věk | 3.–5. třída ZŠ |
 | Skupiny | Skupina A 9 dětí, skupina B 8 dětí; obvykle 1–2 chybí |
-| Docházka | Kroužek je každé úterý 2 h; skupiny se střídají, každá chodí ob týden |
+| Docházka | Kroužek je každé úterý 2 h; skupiny se střídají, každá chodí ob týden: skupina A v sudém týdnu (začala 20. 10.), skupina B v lichém (27. 10.) |
 | Vedení | Jeden vedoucí, bez dalšího dospělého; při práci na stanovištích musí být vedoucí u pájení |
 | Horké nářadí | Mikropájka, trafopájka, 3 tavné pistole půjčené od školy (jedna obvykle nefunguje úplně) a vlastní akumulátorová tavná pistole Parkside. Všechno horké stojí na jednom „horkém stole“, kde sedí vedoucí. |
 | Rozpočet | 300 Kč za hodinu, tj. 600 Kč za jedno úterní setkání; od 20. 10. 2026 do konce 1. pololetí asi 13 termínů ≈ 7 800 Kč |

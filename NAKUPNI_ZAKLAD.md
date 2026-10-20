@@ -17,7 +17,8 @@ Před každým nákupem nejprve projít tento seznam.
 - **Kelímky:** 30 kusů (zamýšleno na kreslícího vibrobota, viz karta 05).
 - **CD:** několik starých CD (vznášedla, viz karta 02).
 - **Vibrobot:** 20 kartáčů (koupeno), krabička různých šroubků na excentry. Dokoupit motorky a vypínače.
-- **Mechanika (zbytky z autíček):** brčka, špejle, plastelína, asi 5 balení kancelářských sponek včetně velkých.
+- **Mechanika (zbytky z autíček):** brčka, špejle, plastelína (po věžích ze špaget jí ubylo, dokoupit), asi 5 balení kancelářských sponek včetně velkých.
+- **Špagety:** 3,5 balení po 500 g (zbytek po věžích, karta 13).
 
 **Pozor:** pájecí kapalina bývá kyselá (pro klempířské práce) a na elektroniku se nehodí, protože spoje časem koroduje; ověřit na etiketě. Pro děti používat cín s kalafunou. Leptání dělá jen vedoucí mimo lekci, v rukavicích a s ochranou očí. Kancelářské sponky jsou ocelové a cín na nich nedrží, k drátům se připojují omotáním nebo krokosvorkou.
 

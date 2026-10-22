@@ -35,6 +35,8 @@ openscad -D 'dil="zkouska"' -o modely/excentr_zkouska.stl modely/excentr.scad
 
 Rozměry (otvor pro hřídel, poloměr závaží) se mění parametry na začátku `.scad` souboru.
 
-## Použití
+## Použití a licence
 
-Návody klidně použijte pro vlastní kroužek nebo hodinu. Ceny a odkazy na obchody odpovídají stavu v době zápisu (podzim 2026), před nákupem je ověřte.
+Návody klidně použijte, upravte a sdílejte pro vlastní kroužek nebo hodinu. Ceny a odkazy na obchody odpovídají stavu v době zápisu (podzim 2026), před nákupem je ověřte.
+
+Obsah repozitáře (návody, modely i skripty) je pod licencí [Creative Commons Uveďte původ 4.0 Mezinárodní (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.cs), plné znění v souboru [LICENSE](LICENSE). Stačí uvést „Bastlířská dílna“ s odkazem na tento repozitář a napsat, co jste změnili.

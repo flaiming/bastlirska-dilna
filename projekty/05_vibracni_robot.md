@@ -20,7 +20,7 @@ Dítě postaví robota z kartáče, motorku s excentrem a baterie. Excentr (záv
 
 - **Kartáč:** 10× kartáč na boty (asi 15 × 5 × 4 cm, jemné štětiny) a 10× rýžák (větší, tuhé štětiny). V každé skupině půlka dětí s každým druhem, na konci srovnání.
 - **Motorek:** [DC motor 3–5 V, 17–18 000 ot/min z Dratek.cz](https://dratek.cz/arduino-platforma/2987-dc-motor-3-5v-17-18000rpm.html) (hřídel 2 mm, tělo 20 × 27 mm, 25 Kč), přilepený nebo přichycený stahovací páskou u **jednoho konce** kartáče, hřídel přesahuje přes okraj.
-- **Excentr:** vlastní výroba vedoucím (viz příprava), šroubek přilepený na hřídel.
+- **Excentr:** 3D tištěný díl nalisovaný na hřídel ([model](../modely/excentr.scad)), v rameni zašroubovaný šroubek M3 jako závaží. Vyrábí vedoucí předem (viz příprava).
 - **Místo pro excentr:** hřídel **nesmí přečnívat přes okraj kartáče**. Robot se pak při nárazu do překážky odrazí a excentr se o nic nezasekne (ověřeno na prototypu 16. 10. 2026). Motor proto leží na hřbetu kartáče na **podložce**, aby se šroubek točil volně nad kartáčem: hřídel musí být výš než poloměr otáčení šroubku. Podložka: špalík, kus korku nebo 2–3 slepená víčka; výšku podle vzorku.
 - **Napájení:** držák 2× AA přilepený tavným lepidlem na hřbet kartáče. Pokud vzorek s rýžákem nepojede, zkusit 3× AA (4,5 V).
 - **Vypínač:** malý kolébkový vypínač, přilepený navrch kartáče.
@@ -33,12 +33,14 @@ Dítě postaví robota z kartáče, motorku s excentrem a baterie. Excentr (záv
    - kam robot jede: kartáč na boty má rovné štětiny a může se jen točit; zkusit štětiny přejet do jedné strany nebo kartáč podložit, aby se naklonil;
    - kde má být motorek, aby kmitání bylo největší (obvykle na konci).
    Výsledek zapsat sem a podle něj objednat držáky.
-2. **Excentry na všechny motorky** (den předem, ať lepidlo vychladne):
-   - šroubek o velikosti ověřené na vzorku, přilepený tavným lepidlem napříč přes hřídel tak, aby přečníval na jednu stranu;
-   - z krabičky šroubků vybrat několik velikostí kolem té ze vzorku a motory s nimi rozdělit, aby děti mohly porovnávat; motory označit podle velikosti šroubku.
-   Motor má 18 000 ot/min, takže závaží musí držet opravdu pevně.
-   Lepší držení: nejdřív na hřídel nalisovat plastový pastorek ([Techfun, 9 zubů, otvor 1,9 mm](https://techfun.cz/produkt/ozubene-kolecko-pro-dc-motorky-9-zubu/), 5 Kč) a šroubek lepit na něj. Bez pastorku hřídel odmastit a zdrsnit smirkem, případně omotat několika závity tenkého drátu nebo navléknout kousek izolace z drátu.
-   Lepidlo musí obalit hřídel i závaží; nechat úplně vychladnout a zkusit krátce roztočit. Polovinu motorků s kratším, polovinu s delším šroubkem.
+2. **Excentry na všechny motorky** (3D tisk, model [`modely/excentr.scad`](../modely/excentr.scad), hotová STL vedle):
+   - nejdřív vytisknout **zkušební destičku** (`excentr_zkouska.stl`, otvory 1,7–2,1 mm) a vybrat otvor, který jde na hřídel natlačit silou, ale bez praskání; hodnotu zapsat do `hridel_d` a vyexportovat excentr znovu;
+   - tisknout naležato bez podpěr, PLA nebo PETG, 100% výplň (díl je malý, ať je těžký a pevný); 20 kusů najednou;
+   - nalisovat na hřídel (podložit zadní konec hřídele, ne tlačit na motor), pro jistotu kapka vteřinového lepidla na rozhraní hřídele a náboje;
+   - do ramene zašroubovat šroubek M3 o délce ověřené na vzorku (samořezně do plastu); **velikost excentru se ladí délkou šroubku a maticemi** navíc, což můžou zkoušet i děti;
+   - poloměr otáčení je asi 9,5 mm od osy: motor na podložce tak, aby osa byla aspoň 11 mm nad hřbetem kartáče.
+   Motor má 18 000 ot/min, takže excentr musí držet pevně: krátce roztočit a zkontrolovat, že nehází.
+   Záloha bez tiskárny: šroubek přilepený tavným lepidlem napříč přes odmaštěnou a zdrsněnou hřídel.
 3. Odizolovat konce vodičů držáků a připravit krátké kousky lanka (2× asi 10 cm na robota) od vypínače k motorku.
 4. Pájecí stanoviště stejné jako u hlavolamu.
 
@@ -54,7 +56,8 @@ Počítáno na **18 robotů** (17 dětí + 1 rezerva).
 | [Držák 2× AA DPS DIL, Dratek](https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html) | 1 | 17 + 1 | Koupit | 12 Kč; děti pájí vodiče k vývodům. Baterie pojistit gumičkou, při vibracích můžou vyskočit. Alternativa: box s krytem a vypínačem (20 Kč), pak odpadá vypínač. |
 | Baterie AA (dílenská sada) | 2 po dobu lekce | 13 párů | Skladem (16 alkalických + 10 nabíjecích), sdílená s hlavolamem | Zůstávají v dílně, děti si je neodnášejí. Při 3× AA o polovinu víc. |
 | Šroubky různých velikostí | 1 | asi 25 | Skladem (krabička šroubků) | Na excentry; nekupovat. |
-| [Pastorek 9 zubů, otvor 1,9 mm (Techfun)](https://techfun.cz/produkt/ozubene-kolecko-pro-dc-motorky-9-zubu/) | 1 | 17 + 3 | Koupit | 5 Kč/ks; nalisovat na hřídel, šroubek lepit na něj. |
+| Tištěný excentr ([model](../modely/excentr.scad)) | 1 | 17 + 3 | Vytisknout | Nalisovat na hřídel; nahrazuje pastorek z Techfunu. |
+| Šroubky M3 různých délek + matice M3 | 1 + pár matic | asi 25 + 30 matic | Skladem (krabička šroubků), ověřit M3 | Závaží excentru; ladí se délkou a maticemi. |
 | Tavné lepidlo | – | několik tyčinek | Skladem | Excentry dělá vedoucí předem; motor, podložku, držák, vypínač a ozdoby lepí děti. |
 | Stahovací pásky | 1–2 | 1 balení | Koupit / skladem | Pojistka motorku. |
 | Lanko | 20 cm | asi 4 m | Skladem | |

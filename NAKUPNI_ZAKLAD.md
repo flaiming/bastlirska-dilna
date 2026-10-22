@@ -34,13 +34,13 @@ Podrobnosti v kartách [06](projekty/06_drateny_hlavolam.md) a [05](projekty/05_
 | [DC motor 3–5 V, 18 000 ot/min](https://dratek.cz/arduino-platforma/2987-dc-motor-3-5v-17-18000rpm.html) | Dratek | 18 | 25 | 450 | Vibrobot; vzorek otestován. |
 | [Kolébkový vypínač 15 × 10,5 mm](https://dratek.cz/arduino-platforma/7699-kolebkovy-vypinac-ac-3a-250v.html) | Dratek | 18 | 4,80 | 86 | Vibrobot; množstevní cena od 10 ks. |
 | Baterie AA (dílenská sada) | skladem | – | – | 0 | Nekupovat: 16 alkalických + 10 nabíjecích ve skladu, sdílí je hlavolam i vibrobot a obě skupiny. Výrobky jdou domů bez baterií. |
-| [Pastorek 9 zubů, otvor 1,9 mm](https://techfun.cz/produkt/ozubene-kolecko-pro-dc-motorky-9-zubu/) | Techfun | 20 | 5 | 100 | Podklad excentru; jiný e-shop = další poštovné. Náhrada: zdrsnit hřídel. |
+| Excentr (3D tisk, [model](modely/excentr.scad)) | vlastní tisk | 20 | – | – | Nahrazuje pastorek z Techfunu (nekupovat); závaží šroubek M3 a matice ze skladu. |
 | Stahovací pásky | papírnictví / hobby | 1 balení | – | ~30 | Vibrobot, pojistka motoru; jinak se lepí tavnou pistolí. |
 | Pohyblivá očička, chlupaté (plyšové) drátky | papírnictví / hobby | asi 50 + 1 balení | – | ~100 | Zdobení vibrobotů; sponky na tykadla skladem. |
 | Holý drát 1,5–2 mm (měď, nebo pozink ze zásoby) | krabice drátů / hobby | asi 16 m | – | – | Hlavolam; pozink se zkouší, zda jde pájet. |
 | Prkýnka asi 25 × 8 cm | skladem | 20 | – | – | Podstavce hlavolamu; dráha se přišroubuje. |
 
-**Celkem orientačně 1 300 Kč** (18 sad na výrobek, baterie jen jako dílenská sada) (baterie jen jako dílenská sada); objednávka ze tří obchodů (Dratek, Laskakit, Techfun), tedy třikrát poštovné. Na Laskakitu je skladem i [kolébkový vypínač za 5 Kč](https://www.laskakit.cz/prepinac-kolebkovy-3a-250vac/), dá se tedy vzít tam místo z Dratku. Motor 130 a box 2× AA tam teď nemají (naskladnění cca 15. 11.). + poštovné, z rozpočtu asi 7 800 Kč na pololetí.
+**Celkem orientačně 1 200 Kč** + poštovné (18 sad na výrobek, baterie jen jako dílenská sada, excentry z 3D tisku); objednáno 22. 10. 2026 z Dratku a Laskakitu. Z rozpočtu asi 7 800 Kč na pololetí.
 
 Alternativa pro vibrobota: [box 2× AA s krytem a vypínačem](https://dratek.cz/arduino-platforma/122962-bateriovy-box-2x-aa-s-krytem-a-on-off-prepinacem.html) (20 Kč od 10 ks, skladem 69). Baterie z něj při vibracích nevypadnou a nepotřebuje zvláštní vypínač, ale děti pak pájí jen dva spoje u motoru. [Box 2× AA s vodiči](https://dratek.cz/arduino-platforma/932-bateriovy-box-3v.html) není skladem.
 
@@ -70,7 +70,7 @@ Odpájecí knot Dratek nemá; bere se z Laskakitu (odsávací lícna 2 mm, 1,5 m
 
 **2. Laskakit:** [aktivní bzučák 3,3 V](https://www.laskakit.cz/aktivni-bzucak-3-3v-5v/?variantId=22805) 18 × 6 Kč = 108 Kč + [odsávací lícna 2 mm](https://www.laskakit.cz/vyhledavani/?string=odsavaci%20knot) 45 Kč + aktivní kalafuna 10 g 38 Kč (pro vedoucího; po pájení otřít lihem) = 191 Kč + poštovné; objednáno 22. 10. 2026.
 
-**3. Techfun, do poloviny listopadu:** [pastorek 9 zubů](https://techfun.cz/produkt/ozubene-kolecko-pro-dc-motorky-9-zubu/) 20 × 5 Kč = 100 Kč + poštovné (vibrobot až 24. 11.; dva navíc, kdyby některý praskl při nalisování).
+**3. Techfun: odpadá.** Místo pastorků tištěný excentr ([model](modely/excentr.scad)), šroubky a matice M3 ze skladu.
 
 **4. Lidl.cz: objednáno 22. 10. 2026** 1× pájecí stanice Parkside PLSD 60 C3, 400 Kč + 49 Kč doprava = 449 Kč. Pro děti tedy 2 pájecí místa (PLSD + mikropájka), trafopájka jen vedoucí. Druhou PLSD dokoupit, pokud se u hlavolamu ukáže, že se na pájení čeká moc dlouho.
 

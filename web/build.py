@@ -23,8 +23,12 @@ PLAN = [
      "note": "První pájení. Stanoviště: pájení · stavba hlavolamu · Voltík."},
     {"n": "4", "title": "Vibrobot z kartáče", "card": "05", "status": "prep",
      "note": "Prototyp funguje. Pájení k motorku a vypínači, zdobení a závody."},
-    {"n": "5–7", "title": "Podle hlasování dětí", "card": None, "status": "idea",
-     "note": "Balónky a vznášedlo z CD (karta 02), zvuková dílna s gumičkovou kytarou (karta 14), alarm se spouští z kolíčku, světlo na tmu, blikač, vlastní plošný spoj…"},
+    {"n": "5", "title": "Podle hlasování dětí", "card": None, "status": "idea",
+     "note": "Něco bez elektriky: balónky a vznášedlo z CD (karta 02), nebo zvuková dílna s kytarou (karta 14)."},
+    {"n": "6", "title": "Součástky I: LED a odpor", "card": "15", "status": "idea",
+     "note": "Objevování s krokosvorkami, výrobek svítící ozdoba na knoflíkovou baterii; začátek prosince."},
+    {"n": "7", "title": "Podle hlasování dětí", "card": None, "status": "idea",
+     "note": "Druhá z karet 02 / 14, nebo jednoduchý alarm. Elektrická linka (karty 16–18) pokračuje ve 2. pololetí."},
 ]
 
 # Úterky do konce 1. pololetí (bez 17. 11. a 29. 12.).

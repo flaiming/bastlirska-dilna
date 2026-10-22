@@ -4,7 +4,7 @@
 **Pro koho:** 3.–5. třída; skupina A 9 dětí, skupina B 8 dětí, obvykle chybí 1–2  
 **Délka:** přibližně 120 minut  
 **Kdy:** 3. lekce každé skupiny, první lekce s pájením  
-**Co si děti odnesou:** vlastní hlavolam na baterie
+**Co si děti odnesou:** vlastní hlavolam **bez baterií** (bzučák a držák jsou zapájené, jdou s ním). Baterie jsou dílenské a zůstávají; doma stačí vložit 2× AA.
 
 ## Cíl a princip
 
@@ -50,9 +50,9 @@ Počítáno na **20 hlavolamů** (17 dětí + rezerva).
 
 | Položka | Na dítě | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | ---: | --- | --- |
-| [Aktivní bzučák 3,3 V, Laskakit](https://www.laskakit.cz/aktivni-bzucak-3-3v-5v/?variantId=22805) | 1 | 20 + 2 | Koupit | 6 Kč, varianta LA216000A na 3,3 V; na 2× AA pípá naplno. Delší vývod je plus. |
-| [Držák 2× AA DPS DIL, Dratek](https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html) | 1 | 20 | Koupit | 12 Kč. Bez drátů: děti připájí vodiče k vývodům. Vypínač není potřeba. |
-| Baterie AA | 2 | 40 + rezerva | Koupit | |
+| [Aktivní bzučák 3,3 V, Laskakit](https://www.laskakit.cz/aktivni-bzucak-3-3v-5v/?variantId=22805) | 1 | 17 + 1 | Koupit | 6 Kč, varianta LA216000A na 3,3 V; na 2× AA pípá naplno. Delší vývod je plus. |
+| [Držák 2× AA DPS DIL, Dratek](https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html) | 1 | 17 + 1 | Koupit | 12 Kč. Bez drátů: děti připájí vodiče k vývodům. Vypínač není potřeba. |
+| Baterie AA (dílenská sada) | 2 po dobu lekce | 13 párů | Skladem (16 alkalických + 10 nabíjecích), sdílená s vibrobotem | Zůstávají v dílně, děti si je neodnášejí. |
 | Holý měděný drát 1,5–2 mm | 80 cm | asi 16 m | Zkontrolovat krabici drátů, jinak koupit | Na dráhu a očko; ne pozinkovaný ani ocelový (cín by nedržel). |
 | Ohebné lanko | 50 cm | asi 10 m | Skladem (krabice drátů) | K očku a od bzučáku k dráze. |
 | Prkýnko asi 25 × 8 cm | 1 | 20 | Skladem | Konce dráhy a lanka se přišroubují. |
@@ -74,7 +74,7 @@ Při 7–8 dětech 3 skupinky po 2–3; vedoucí sedí u pájení.
 | 43–71 min | **Rotace 2** |
 | 71–99 min | **Rotace 3** |
 | 99–112 min | **Kompletace:** dráha do podstavce (děti zalepí tavnou pistolí, vedoucí hlídá), drát od bzučáku omotat kolem konce dráhy pod podstavcem, nasadit očko, vyzkoušet. |
-| 112–120 min | Kdo projde dráhu bez pípnutí? Úklid. |
+| 112–120 min | Kdo projde dráhu bez pípnutí? **Vyndat baterie** zpět do dílenské krabičky, hlavolam jde domů se štítkem „doma vložit 2× AA“. Úklid. |
 
 **Stanoviště:**
 
@@ -102,5 +102,5 @@ Klasický „drátěný hlavolam“ (buzz wire game). Úvodní ukázka použív�
 ## Po lekci
 
 - **Vzorek před lekcí:** doplnit použitý drát, typ bzučáku a hlasitost na 3 V.
-- **Skupina A:** stihla se rotace? Kolik minut pájení vyšlo na dítě? Kolik spojů se muselo opravovat?
+- **Skupina A:** stihla se rotace? Kolik minut pájení vyšlo na dítě? Kolik spojů se muselo opravovat? Stačila 2 pájecí místa pro děti (PLSD 60 C3 + mikropájka), nebo dokoupit druhou PLSD?
 - **Skupina B:** finální úpravy a spotřeba materiálu.

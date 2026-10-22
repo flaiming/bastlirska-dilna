@@ -4,7 +4,7 @@
 **Pro koho:** 3.–5. třída; skupina A 9 dětí, skupina B 8 dětí, obvykle chybí 1–2  
 **Délka:** přibližně 120 minut  
 **Kdy:** 4. lekce každé skupiny, hned po drátěném hlavolamu (druhé pájení)  
-**Co si děti odnesou:** vlastního robota
+**Co si děti odnesou:** vlastního robota **bez baterií** (motor, vypínač a držák jsou zapájené, jdou s ním). Baterie jsou dílenské a zůstávají; doma stačí vložit 2× AA.
 
 ## Cíl a princip
 
@@ -44,17 +44,17 @@ Dítě postaví robota z kartáče, motorku s excentrem a baterie. Excentr (záv
 
 ## Materiál a nákup
 
-Počítáno na **20 robotů** (17 dětí + rezerva).
+Počítáno na **18 robotů** (17 dětí + 1 rezerva).
 
 | Položka | Na dítě | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | ---: | --- | --- |
 | Kartáč na boty / rýžák | 1 | 10 + 10 | Skladem | |
-| [DC motor 3–5 V, 18 000 ot/min (Dratek.cz)](https://dratek.cz/arduino-platforma/2987-dc-motor-3-5v-17-18000rpm.html) | 1 | 20 + 2 | Koupit | 25 Kč/ks; vzorek otestován, jede se šroubkem jako excentrem. |
-| [Kolébkový vypínač 15 × 10,5 mm, Dratek](https://dratek.cz/arduino-platforma/7699-kolebkovy-vypinac-ac-3a-250v.html) | 1 | 20 + 2 | Koupit | 4,80 Kč od 10 ks. |
-| [Držák 2× AA DPS DIL, Dratek](https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html) | 1 | 20 | Koupit | 12 Kč; děti pájí vodiče k vývodům. Baterie pojistit gumičkou, při vibracích můžou vyskočit. Alternativa: box s krytem a vypínačem (20 Kč), pak odpadá vypínač. |
-| Baterie AA | 2 | 40 + rezerva | Koupit | Při 3× AA o polovinu víc. |
+| [DC motor 3–5 V, 18 000 ot/min (Dratek.cz)](https://dratek.cz/arduino-platforma/2987-dc-motor-3-5v-17-18000rpm.html) | 1 | 17 + 1 | Koupit | 25 Kč/ks; vzorek otestován, jede se šroubkem jako excentrem. |
+| [Kolébkový vypínač 15 × 10,5 mm, Dratek](https://dratek.cz/arduino-platforma/7699-kolebkovy-vypinac-ac-3a-250v.html) | 1 | 17 + 1 | Koupit | 4,80 Kč od 10 ks. |
+| [Držák 2× AA DPS DIL, Dratek](https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html) | 1 | 17 + 1 | Koupit | 12 Kč; děti pájí vodiče k vývodům. Baterie pojistit gumičkou, při vibracích můžou vyskočit. Alternativa: box s krytem a vypínačem (20 Kč), pak odpadá vypínač. |
+| Baterie AA (dílenská sada) | 2 po dobu lekce | 13 párů | Skladem (16 alkalických + 10 nabíjecích), sdílená s hlavolamem | Zůstávají v dílně, děti si je neodnášejí. Při 3× AA o polovinu víc. |
 | Šroubky různých velikostí | 1 | asi 25 | Skladem (krabička šroubků) | Na excentry; nekupovat. |
-| [Pastorek 9 zubů, otvor 1,9 mm (Techfun)](https://techfun.cz/produkt/ozubene-kolecko-pro-dc-motorky-9-zubu/) | 1 | 22 + pár navíc | Koupit | 5 Kč/ks; nalisovat na hřídel, šroubek lepit na něj. |
+| [Pastorek 9 zubů, otvor 1,9 mm (Techfun)](https://techfun.cz/produkt/ozubene-kolecko-pro-dc-motorky-9-zubu/) | 1 | 17 + 3 | Koupit | 5 Kč/ks; nalisovat na hřídel, šroubek lepit na něj. |
 | Tavné lepidlo | – | několik tyčinek | Skladem | Excentry dělá vedoucí předem; motor, podložku, držák, vypínač a ozdoby lepí děti. |
 | Stahovací pásky | 1–2 | 1 balení | Koupit / skladem | Pojistka motorku. |
 | Lanko | 20 cm | asi 4 m | Skladem | |
@@ -72,7 +72,7 @@ Počítáno na **20 robotů** (17 dětí + rezerva).
 | 10–70 min | **Stanoviště** (2 rotace po ~30 min): ① **pájení u vedoucího:** vodiče držáku a lanka k vypínači a k motorku (4 spoje) · ② **příprava kartáče:** vybrat druh kartáče a excentr, rozmyslet umístění, přilepit držák a vypínač. Kdo čeká, jde k Voltíkovi. |
 | 70–80 min | Kompletace: přichytit motorek (tavná pistole, případně pojistit stahovací páskou), první jízda. |
 | 80–105 min | **Zdobení, ladění a závody:** oči, tykadla a ocásek; pozorovat, jak ozdoby mění jízdu. Změnit jednu věc (poloha motorku, velikost excentru, ozdoba nebo plastelína na jedné straně) a porovnat. Závod rovně, závod v kruhu, srovnání kartáč na boty vs. rýžák. |
-| 105–120 min | Úklid, co pomohlo robotovi jet rovně. |
+| 105–120 min | Úklid, co pomohlo robotovi jet rovně. **Vyndat baterie** zpět do dílenské krabičky (vedoucí počítá páry), robot jde domů prázdný se štítkem „doma vložit 2× AA“. |
 
 ## Tipy při stavbě a když to nefunguje
 
@@ -91,7 +91,7 @@ Skladem je 30 kelímků. Kelímek se otočí dnem vzhůru, kolem okraje se izole
 
 Možnosti zařazení:
 - **Výběr v lekci 4:** každé dítě si vybere kartáč, nebo kelímek. Stejný motor, držák i pájení, nic navíc se nekupuje.
-- **Samostatná lekce „Vibrobot II“:** děti si postaví druhého robota úplně samy (opakování pájení bez pomoci). Potřeba další sada motor + držák + vypínač + baterie, orientačně 900 Kč na 20 robotů.
+- **Samostatná lekce „Vibrobot II“:** děti si postaví druhého robota úplně samy (opakování pájení bez pomoci). Potřeba další sada motor + držák + vypínač, orientačně 850 Kč na 20 robotů; baterie z dílenské sady.
 - **Rozšíření pro rychlé děti v lekci 4:** 2–3 kelímkové roboty z rezervních motorů.
 
 Fixy: vypratelné, 3–4 na robota (asi 60–80 ks na skupinu, nebo děti přinesou vlastní). Papír chránit podložkou, fixy prosakují.

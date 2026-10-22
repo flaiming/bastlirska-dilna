@@ -33,6 +33,10 @@ Plán kombinuje mechaniku, elektřinu, jednoduché pohony a pokusy. Jde o zásob
 12. **Závěrečná technická výzva** – děti využijí naučené postupy pro vlastní řešení.
 13. **Věž a most ze špaget** – stavitelská výzva ve dvojicích; proč drží trojúhelník a jak zátěž ovlivní konstrukci.
 14. **Zvuková dílna** – gumičková kytara z kartonu s pražci a ladicími klikami, kelímkový telefon, brčková píšťalka; zvuk je chvění.
+15. **Objevujeme součástky I: LED a odpor** – objevování s krokosvorkami, výrobek svítící ozdoba na knoflíkovou baterii.
+16. **Objevujeme součástky II: fotorezistor a tranzistor** – první kontaktní pole, dotykový spínač, světlo na tmu (obsahuje téma 9).
+17. **Objevujeme součástky III: kondenzátor a blikač** – kyblík na elektřinu, schodišťové světlo, blikač na kontaktním poli.
+18. **Vlastní plošný spoj** – dvě lekce: kreslení na cuprexit, leptání (vedoucí), pájení blikače nebo světýlka (rozvíjí téma 11).
 
 U vibrobotů stojí za vyzkoušení kartáčkový robot, robot na šikmých nožkách, kreslící varianta nebo jednoduchý 3D tištěný podvozek. Předtištěná základna může dětem usnadnit stavbu, ale prostor pro změny mají tvořit nožky, vyvážení a umístění motorku. Konkrétní podobu lekce ještě vybrat.
 
@@ -41,6 +45,32 @@ Podrobné návody vznikají postupně ve složce [projekty](projekty/README.md).
 ### Vyřazené návrhy
 
 Z původního zásobníku jsme vyřadili **elektromagnetický jeřáb, katapult, telegraf, mechanický automat a loďku na gumičku**. Balónkové pokusy jsme naopak přidali. Původní seznam 16 nápadů proto není aktuální osnovou.
+
+## Elektrická linka: jak pojmout elektroniku
+
+Elektřina se v kroužku staví po schodech. Každý schod přidá **jednu až dvě nové součástky** a **jeden nový způsob stavění**, nikdy víc najednou.
+
+| Krok | Lekce | Nové součástky | Jak se staví | Domů |
+| --- | --- | --- | --- | --- |
+| 1 | [Hlavolam](projekty/06_drateny_hlavolam.md) | obvod, spínač, bzučák, vodič a izolant | první pájení drátů | hlavolam |
+| 2 | [Vibrobot](projekty/05_vibracni_robot.md) | motorek, vypínač | pájení k vývodům | robot |
+| 3 | [Součástky I](projekty/15_soucastky_led_a_odpor.md) | LED, odpor, multimetr | krokosvorky (vidět každý spoj) | svítící ozdoba |
+| 4 | [Součástky II](projekty/16_soucastky_fotorezistor_a_tranzistor.md) | fotorezistor, trimr, tranzistor | kontaktní pole podle kartiček 1 : 1 | volitelně světýlko |
+| 5 | [Součástky III](projekty/17_soucastky_kondenzator_a_blikac.md) | kondenzátor | kontaktní pole | – |
+| 6 | [Vlastní plošný spoj](projekty/18_vlastni_plosny_spoj.md) (2 lekce) | nic nového, opakování | kreslení a leptání cuprexitu, pájení | blikač nebo světýlko |
+| 7 | Alarm (07), siréna 555 (10), závěrečná výzva (12) | podle výběru | děti kombinují, co znají | podle projektu |
+
+**Zásady pro všechny elektro lekce:**
+
+- **Každá lekce má dvě části: objevování a výrobek.** Objevuje se ze vratných součástek (krokosvorky, kontaktní pole), které po lekci jdou zpět do krabiček; výrobek je zapájený a jde domů. Odpovídá to pravidlu v [nákupním základu](NAKUPNI_ZAKLAD.md): co je zapájené, jde domů, co se zasouvá, zůstává.
+- **Od viditelného k schovanému:** nejdřív krokosvorky, kde je vidět každý spoj; pak kontaktní pole („krabička s krokosvorkami uvnitř“); pak pájivé pole nebo vlastní plošný spoj.
+- **Jedno napětí:** 3 V (2× AA nebo CR2032), jen pro dotykový spínač a 555 případně 4,5 V. Děti si nemusí pamatovat, jakou baterii kam.
+- **Obrázky místo vzorců:** baterie je čerpadlo, odpor zúžená hadice, LED jednosměrný ventil se světlem, kondenzátor kyblík, tranzistor kohoutek ovládaný malým proudem. Žádný Ohmův zákon; děti zjišťují, **co se stane, když něco změní**.
+- **Kartičky zapojení 1 : 1** (fotka nebo kresba kontaktního pole se součástkami) a barvy propojek: červená plus, černá mínus. Vedoucí zkontroluje zapojení, než se připojí baterie.
+- **Pas součástek:** každé dítě má kartičku, kam si přilepí novou součástku a napíše jedním slovem, co dělá (jednosměrka, brzda, oko, kohoutek, kyblík). Sbírka roste a na konci roku je z ní tahák.
+- **Střídat s mechanikou.** Po dvou elektro lekcích za sebou (hlavolam, vibrobot) zařadit něco jiného podle hlasování dětí; elektro linka pokračuje hlavně ve 2. pololetí.
+
+Téma 01 „Elektrická detektivka a Voltík“ se rozpouští do lekcí 15–17 (Voltík jako stanoviště pro čekající, hledání chyb jako rozšiřující kartičky); téma 09 je součástí lekce 16 a téma 11 lekce 18.
 
 ## Vybavení a společné zásoby
 
@@ -90,7 +120,7 @@ Protože se skupiny střídají, je užitečné vést u každého tématu stav *
 | 2 | Věž a most ze špaget | + hlasování dětí, kam dál |
 | 3 | [Elektrická dílna I: drátěný hlavolam](projekty/06_drateny_hlavolam.md) | Stanoviště: pájení s vedoucím (rozcvička + dráty k bzučáku) · stavba hlavolamu · Voltík; úvod přes sponkový vypínač |
 | 4 | [Vibrobot](projekty/05_vibracni_robot.md) | Kartáčkový robot; pájení vodičů k motorku a vypínači |
-| 5–7 | Podle hlasování | Alarm se spouští z kolíčku, světlo na tmu, blikač, vlastní plošný spoj… |
+| 5–7 | Podle hlasování | Návrh: 5 něco bez elektriky (balónky, kytara), 6 [Součástky I: svítící ozdoba](projekty/15_soucastky_led_a_odpor.md) na začátku prosince, 7 podle hlasování. Elektrická linka (16–18, alarm, 555) pokračuje ve 2. pololetí. |
 
 ## Termíny do konce 1. pololetí
 

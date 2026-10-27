@@ -86,4 +86,11 @@ Ostré konce špejlí zastřihnout nebo přelepit. Otvory do víček dělá pře
 - **Skupina A:** vyřezávání podvozků z kartonu dětmi výrazně zdržovalo a chyběl výřez u zadní osy pro gumičku.
 - **Úprava pro skupinu B:** podvozky předřezal vedoucí včetně výřezu u zadní osy – osvědčilo se, dělat tak i příště.
 - **Ladění:** postupně přidávané gumičky na kola jako „pneumatiky“ a závaží.
+- **Jak se to nakonec stavělo (ověřeno na lekci):**
+  - Brčka lepit tavnou pistolí, je to jednodušší než páska a drží líp.
+  - Vzadu nedávat jedno brčko přes výřez, ale dva krátké kousky na karton vedle výřezu; střed osy musí zůstat volný pro gumičku.
+  - Háček vpředu: kousek špejle zasunutý vodorovně do přední hrany kartonu (do vlnité mezivrstvy). Sponka není potřeba.
+  - Na střed zadní osy přilepit napříč kousek špejle 1–1,5 cm jako zarážku, jinak gumička po ose klouže; je dobré ji i přivázat.
+  - Kola nasadit blízko k brčkům, ať se osa nemůže posouvat do stran.
+  - Gumička vede po horní straně podvozku. Před navíjením nemá být volná ani napnutá; podle potřeby spojit 2–3 gumičky za sebou.
 - **Zbylý materiál:** brčka, špejle, plastelína, sponky – použitelné v dalších lekcích.

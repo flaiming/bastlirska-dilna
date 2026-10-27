@@ -52,7 +52,7 @@ Vyzkoušeno 20. 10.: **věže samy vyplnily celé dvě hodiny**, na mosty nezbyl
 | Čas | Co dělají děti a vedoucí |
 | --- | --- |
 | 0–10 min | Rozdělení do dvojic, rozdání sad materiálu, pravidla na tabuli. Žádná ukázka čtverce a trojúhelníku předem; rovnou se staví. |
-| 10–50 min | **Věž, 1. pokus (dvojice):** co nejvyšší věž, stojí sama bez přilepení ke stolu. Vedoucí obchází a ptá se „kde se to kroutí?“; teprve u konkrétní kroutící se stěny ukáže, že trojúhelník nebo úhlopříčka drží. |
+| 10–50 min | **Věž, 1. pokus (dvojice):** co nejvyšší věž; základnu lze přilepit páskou ke stolu (vedoucí povolil, nevadí to). Vedoucí obchází a ptá se „kde se to kroutí?“; teprve u konkrétní kroutící se stěny ukáže, že trojúhelník nebo úhlopříčka drží. |
 | 50–65 min | **Měření:** výška a zátěž (mandarinka nebo kelímek se zátěží) **na nejvyšším bodě**, 10 sekund. Krátké porovnání: proč jedna věž drží a druhá ne. |
 | 65–105 min | **Věž, 2. pokus:** přestavět nebo vylepšit podle toho, co fungovalo u ostatních. Znovu změřit výšku i zátěž. |
 | 105–120 min | Úklid úlomků a plastelíny. Krátké shrnutí: kde kolem sebe vidíme trojúhelníky (jeřáb, stožár elektrického vedení, krov střechy, železniční most). |
@@ -86,3 +86,4 @@ Výzva vychází ze známé „spaghetti marshmallow challenge“ (věž ze špa
 - **Soutěž:** nakonec soupeřili o nejvyšší věž a o největší nosnost. Nosnost se neměřila na špici, ale na plošině uprostřed věže, kam šlo něco položit. Příště předem říct, kde se zátěž pokládá (na nejvyšší bod), aby výška a nosnost šly dohromady.
 - **Výsledky:** nejvyšší věž měřila 112 cm.
 - **Spotřeba:** špaget jen půl balení 500 g celkem (koupena 4, zbývá 3,5). Plastelíny šlo docela dost, dokoupit. Lepicí pásky je dost.
+- **Skupina B, 27. 10. 2026:** dopadlo dobře; začali rovnou ve dvojicích a stavěli jen věže. Nejvyšší věž 83 cm. Zatěžovalo se kelímkem s hřebíky (počet se nezapsal).

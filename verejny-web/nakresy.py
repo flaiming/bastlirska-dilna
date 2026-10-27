@@ -148,7 +148,7 @@ def kulicka(x, y, barva, r=7):
 def kulicky(body, barvy=('#E8487A', '#2F6FE0', '#13A39A', '#F08A24')):
     return ''.join(kulicka(x, y, barvy[i % len(barvy)]) for i, (x, y) in enumerate(body))
 def paska(x, y, w, h=7):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="1.5" fill="#EEF5FA" stroke="#93A9BF" stroke-width="1.1"/>'
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="1.5" fill="#EEF5FA" fill-opacity=".45" stroke="#93A9BF" stroke-width="1.1"/>'
 def sipka_dolu(x, y1, y2):
     return f'<line x1="{x}" y1="{y1}" x2="{x}" y2="{y2}" stroke="#1B2B4B" stroke-width="2.5" marker-end="url(#sip{{n}})"/>'
 stul = '<line class="ground" x1="20" y1="170" x2="320" y2="170"/>'
@@ -168,10 +168,10 @@ NAKRESY.update({
     old(spag(*kosoctverec[:2], (130, 60), (40, 60), kosoctverec[0]))
     + spag(*kosoctverec, kosoctverec[0]) + kulicky(kosoctverec)
     + '<line x1="22" y1="60" x2="58" y2="60" stroke="#1B2B4B" stroke-width="2.5" marker-end="url(#sip{n})"/>'
-    + spag((210, 150), (300, 150), (300, 60), (210, 60), (210, 150), (300, 60))
+    + spag((300, 150), (210, 150), (210, 60), (300, 60), (300, 150), (210, 60))
     + kulicky([(210, 150), (300, 150), (300, 60), (210, 60)])
     + '<line x1="176" y1="60" x2="198" y2="60" stroke="#1B2B4B" stroke-width="2.5" marker-end="url(#sip{n})"/>'
-    + note(255, 105, 300, 30, 'šikmá špageta', 'end')
+    + note(255, 105, 290, 30, 'šikmá špageta', 'end')
     + '<text class="lbl" x="95" y="185" text-anchor="middle">bez šikmé se zkroutí</text>'
     + '<text class="lbl" x="255" y="185" text-anchor="middle">se šikmou drží</text>',
     'Stěna z boku: čtverec se po zatlačení zkřiví, s šikmou špagetou drží tvar'),
@@ -179,8 +179,8 @@ NAKRESY.update({
     stul
     + sipka_dolu(75, 18, 42) + '<path d="M75 170 Q100 110 75 50" fill="none" stroke="#E9B425" stroke-width="4" stroke-linecap="round"/>'
     + sipka_dolu(170, 18, 42) + spag((165, 170), (165, 50)) + spag((170, 170), (170, 50)) + spag((175, 170), (175, 50))
-    + paska(159, 78, 22) + paska(159, 136, 22)
-    + sipka_dolu(275, 18, 42) + spag((275, 170), (275, 112)) + spag((275, 108), (275, 50)) + kulicka(275, 110, '#13A39A')
+    + paska(161, 74, 18, 14) + paska(161, 132, 18, 14)
+    + sipka_dolu(275, 18, 42) + spag((275, 170), (275, 114)) + spag((275, 106), (275, 50)) + paska(268, 96, 14, 28)
     + '<text class="lbl" x="75" y="192" text-anchor="middle">jedna se ohne</text>'
     + '<text class="lbl" x="170" y="192" text-anchor="middle">svazek</text>'
     + '<text class="lbl" x="275" y="192" text-anchor="middle">spoj v půlce</text>',

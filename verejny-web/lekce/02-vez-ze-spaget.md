@@ -60,7 +60,7 @@ Z rohů základny vyveďte nahoru sloupky a spojte je dalším patrem. Když se 
 
 ### Zpevněte dlouhé špagety
 
-Jedna dlouhá svislá špageta se pod zátěží ohne a praskne. Svažte jich několik páskou do svazku, nebo ji v půlce rozdělte spojem s plastelínou.
+Jedna dlouhá svislá špageta se pod zátěží ohne a praskne. Svažte jich několik páskou do svazku, nebo ji složte ze dvou kratších a spoj mezi nimi oviňte páskou.
 
 {{nakres vez-svazek}}
 

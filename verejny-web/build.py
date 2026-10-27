@@ -11,7 +11,7 @@ import shutil
 import struct
 from pathlib import Path
 
-from nakresy import NAKRESY
+from nakresy import NAKRESY, vez
 
 ZDROJ = Path(__file__).parent
 VYSTUP = ZDROJ.parent / 'site'
@@ -256,7 +256,7 @@ def stranka_domu(lekce):
 <p class="lead">{meta["perex"]}</p>
 {md(uvod, p="facts")}
 </div>
-{(ZDROJ / "vez.svg").read_text()}
+{vez()}
 </div>
 </section>''']
     for nadpis, druh, id_, text in casti:

@@ -136,3 +136,58 @@ NAKRESY = {
     'Změřte, jak daleko auto dojelo od startu', '0 88 340 108'),
 }
 
+
+
+# --- věž ze špaget v úvodu webu ---
+def vez():
+    """Věž s rovnou horní plošinou, na které stojí kelímek s hřebíky. Metr měří výšku po plošinu."""
+    zem, vrch, cm = 540, 60, 112          # vrch = horní plošina, ta měří 112 cm
+    px = (zem - vrch) / cm                # pixelů na centimetr
+    # patra: mezery se směrem nahoru zmenšují, šířka se zužuje rovnoměrně
+    mezery = [96 * 0.93 ** k for k in range(6)]
+    mezery = [m * (zem - vrch) / sum(mezery) for m in mezery]
+    patra, y = [], zem
+    for m in [0] + mezery:
+        y -= m
+        patra.append((round(y), round(26 + 109 * (y - vrch) / (zem - vrch))))
+    body = [((200 - w, y), (200 + w, y)) for y, w in patra]
+
+    cary = []
+    def cara(a, b):
+        cary.append(f'<line class="s" style="--i:{len(cary)}" x1="{a[0]}" y1="{a[1]}" x2="{b[0]}" y2="{b[1]}" pathLength="1"/>')
+    for k, (l, r) in enumerate(body):
+        cara(l, r)
+        if k + 1 < len(body):
+            l2, r2 = body[k + 1]
+            cara(l, l2)
+            cara(r, r2)
+            cara(l, r2) if k % 2 == 0 else cara(r, l2)
+
+    barvy = ['#E8487A', '#2F6FE0', '#2F6FE0', '#F08A24', '#E8487A', '#13A39A', '#F08A24',
+             '#13A39A', '#E0402B', '#13A39A', '#13A39A', '#2F6FE0', '#E0402B', '#2F6FE0']
+    spoje = []
+    for k, (l, r) in enumerate(body):
+        for j, (x, y) in enumerate((l, r)):
+            rx = 8 + (k + j) % 3
+            spoje.append(f'<ellipse class="b" style="--i:{k}" cx="{x}" cy="{y}" rx="{rx}" ry="{rx - 1 - j}" fill="{barvy[2 * k + j]}"/>')
+
+    metr = [f'<line x1="408" y1="{zem}" x2="408" y2="{vrch}"/>']
+    for d in range(0, cm - 5, 10):
+        sirka = 10 if d % 50 == 0 else 6
+        metr.append(f'<line x1="{408 - sirka}" y1="{zem - d * px:.0f}" x2="{408 + sirka}" y2="{zem - d * px:.0f}"/>')
+    metr.append(f'<line x1="398" y1="{vrch}" x2="418" y2="{vrch}"/>')
+    popisky = ''.join(f'<text class="ruler-note" x="392" y="{zem - d * px + 4:.0f}" text-anchor="end">{d}</text>' for d in (50, 100))
+
+    # kelímek stojí na plošině
+    dno = vrch - 3
+    kelimek = (f'<g class="top"><g stroke="#7A8696" stroke-width="2.5" stroke-linecap="round">'
+               f'<line x1="193" y1="{dno - 20}" x2="188" y2="{dno - 40}"/><line x1="185" y1="{dno - 40}" x2="191" y2="{dno - 41}"/>'
+               f'<line x1="200" y1="{dno - 20}" x2="201" y2="{dno - 43}"/><line x1="198" y1="{dno - 43}" x2="204" y2="{dno - 43}"/>'
+               f'<line x1="207" y1="{dno - 20}" x2="213" y2="{dno - 38}"/><line x1="210" y1="{dno - 39}" x2="216" y2="{dno - 37}"/></g>'
+               f'<path d="M182 {dno - 30} L218 {dno - 30} L213 {dno} L187 {dno} Z" fill="#F4F7FA" stroke="#1B2B4B" stroke-width="2" stroke-linejoin="round"/></g>')
+
+    return ('<svg class="tower" viewBox="0 0 440 570" role="img" aria-labelledby="vez-popis">'
+            f'<title id="vez-popis">Věž ze špaget spojených plastelínou, na horní plošině kelímek s hřebíky, vedle metr ukazující {cm} cm</title>'
+            '<g class="ruler" aria-hidden="true">' + ''.join(metr) + '</g>'
+            f'<text class="ruler-label" x="420" y="{vrch - 12}" text-anchor="end">{cm} cm</text>' + popisky
+            + '\n'.join(cary) + '\n'.join(spoje) + kelimek + '</svg>')

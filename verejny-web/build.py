@@ -5,16 +5,22 @@ Lekce je jeden Markdown soubor: hlavička mezi --- a pod ní oddíly ## Nadpis {
 Druhy oddílů: galerie, princip, potreby, postup, opravy, pribeh; bez druhu je obyčejný oddíl.
 V textu: > tip nebo poznámka, ![popisek](fotka.jpg), {{nakres jmeno}}, {{model ...}}, {{stahnout ...}}.
 """
+import functools
 import hashlib
+import http.server
 import re
 import shutil
 import struct
+import subprocess
+import tempfile
+import threading
 from pathlib import Path
 
 from nakresy import NAKRESY, vez
 
 ZDROJ = Path(__file__).parent
 VYSTUP = ZDROJ.parent / 'site'
+CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 PORADI = ['První', 'Druhá', 'Třetí', 'Čtvrtá', 'Pátá', 'Šestá', 'Sedmá', 'Osmá', 'Devátá', 'Desátá']
 POPISKY = dict(
     (k.strip(), v.strip()) for k, v in
@@ -192,7 +198,22 @@ def sipka(lekce, popisek, trida):
             f'<span><small>{popisek}</small><strong>{lekce["nazev"]}</strong></span></a>')
 
 
-def stranka_lekce(lekce, predchozi, dalsi):
+def stranky(n):
+    return f'{n} strana' if n == 1 else f'{n} strany' if n < 5 else f'{n} stran'
+
+
+def nazev_pdf(lekce):
+    return f'bastlirska-dilna-{lekce["adresa"]}.pdf'
+
+
+def tlacitko_pdf(lekce, pocet_stran):
+    if not pocet_stran:
+        return ''
+    return (f'<a class="dl dl-alt" href="/{lekce["adresa"]}/{nazev_pdf(lekce)}" download>{IKONA}'
+            f'<span><strong>Stáhnout návod v PDF</strong><small>na tisk, A4, {stranky(pocet_stran)}</small></span></a>')
+
+
+def stranka_lekce(lekce, predchozi, dalsi, pocet_stran=None):
     _, casti = oddily(lekce['telo'])
     obsah = [f'''<div class="guide-head">
 <div class="wrap">
@@ -204,6 +225,8 @@ def stranka_lekce(lekce, predchozi, dalsi):
 <li><strong>Jak dlouho:</strong> {lekce["jak_dlouho"]}</li>
 <li><strong>Domů:</strong> {lekce["domu"]}</li>
 </ul>
+<p class="jen-tisk">Celý návod s fotkami: bastleni.oram.cz/{lekce["adresa"]}/</p>
+{tlacitko_pdf(lekce, pocet_stran)}
 </div>
 </div>''']
     navigace = (f'<nav class="next" aria-label="Další lekce">\n{sipka(predchozi, "Předchozí lekce", "prev")}\n'
@@ -292,6 +315,41 @@ def stranka(**hodnoty):
     return re.sub(r'(src|href)="(/[^"#?]*)"', otisk, html)
 
 
+class TichyServer(http.server.SimpleHTTPRequestHandler):
+    def log_message(self, *args):
+        pass
+
+
+def vytvor_pdf(lekce):
+    """Vytiskne stránky lekcí do PDF přes Chrome bez okna. Vzhled tisku je v @media print ve styles.css."""
+    if not Path(CHROME).exists():
+        raise SystemExit(f'PDF návodů potřebuje Google Chrome ({CHROME})')
+    server = http.server.ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(TichyServer, directory=VYSTUP))
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    pocty = {}
+    try:
+        with tempfile.TemporaryDirectory() as profil:
+            for l in lekce:
+                cil = VYSTUP / l['adresa'] / nazev_pdf(l)
+                subprocess.run([CHROME, '--headless', '--disable-gpu', '--no-pdf-header-footer',
+                                f'--user-data-dir={profil}', '--virtual-time-budget=10000',
+                                f'--print-to-pdf={cil}', f'http://127.0.0.1:{server.server_port}/{l["adresa"]}/'],
+                               check=True, capture_output=True)
+                pocty[l['adresa']] = len(re.findall(rb'/Type\s*/Page[^s]', cil.read_bytes()))
+    finally:
+        server.shutdown()
+    return pocty
+
+
+def zapis_lekce(lekce, pocty=None):
+    for i, l in enumerate(lekce):
+        predchozi = lekce[i - 1] if i > 0 else None
+        dalsi = lekce[i + 1] if i + 1 < len(lekce) else None
+        (VYSTUP / l['adresa']).mkdir(exist_ok=True)
+        html = stranka_lekce(l, predchozi, dalsi, (pocty or {}).get(l['adresa']))
+        (VYSTUP / l['adresa'] / 'index.html').write_text(html)
+
+
 def main():
     lekce = []
     for soubor in sorted((ZDROJ / 'lekce').glob('*.md')):
@@ -301,11 +359,9 @@ def main():
     shutil.rmtree(VYSTUP, ignore_errors=True)
     shutil.copytree(ZDROJ / 'static', VYSTUP, ignore=shutil.ignore_patterns('.DS_Store'))
     (VYSTUP / 'index.html').write_text(stranka_domu(lekce))
-    for i, l in enumerate(lekce):
-        predchozi = lekce[i - 1] if i > 0 else None
-        dalsi = lekce[i + 1] if i + 1 < len(lekce) else None
-        (VYSTUP / l['adresa']).mkdir()
-        (VYSTUP / l['adresa'] / 'index.html').write_text(stranka_lekce(l, predchozi, dalsi))
+    # dvakrát: PDF se tiskne z hotové stránky a tlačítko pak potřebuje znát počet stran
+    zapis_lekce(lekce)
+    zapis_lekce(lekce, vytvor_pdf(lekce))
     print(f'Hotovo: {VYSTUP} ({len(lekce)} lekcí)')
 
 

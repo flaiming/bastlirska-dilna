@@ -34,6 +34,7 @@ make fotka Z=~/Downloads/IMG_1234.jpg JAKO=auto-novy [OTOCIT=90]   # zmenší fo
 - Fotky leží ve `verejny-web/static/foto/` a každá má popisek ve `verejny-web/fotky.txt`. Na fotkách nesmí být obličej dítěte.
 - Nákresy ke krokům jsou ve `verejny-web/nakresy.py`, do textu se vkládají řádkem `{{nakres jmeno}}`.
 - K odkazům na fotky, styly a modely build přidá otisk obsahu (`?v=…`), takže prohlížeč po změně nenačte starou verzi.
+- PDF návodů na tisk vyrábí build přes Google Chrome bez okna. Vzhled tisku je v `@media print` ve `styles.css` (bez fotek z galerie, navigace a tmavých ploch).
 - Konfigurace nginx na serveru je pro přehled ve `verejny-web/nginx.conf`.
 
 ## HTML přehled

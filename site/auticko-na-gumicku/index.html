@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap">
-<link rel="stylesheet" href="../styles.css?v=3">
+<link rel="stylesheet" href="../styles.css?v=4">
 </head>
 <body>
 
@@ -79,7 +79,7 @@
           <li>Pevný vlnitý karton asi 20 × 8 cm</li>
           <li>2 dřevěné špejle na osy a pár kousků navíc na háček a zarážku</li>
           <li>Brčko: jeden kus asi 8 cm dopředu a dva kousky asi po 2,5 cm dozadu</li>
-          <li>4 kola: víčka od PET lahví s dírkou uprostřed nebo kolečka ze stavebnice. My jsme měli zadní kola větší než přední.</li>
+          <li>4 kola: víčka od PET lahví s dírkou uprostřed, kolečka ze stavebnice, nebo <a href="#kola">kola z 3D tiskárny</a>. Zadní kola mají být větší než přední.</li>
           <li>2–3 gumičky a pár náhradních</li>
           <li>Tavná pistole</li>
           <li>Nit nebo tenký provázek na přivázání zarážky</li>
@@ -157,6 +157,38 @@
         </ol>
       </div>
     </div>
+
+    <section class="after" id="kola">
+      <h2>Kola z 3D tiskárny</h2>
+      <p class="section-lead">Místo víček můžete kola vytisknout. Jsou navržená na 3mm špejli, takže na ose drží bez lepení. Po obvodu mají drážku na tenkou gumičku, která slouží jako pneumatika, protože plastové kolo po hladké podlaze klouže.</p>
+      <ul class="prints">
+        <li>
+          <img src="../foto/kolo-30.jpg" alt="Náhled kolečka o průměru 30 mm se šesti paprsky" width="480" height="384" loading="lazy">
+          <h3>30 mm</h3>
+          <p>Malé, hodí se dopředu.</p>
+          <a href="../modely/kolo_30mm.stl" download>Stáhnout STL (1,7 MB)</a>
+        </li>
+        <li>
+          <img src="../foto/kolo-45.jpg" alt="Náhled kolečka o průměru 45 mm se šesti paprsky" width="480" height="384" loading="lazy">
+          <h3>45 mm</h3>
+          <p>Střední, dopředu i dozadu.</p>
+          <a href="../modely/kolo_45mm.stl" download>Stáhnout STL (1,7 MB)</a>
+        </li>
+        <li>
+          <img src="../foto/kolo-60.jpg" alt="Náhled kolečka o průměru 60 mm se šesti paprsky" width="480" height="384" loading="lazy">
+          <h3>60 mm</h3>
+          <p>Velké, hodí se dozadu na pohon.</p>
+          <a href="../modely/kolo_60mm.stl" download>Stáhnout STL (1,7 MB)</a>
+        </li>
+      </ul>
+      <ul class="more">
+        <li>Na jedno auto potřebujete 4 kola. Zadní dávejte větší než přední.</li>
+        <li>Kolo je široké 8 mm a tiskne se naležato bez podpěr.</li>
+        <li>Otvor pro osu má 3,46 mm. Když kolo na vaší špejli prokluzuje nebo nejde nasadit, upravte v modelu hodnotu <code>rod</code> a vygenerujte si vlastní.</li>
+        <li><a href="../modely/kola-vsechny-vzhledy.zip" download>Všechny vzhledy kol</a> (plné, s kruhovými otvory, rovné a zahnuté paprsky, okna) ve všech třech velikostech, ZIP 2 MB.</li>
+        <li><a href="../modely/kolecko.scad" download>Zdrojový model pro OpenSCAD</a>, ve kterém jde změnit průměr, šířku, vzhled i velikost otvoru.</li>
+      </ul>
+    </section>
 
     <section class="after">
       <h2>Když to nejede</h2>

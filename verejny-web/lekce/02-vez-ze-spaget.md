@@ -15,11 +15,11 @@ tlacitko: Návod na věž
 
 ## Fotky {galerie}
 
-- vez-kopule.jpg: Kopule z trojúhelníků
-- vez-vysoka.jpg: Štíhlá věž zpevněná páskou
-- vez-tenka.jpg: Nohy ze svazků špaget
+- vez-kopule.jpg
+- vez-vysoka.jpg
+- vez-tenka.jpg
 - vez-zatez.jpg: Zkouška nosnosti
-- vez-kostka.jpg: Nízká, ale pevná kostka
+- vez-kostka.jpg
 
 ## Proč trojúhelník drží {princip}
 

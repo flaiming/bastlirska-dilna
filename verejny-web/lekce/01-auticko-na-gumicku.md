@@ -16,9 +16,9 @@ tlacitko: Návod na autíčko
 ## Fotky {galerie}
 
 - auto-hotove.jpg: Hotové autíčko s karoserií z kartonu
-- auto-potreby.jpg: Všechno, co je potřeba
+- auto-potreby.jpg
 - auto-stavba.jpg: Kola na osách, zbývá gumička
-- auto-zepredu.jpg: Pohled zepředu
+- auto-zepredu.jpg
 - auto-stul.jpg: Materiál pro celou skupinu
 
 ## Proč to jede {princip}

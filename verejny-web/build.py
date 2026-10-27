@@ -140,9 +140,9 @@ def md(text, ul='', p='', citace='tip'):
 def galerie(text):
     figury = ''
     for r in text.strip().splitlines():
-        soubor, popisek = r[2:].split(': ', 1)
+        soubor, _, popisek = r[2:].partition(': ')
         figury += (f'<figure><a href="/foto/{soubor}">{img(soubor, lazy=False)}</a>'
-                   f'<figcaption>{popisek}</figcaption></figure>\n')
+                   + (f'<figcaption>{popisek}</figcaption>' if popisek else '') + '</figure>\n')
     return f'<div class="wrap">\n<div class="gallery">\n{figury}</div>\n</div>'
 
 

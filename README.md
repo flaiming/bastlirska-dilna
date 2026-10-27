@@ -30,6 +30,7 @@ make nasadit   # sestaví a nahraje na server
 make fotka Z=~/Downloads/IMG_1234.jpg JAKO=auto-novy [OTOCIT=90]   # zmenší fotku a odstraní metadata
 ```
 
+- Lekci lze připravit dopředu: s `zverejnit: 2026-11-03` v hlavičce se na web dostane až při prvním `make nasadit` v ten den nebo později. `make nahled` ji ukáže hned, s označením „Koncept“. Až se zveřejní, z „Co chystáme dál“ zmizí plán se stejným názvem sám.
 - Nová lekce je jeden soubor `verejny-web/lekce/NN-adresa.md`. Formát je popsaný na začátku `verejny-web/build.py`, nejlíp je zkopírovat existující lekci. Lekci pak smažte z „Co chystáme dál“ v `verejny-web/domu.md`.
 - Fotky leží ve `verejny-web/static/foto/` a každá má popisek ve `verejny-web/fotky.txt`. Na fotkách nesmí být obličej dítěte.
 - Nákresy ke krokům jsou ve `verejny-web/nakresy.py`, do textu se vkládají řádkem `{{nakres jmeno}}`.

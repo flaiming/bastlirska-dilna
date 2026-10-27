@@ -4,7 +4,11 @@
 Lekce je jeden Markdown soubor: hlavička mezi --- a pod ní oddíly ## Nadpis {druh #id}.
 Druhy oddílů: galerie, princip, potreby, postup, opravy, pribeh; bez druhu je obyčejný oddíl.
 V textu: > tip nebo poznámka, ![popisek](fotka.jpg), {{nakres jmeno}}, {{model ...}}, {{stahnout ...}}.
+
+Rozpracovaná lekce má v hlavičce `zverejnit: 2026-11-03`. Do toho dne se na web nedostane,
+v náhledu (build.py --koncepty, tedy make nahled) je vidět s označením „Koncept“.
 """
+import datetime
 import functools
 import hashlib
 import http.server
@@ -12,6 +16,7 @@ import re
 import shutil
 import struct
 import subprocess
+import sys
 import tempfile
 import threading
 from pathlib import Path
@@ -213,10 +218,19 @@ def tlacitko_pdf(lekce, pocet_stran):
             f'<span><strong>Stáhnout návod v PDF</strong><small>na tisk, A4, {stranky(pocet_stran)}</small></span></a>')
 
 
+def koncept(lekce):
+    """Štítek u lekce, která ještě není zveřejněná (jen v náhledu)."""
+    if not lekce.get('koncept'):
+        return ''
+    d = lekce['zverejnit']
+    return f'<p class="koncept">Koncept, na webu se objeví {d.day}. {d.month}. {d.year}</p>'
+
+
 def stranka_lekce(lekce, predchozi, dalsi, pocet_stran=None):
     _, casti = oddily(lekce['telo'])
     obsah = [f'''<div class="guide-head">
 <div class="wrap">
+{koncept(lekce)}
 {cislo(lekce)}
 <h1>{lekce["nazev"]}</h1>
 <p class="lead">{lekce["perex"]}</p>
@@ -260,6 +274,7 @@ def karta(lekce):
 {fotky}
 </div>
 <div>
+{koncept(lekce)}
 {cislo(lekce)}
 <h3>{lekce["nazev"]}</h3>
 <p>{lekce["prehled"]}</p>
@@ -288,9 +303,12 @@ def stranka_domu(lekce):
             vnitrek = md(uvodni, p='intro') + '\n' + '\n'.join(karta(l) for l in lekce)
             trida = 'section done'
         else:
+            # plán, ze kterého už je zveřejněná lekce, se vynechá sám
+            hotove = {l['nazev'].lower() for l in lekce}
+            plany = [p.partition('\n') for p in re.split(r'^### ', '### ' + plany, flags=re.M)[1:]]
+            plany = [(nazev, popis) for nazev, _, popis in plany if nazev.strip().lower() not in hotove]
             polozky = ''
-            for n, plan in enumerate(re.split(r'^### ', '### ' + plany, flags=re.M)[1:], start=len(lekce) + 1):
-                nazev, _, popis = plan.partition('\n')
+            for n, (nazev, popis) in enumerate(plany, start=len(lekce) + 1):
                 polozky += (f'<li>\n<span class="blob"><span>{n}</span></span>\n'
                             f'<div>\n<h3>{nazev.strip()}</h3>\n{md(popis)}\n</div>\n</li>\n')
             vnitrek = md(uvodni, p='intro') + f'\n<ol class="plans">\n{polozky}</ol>'
@@ -351,10 +369,19 @@ def zapis_lekce(lekce, pocty=None):
 
 
 def main():
+    s_koncepty = '--koncepty' in sys.argv
+    dnes = datetime.date.today()
     lekce = []
     for soubor in sorted((ZDROJ / 'lekce').glob('*.md')):
         meta, telo = nacti(soubor)
-        lekce.append(meta | {'telo': telo, 'cislo': int(soubor.name.split('-')[0])})
+        l = meta | {'telo': telo, 'cislo': int(soubor.name.split('-')[0])}
+        if 'zverejnit' in l:
+            l['zverejnit'] = datetime.date.fromisoformat(l['zverejnit'])
+            l['koncept'] = l['zverejnit'] > dnes
+        if l.get('koncept') and not s_koncepty:
+            print(f'Koncept {soubor.name} vynechán, zveřejní se {l["zverejnit"]}')
+            continue
+        lekce.append(l)
 
     shutil.rmtree(VYSTUP, ignore_errors=True)
     shutil.copytree(ZDROJ / 'static', VYSTUP, ignore=shutil.ignore_patterns('.DS_Store'))

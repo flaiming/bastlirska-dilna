@@ -8,11 +8,12 @@ SERVER = flaim@oram.cz:/www/bastleni/
 web:
 	python3 -B verejny-web/build.py
 
-# Sestaví web a pustí ho na http://localhost:8765
-nahled: web
+# Sestaví web i s rozpracovanými lekcemi (zverejnit: datum v budoucnu) a pustí ho na http://localhost:8765
+nahled:
+	python3 -B verejny-web/build.py --koncepty
 	python3 -m http.server 8765 --bind 127.0.0.1 --directory site
 
-# Sestaví web a nahraje ho na server
+# Sestaví web bez rozpracovaných lekcí a nahraje ho na server
 nasadit: web
 	rsync -az --delete site/ $(SERVER)
 

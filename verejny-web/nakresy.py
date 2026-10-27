@@ -138,6 +138,67 @@ NAKRESY = {
 
 
 
+# --- věž ze špaget: obecné zásady stavby, ne hotový návrh, ať zbude prostor pro vlastní nápady ---
+def spag(*body, barva='#E9B425', sirka=4):
+    """Lomená čára ze špaget přes zadané body."""
+    d = 'M' + ' L'.join(f'{x} {y}' for x, y in body)
+    return f'<path d="{d}" fill="none" stroke="{barva}" stroke-width="{sirka}" stroke-linecap="round" stroke-linejoin="round"/>'
+def kulicka(x, y, barva, r=7):
+    return f'<ellipse cx="{x}" cy="{y}" rx="{r}" ry="{r - 1}" fill="{barva}"/>'
+def kulicky(body, barvy=('#E8487A', '#2F6FE0', '#13A39A', '#F08A24')):
+    return ''.join(kulicka(x, y, barvy[i % len(barvy)]) for i, (x, y) in enumerate(body))
+def paska(x, y, w, h=7):
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="1.5" fill="#EEF5FA" stroke="#93A9BF" stroke-width="1.1"/>'
+def sipka_dolu(x, y1, y2):
+    return f'<line x1="{x}" y1="{y1}" x2="{x}" y2="{y2}" stroke="#1B2B4B" stroke-width="2.5" marker-end="url(#sip{{n}})"/>'
+stul = '<line class="ground" x1="20" y1="170" x2="320" y2="170"/>'
+
+troj = [(40, 160), (140, 160), (90, 73)]
+ctverec = [(205, 75), (295, 75), (295, 160), (205, 160)]
+kosoctverec = [(40, 150), (130, 150), (160, 60), (70, 60)]
+
+NAKRESY.update({
+ 'vez-zaklad': svg(11,
+    spag(*troj, troj[0]) + kulicky(troj) + spag(*ctverec, ctverec[0]) + kulicky(ctverec)
+    + '<text class="lbl" x="90" y="190" text-anchor="middle">trojúhelník</text>'
+    + '<text class="lbl" x="250" y="190" text-anchor="middle">nebo čtverec</text>'
+    + note(295, 75, 250, 34, 'kulička plastelíny obalí konce špaget', 'end'),
+    'Základna shora: špagety spojené v rozích kuličkami plastelíny'),
+ 'vez-steny': svg(12,
+    old(spag(*kosoctverec[:2], (130, 60), (40, 60), kosoctverec[0]))
+    + spag(*kosoctverec, kosoctverec[0]) + kulicky(kosoctverec)
+    + '<line x1="22" y1="60" x2="58" y2="60" stroke="#1B2B4B" stroke-width="2.5" marker-end="url(#sip{n})"/>'
+    + spag((210, 150), (300, 150), (300, 60), (210, 60), (210, 150), (300, 60))
+    + kulicky([(210, 150), (300, 150), (300, 60), (210, 60)])
+    + '<line x1="176" y1="60" x2="198" y2="60" stroke="#1B2B4B" stroke-width="2.5" marker-end="url(#sip{n})"/>'
+    + note(255, 105, 300, 30, 'šikmá špageta', 'end')
+    + '<text class="lbl" x="95" y="185" text-anchor="middle">bez šikmé se zkroutí</text>'
+    + '<text class="lbl" x="255" y="185" text-anchor="middle">se šikmou drží</text>',
+    'Stěna z boku: čtverec se po zatlačení zkřiví, s šikmou špagetou drží tvar'),
+ 'vez-svazek': svg(13,
+    stul
+    + sipka_dolu(75, 18, 42) + '<path d="M75 170 Q100 110 75 50" fill="none" stroke="#E9B425" stroke-width="4" stroke-linecap="round"/>'
+    + sipka_dolu(170, 18, 42) + spag((165, 170), (165, 50)) + spag((170, 170), (170, 50)) + spag((175, 170), (175, 50))
+    + paska(159, 78, 22) + paska(159, 136, 22)
+    + sipka_dolu(275, 18, 42) + spag((275, 170), (275, 112)) + spag((275, 108), (275, 50)) + kulicka(275, 110, '#13A39A')
+    + '<text class="lbl" x="75" y="192" text-anchor="middle">jedna se ohne</text>'
+    + '<text class="lbl" x="170" y="192" text-anchor="middle">svazek</text>'
+    + '<text class="lbl" x="275" y="192" text-anchor="middle">spoj v půlce</text>',
+    'Jedna dlouhá špageta se pod zátěží ohne, svazek nebo spoj v půlce vydrží'),
+ 'vez-mereni': svg(14,
+    '<line class="ground" x1="20" y1="175" x2="320" y2="175"/>'
+    + old(spag((110, 175), (150, 55), (190, 55), (230, 175), (110, 175)),
+          spag((123, 135), (217, 135)), spag((137, 95), (203, 95)),
+          spag((110, 175), (217, 135), (137, 95), (190, 55)),
+          kulicky([(110, 175), (230, 175), (123, 135), (217, 135), (137, 95), (203, 95), (150, 55), (190, 55)]))
+    + '<text class="hint" x="170" y="193" text-anchor="middle">tvar věže je na vás</text>'
+    + '<path d="M155 25 L185 25 L181 50 L159 50 Z" fill="#F4F7FA" stroke="#1B2B4B" stroke-width="2" stroke-linejoin="round"/>'
+    + dim_v(70, 55, 175, 'výška') + '<line class="lead" x1="70" y1="55" x2="146" y2="55" stroke-dasharray="3 3"/>'
+    + note(183, 36, 236, 24, 'zátěž navrch'),
+    'Výška se měří od stolu po vrchol, zátěž se položí na nejvyšší bod'),
+})
+
+
 # --- věž ze špaget v úvodu webu ---
 def vez():
     """Věž s rovnou horní plošinou, na které stojí kelímek s hřebíky. Metr měří výšku po plošinu."""

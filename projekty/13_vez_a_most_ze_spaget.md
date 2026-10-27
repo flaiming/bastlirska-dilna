@@ -35,7 +35,7 @@ Počítáno na 1 lekci pro obě skupiny, tedy přibližně 8 dvojic celkem.
 | --- | ---: | ---: | --- | --- |
 | Nevařené špagety (klasická tloušťka, ne tenké „spaghettini“) | přibližně 1/8 balení 500 g | 1–2 balení po 500 g | Skladem | 20. 10. spotřebovaly 2 dvojice na věže jen půl balení. Koupena 4 balení, zbývá 3,5. |
 | Plastelína | 1 velká hrouda | podle zásoby + dokoupit | Skladem, dokoupit | Spojů je hodně a plastelíny padne víc, než se zdá; skupině A jí 20. 10. na 2 dvojice šlo docela dost. Dokoupit před skupinou B (27. 10.), ta může mít až 4 dvojice. Po lekci vrátit do zásoby. |
-| Papírová lepicí páska | 1 m na výzvu | 2 role | Skladem | Omezené množství nutí přemýšlet; lze odměřit předem a nalepit na okraj lavice. Zásoba stačí. |
+| Lepicí páska, obyčejná průhledná | 1 m na výzvu | 2 role | Papírová skladem | Omezené množství nutí přemýšlet; lze odměřit předem a nalepit na okraj lavice. Na lekci jsme měli papírovou a na věže se moc nehodila, drží hůř. Příště obyčejnou průhlednou. |
 | Kancelářské sponky | 2–3 | 1 balení | Skladem | Háček pro kelímek na mostě. |
 | Lehký kelímek na zátěž | 1 | 4–5 vratných | Zajistit | Plastový nebo papírový. |
 | Zátěž: mince, kostky, matky nebo rýže | podle potřeby | 1 sada | Zajistit | Mince dobře počítat; rýži lze vážit na kuchyňské váze. |

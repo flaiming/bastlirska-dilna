@@ -31,7 +31,7 @@ Jedna špageta toho hodně unese, když se tlačí po délce, ale snadno se zlom
 
 - Nevařené špagety klasické tloušťky, asi osmina balení 500 g na dvojici
 - Velká hrouda plastelíny na spoje
-- Asi 1 metr papírové lepicí pásky
+- Asi 1 metr obyčejné průhledné lepicí pásky. Papírová jde taky, ale drží hůř.
 - Svinovací metr
 - Kelímek s plastelínou nebo s hřebíky na zkoušku nosnosti
 - Smetáček na úlomky
@@ -50,23 +50,27 @@ Věž se staví lépe ve dvou: jeden drží, druhý spojuje. Než začnete, doml
 
 Ze špaget a kuliček plastelíny postavte na stole trojúhelník nebo čtverec. Kuličky musí být dost velké, aby špagetu pevně obalily. Spoj pořádně zmáčkněte.
 
-![](vez-trojuhelnik.jpg)
+{{nakres vez-zaklad}}
 
 ### Stavějte nahoru
 
 Z rohů základny vyveďte nahoru sloupky a spojte je dalším patrem. Když se stěna kroutí nebo se věž naklání, přidejte do ní šikmou špagetu. Vzniknou trojúhelníky a stěna přestane povolovat.
 
+{{nakres vez-steny}}
+
 ### Zpevněte dlouhé špagety
 
 Jedna dlouhá svislá špageta se pod zátěží ohne a praskne. Svažte jich několik páskou do svazku, nebo ji v půlce rozdělte spojem s plastelínou.
 
-![](vez-dvojice.jpg)
+{{nakres vez-svazek}}
 
 ### Změřte a zatěžte
 
 Změřte výšku od stolu po špičku. Pak položte kelímek se zátěží na nejvyšší bod a počítejte do deseti. Platí jen věž, která zátěž na špičce udrží.
 
 > Domluvte se předem, kam se zátěž pokládá. U nás ji děti pokládaly na plošinu uprostřed věže, takže nejvyšší a nejpevnější věž byly dvě různé stavby.
+
+{{nakres vez-mereni}}
 
 ### Druhý pokus
 

@@ -13,6 +13,4 @@ vez-vysoka.jpg        | Vysoká štíhlá věž ze špaget a barevné plastelín
 vez-tenka.jpg         | Vysoká věž ze špaget s tmavou plastelínou ve spojích
 vez-zatez.jpg         | Zkouška nosnosti: na stavbu ze špaget se pokládá kelímek se zátěží
 vez-kostka.jpg        | Nízká stavba ze špaget s trojúhelníkovým půdorysem, plastelínou v rozích a páskou nahoře
-vez-trojuhelnik.jpg   | Trojúhelníková základna ze špaget s plastelínou v rozích a dvěma svislými sloupky
-vez-dvojice.jpg       | Dvě děti spolu drží vysokou věž ze špaget
 vez-paska.jpg         | Vysoká tenká věž ze špaget zpevněná průhlednou páskou

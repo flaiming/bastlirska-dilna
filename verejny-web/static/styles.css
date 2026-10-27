@@ -364,7 +364,7 @@ code { font-size: 0.92em; background: var(--paper); padding: 1px 5px; border-rad
   .principle p { max-width: none; }
 
   .howto { display: block; padding: 6mm 0 0; }
-  .howto h2, .after h2 { font-size: 15pt; margin: 0 0 3mm; }
+  .howto h2, .after h2 { font-size: 15pt; margin: 0 0 3mm; break-after: avoid; }
   .materials { position: static; padding: 0; margin: 0 0 6mm; }
   .materials h2 { font-size: 15pt; }
   .materials ul { columns: 2; column-gap: 8mm; }

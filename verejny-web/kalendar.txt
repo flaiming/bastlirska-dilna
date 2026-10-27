@@ -1,0 +1,11 @@
+# Termíny kroužku pro kalendář na webu: každé úterý od–do.
+# Skupina se určí podle čísla týdne v roce (ISO týden), takže po vynechaném úterý se střídání nerozhodí.
+od: 2026-10-20
+do: 2027-01-26
+lichý týden: A
+sudý týden: B
+
+# Výjimky: datum | zrušeno nebo nejisté | poznámka
+2026-11-17 | zrušeno | státní svátek
+2026-12-22 | nejisté | ještě upřesníme
+2026-12-29 | zrušeno | vánoční prázdniny

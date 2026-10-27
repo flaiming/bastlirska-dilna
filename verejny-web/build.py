@@ -284,6 +284,38 @@ def karta(lekce):
 </article>'''
 
 
+MESICE = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec']
+
+
+def kalendar():
+    """Úterky od–do s vystřídanými skupinami a výjimkami z kalendar.txt, po měsících."""
+    nastaveni, vyjimky = {}, {}
+    for r in (ZDROJ / 'kalendar.txt').read_text().splitlines():
+        if not r.strip() or r.startswith('#'):
+            continue
+        if '|' in r:
+            datum, stav, poznamka = (x.strip() for x in r.split('|'))
+            vyjimky[datetime.date.fromisoformat(datum)] = (stav, poznamka)
+        else:
+            k, v = r.split(':', 1)
+            nastaveni[k.strip()] = v.strip()
+    den, konec = datetime.date.fromisoformat(nastaveni['od']), datetime.date.fromisoformat(nastaveni['do'])
+    prvni_rok = den.year
+    mesice = {}
+    while den <= konec:
+        skupina = nastaveni['lichý týden' if den.isocalendar().week % 2 else 'sudý týden']
+        stav, poznamka = vyjimky.get(den, ('', ''))
+        trida = {'zrušeno': ' zruseno', 'nejisté': ' nejiste'}.get(stav, '')
+        popis = poznamka if stav == 'zrušeno' else f'skupina {skupina}' + (f', {poznamka}' if poznamka else '')
+        mesice.setdefault((den.year, den.month), []).append(
+            f'<li class="termin skupina-{skupina.lower()}{trida}" data-datum="{den}">'
+            f'<span class="den">{den.day}. {den.month}.</span><span class="kdo">{popis}</span></li>')
+        den += datetime.timedelta(days=7)
+    return '<div class="kalendar">\n' + '\n'.join(
+        f'<div class="mesic"><h3>{MESICE[m - 1]}{"" if r == prvni_rok else f" {r}"}</h3>'
+        f'<ol>{"".join(dny)}</ol></div>' for (r, m), dny in mesice.items()) + '\n</div>'
+
+
 def stranka_domu(lekce):
     meta, telo = nacti(ZDROJ / 'domu.md')
     uvod, casti = oddily(telo)
@@ -302,6 +334,9 @@ def stranka_domu(lekce):
         if druh == 'lekce':
             vnitrek = md(uvodni, p='intro') + '\n' + '\n'.join(karta(l) for l in lekce)
             trida = 'section done'
+        elif druh == 'kalendar':
+            vnitrek = md(uvodni, p='intro') + '\n' + kalendar()
+            trida = 'section'
         else:
             # plán, ze kterého už je zveřejněná lekce, se vynechá sám
             hotove = {l['nazev'].lower() for l in lekce}

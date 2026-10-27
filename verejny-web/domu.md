@@ -11,6 +11,10 @@ Technický kroužek pro děti z 3.–5. třídy. Každé úterý dvě hodiny, dv
 
 Ke každé lekci je návod, podle kterého si výrobek můžete postavit doma, a pár poznámek, co se nám povedlo a co ne.
 
+## Kdy se scházíme {kalendar #kalendar}
+
+Scházíme se v úterý a skupiny se střídají po týdnech: skupina A v liché týdny, skupina B v sudé.
+
 ## Co chystáme dál {plany #chystame}
 
 Plán se může změnit podle toho, jak nám to půjde. Návody přidáme, až lekci odučíme.

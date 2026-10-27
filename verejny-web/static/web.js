@@ -40,3 +40,13 @@
     if (e.key === 'ArrowRight') show(current + 1);
   });
 })();
+
+// Kalendář: proběhlé termíny ztlumí a označí nejbližší další. Počítá se v prohlížeči, ať to sedí i bez nového buildu.
+(function () {
+  const terminy = [...document.querySelectorAll('.termin[data-datum]')];
+  if (!terminy.length) return;
+  const dnes = new Date().toLocaleDateString('sv');  // RRRR-MM-DD v místním čase
+  terminy.forEach(t => { if (t.dataset.datum < dnes) t.classList.add('probehlo'); });
+  const pristi = terminy.find(t => t.dataset.datum >= dnes && !t.classList.contains('zruseno'));
+  if (pristi) pristi.classList.add(pristi.dataset.datum === dnes ? 'dnes' : 'pristi');
+})();

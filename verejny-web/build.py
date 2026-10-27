@@ -172,14 +172,14 @@ def oddil(nadpis, druh, id_, text, konec=''):
     return f'<section class="after"{id_}>\n<h2>{nadpis}</h2>\n{obsah}\n{konec}</section>'
 
 
-def postup(potreby, kroky):
+def postup(potreby, kroky, barva):
     polozky = ''
     for krok in re.split(r'^### ', kroky, flags=re.M)[1:]:
         nadpis, _, text = krok.partition('\n')
         polozky += f'<li>\n<div>\n<h3>{nadpis.strip()}</h3>\n{md(text)}\n</div>\n</li>\n'
     return (f'<div class="howto">\n<aside class="materials">\n<h2>{potreby[0]}</h2>\n'
             f'{md(potreby[1], citace="note")}\n</aside>\n'
-            f'<div>\n<h2>Postup</h2>\n<ol class="steps">\n{polozky}</ol>\n</div>\n</div>')
+            f'<div>\n<h2>Postup</h2>\n<ol class="steps" style="--c: var(--{barva})">\n{polozky}</ol>\n</div>\n</div>')
 
 
 def cislo(lekce):
@@ -240,7 +240,7 @@ def stranka_lekce(lekce, predchozi, dalsi, pocet_stran=None):
         elif druh == 'potreby':
             potreby = (nadpis, text)
         elif druh == 'postup':
-            telo.append(postup(potreby, text))
+            telo.append(postup(potreby, text, lekce['barva']))
         else:
             telo.append(oddil(nadpis, druh, id_, text, navigace if i == len(casti) - 1 else ''))
     obsah.append('<div class="wrap">\n' + '\n'.join(telo) + '\n</div>')

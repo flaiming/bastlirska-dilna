@@ -192,12 +192,11 @@ a:hover { color: var(--ink); }
 .steps > li { counter-increment: krok; display: grid; grid-template-columns: 2.6rem 1fr; gap: 18px; padding: 0 0 30px; }
 .steps > li::before {
   content: counter(krok); display: grid; place-items: center; width: 2.6rem; height: 2.3rem; color: #fff; font-weight: 800;
-  border-radius: 52% 48% 55% 45% / 58% 50% 50% 42%; background: var(--blue); transform: rotate(-6deg);
+  border-radius: 52% 48% 55% 45% / 58% 50% 50% 42%; background: var(--c, var(--blue)); transform: rotate(-6deg);
 }
-.steps > li:nth-child(5n+2)::before { background: var(--pink); transform: rotate(5deg); }
-.steps > li:nth-child(5n+3)::before { background: var(--teal); transform: rotate(-3deg); }
-.steps > li:nth-child(5n+4)::before { background: var(--orange); transform: rotate(8deg); }
-.steps > li:nth-child(5n+5)::before { background: #E0402B; }
+.steps > li:nth-child(4n+2)::before { transform: rotate(5deg); }
+.steps > li:nth-child(4n+3)::before { transform: rotate(-3deg); }
+.steps > li:nth-child(4n+4)::before { transform: rotate(8deg); }
 .steps h3 { margin: 0.15em 0 6px; font-size: 1.25rem; line-height: 1.25; }
 .steps p { margin: 0 0 8px; max-width: var(--measure); }
 .steps .tip { color: var(--ink-soft); font-size: 1rem; }

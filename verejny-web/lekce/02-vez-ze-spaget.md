@@ -60,7 +60,9 @@ Z rohů základny vyveďte nahoru sloupky a spojte je dalším patrem. Když se 
 
 ### Zpevněte dlouhé špagety
 
-Jedna dlouhá svislá špageta se pod zátěží ohne a praskne. Svažte jich několik páskou do svazku, nebo ji složte ze dvou kratších, které se kus překrývají, a překryv oviňte páskou.
+Jedna dlouhá svislá špageta se pod zátěží ohne a praskne. Svažte jich několik páskou do svazku, ten vydrží mnohem víc.
+
+Když potřebujete delší kus, složte ho ze dvou špaget, které se kus překrývají, a překryv oviňte páskou. Pevnější tím ale nebude, pod zátěží se ohne stejně jako jedna dlouhá.
 
 {{nakres vez-svazek}}
 
@@ -79,7 +81,7 @@ Podívejte se, co drželo ostatním dvojicím, a postavte věž znovu nebo tu sv
 ## Když to padá {opravy}
 
 - **Věž se kroutí a padá** Chybějí šikmé špagety. Poskládejte stěny z trojúhelníků.
-- **Věž se zlomí uprostřed** Některá špageta je moc dlouhá a ohnula se. Rozdělte ji spojem nebo použijte svazek.
+- **Věž se zlomí uprostřed** Některá špageta je moc dlouhá a ohnula se. Nahraďte ji svazkem.
 - **Spoje povolují** Plastelíny je málo, nebo je moc měkká. Spoj zmáčkněte, případně ho oviňte páskou.
 - **Věž je vysoká, ale zátěž neunese** Rozšiřte základnu. Široká základna a úzká špička drží líp než rovný komín.
 

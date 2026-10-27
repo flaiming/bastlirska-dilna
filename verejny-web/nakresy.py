@@ -180,11 +180,12 @@ NAKRESY.update({
     + sipka_dolu(75, 18, 42) + '<path d="M75 170 Q100 110 75 50" fill="none" stroke="#E9B425" stroke-width="4" stroke-linecap="round"/>'
     + sipka_dolu(170, 18, 42) + spag((165, 170), (165, 50)) + spag((170, 170), (170, 50)) + spag((175, 170), (175, 50))
     + paska(161, 74, 18, 14) + paska(161, 132, 18, 14)
-    + sipka_dolu(275, 18, 42) + spag((272, 170), (272, 84)) + spag((278, 136), (278, 50)) + paska(264, 100, 22, 20)
+    + '<line x1="225" y1="30" x2="225" y2="176" stroke="#9AA6B8" stroke-width="1.2" stroke-dasharray="4 4"/>'
+    + spag((272, 170), (272, 84)) + spag((278, 136), (278, 50)) + paska(264, 100, 22, 20)
     + '<text class="lbl" x="75" y="192" text-anchor="middle">jedna se ohne</text>'
-    + '<text class="lbl" x="170" y="192" text-anchor="middle">svazek</text>'
-    + '<text class="lbl" x="275" y="192" text-anchor="middle">spoj v půlce</text>',
-    'Jedna dlouhá špageta se pod zátěží ohne, svazek nebo spoj v půlce vydrží'),
+    + '<text class="lbl" x="170" y="192" text-anchor="middle">svazek drží</text>'
+    + '<text class="lbl" x="275" y="192" text-anchor="middle">prodloužení</text>',
+    'Jedna dlouhá špageta se pod zátěží ohne, svazek vydrží. Delší kus vznikne překrytím dvou špaget a páskou.'),
  'vez-mereni': svg(14,
     '<line class="ground" x1="20" y1="175" x2="320" y2="175"/>'
     + old(spag((110, 175), (150, 55), (190, 55), (230, 175), (110, 175)),

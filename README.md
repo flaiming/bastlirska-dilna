@@ -13,10 +13,28 @@ Kroužek běží každé úterý dvě hodiny, dvě skupiny po 8–9 dětech se s
 | [NAKUPNI_ZAKLAD.md](NAKUPNI_ZAKLAD.md) | Sklad, nákupy podle obchodů, co si děti odnesou a co zůstává v dílně |
 | [modely/](modely/) | 3D modely pro tisk (OpenSCAD + STL), např. excentr pro vibrobota |
 | [web/](web/) | Generátor HTML přehledu z Markdownu |
+| [verejny-web/](verejny-web/) | Zdroje veřejného webu [bastleni.oram.cz](https://bastleni.oram.cz) |
 
 ## Projektové karty
 
 Každá karta vychází ze [šablony](projekty/SABLONA.md) a po odučení se doplňuje o to, co fungovalo a co změnit pro druhou skupinu. Přehled karet a jejich stav je v [projekty/README.md](projekty/README.md).
+
+## Veřejný web
+
+Web [bastleni.oram.cz](https://bastleni.oram.cz) ukazuje jen odučené lekce s návodem. Skládá se z Markdownu ve `verejny-web/`, výstup jde do `site/` (není v gitu).
+
+```sh
+make web       # sestaví site/
+make nahled    # sestaví a pustí na http://localhost:8765
+make nasadit   # sestaví a nahraje na server
+make fotka Z=~/Downloads/IMG_1234.jpg JAKO=auto-novy [OTOCIT=90]   # zmenší fotku a odstraní metadata
+```
+
+- Nová lekce je jeden soubor `verejny-web/lekce/NN-adresa.md`. Formát je popsaný na začátku `verejny-web/build.py`, nejlíp je zkopírovat existující lekci. Lekci pak smažte z „Co chystáme dál“ v `verejny-web/domu.md`.
+- Fotky leží ve `verejny-web/static/foto/` a každá má popisek ve `verejny-web/fotky.txt`. Na fotkách nesmí být obličej dítěte.
+- Nákresy ke krokům jsou ve `verejny-web/nakresy.py`, do textu se vkládají řádkem `{{nakres jmeno}}`.
+- K odkazům na fotky, styly a modely build přidá otisk obsahu (`?v=…`), takže prohlížeč po změně nenačte starou verzi.
+- Konfigurace nginx na serveru je pro přehled ve `verejny-web/nginx.conf`.
 
 ## HTML přehled
 

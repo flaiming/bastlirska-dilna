@@ -1,0 +1,18 @@
+# Popisky fotek ve static/foto/ (alt text pro nevidomé a pro případ, že se fotka nenačte).
+# Na fotkách nesmí být vidět obličej žádného dítěte.
+auto-hotove.jpg       | Pomalované autíčko z kartonu s červenou karoserií, žlutými světly a čtyřmi koly na špejlích
+auto-potreby.jpg      | Materiál na autíčko: kartonový podvozek s výřezem, špejle, kola, gumičky, nůžky a tavná pistole
+auto-stavba.jpg       | Dětské ruce drží podvozek s nasazenými koly
+auto-zepredu.jpg      | Autíčko zepředu s pomalovanou karoserií a chladičem z víčka
+auto-stul.jpg         | Stůl s materiálem: krabice kol, svazky špejlí a brček, gumičky, plastelína
+kolo-30.jpg           | Náhled kolečka o průměru 30 mm se šesti paprsky
+kolo-45.jpg           | Náhled kolečka o průměru 45 mm se šesti paprsky
+kolo-60.jpg           | Náhled kolečka o průměru 60 mm se šesti paprsky
+vez-kopule.jpg        | Široká kopule ze špaget spojených modrou a zelenou plastelínou
+vez-vysoka.jpg        | Štíhlá věž ze špaget a barevné plastelíny zpevněná páskou
+vez-tenka.jpg         | Vysoká věž ze svazků špaget s černou plastelínou
+vez-zatez.jpg         | Zkouška nosnosti: na kopuli ze špaget se pokládá kelímek plný plastelíny
+vez-kostka.jpg        | Nízká kostka ze špaget s plastelínou v rozích a páskou přes horní stěnu
+vez-trojuhelnik.jpg   | Trojúhelníková základna ze špaget s plastelínou v rozích a dvěma svislými sloupky
+vez-dvojice.jpg       | Dvě děti spolu drží a slepují páskou vysokou věž ze špaget
+vez-paska.jpg         | Vysoká tenká věž ze špaget zpevněná průhlednou páskou

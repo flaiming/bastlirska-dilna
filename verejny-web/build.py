@@ -181,8 +181,15 @@ def cislo(lekce):
             f'<span>{lekce["cislo"]}</span></span>{PORADI[lekce["cislo"] - 1]} lekce</p>')
 
 
-def maly(nazev):
-    return nazev[0].lower() + nazev[1:]
+SIPKA = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m0 0-5.5-5.5M18 12l-5.5 5.5"/></svg>'
+
+
+def sipka(lekce, popisek, trida):
+    """Odkaz na sousední lekci se šipkou v barvě té lekce; bez lekce prázdné místo, aby mřížka seděla."""
+    if not lekce:
+        return '<span></span>'
+    return (f'<a class="{trida}" href="/{lekce["adresa"]}/" style="--c: var(--{lekce["barva"]})">{SIPKA}'
+            f'<span><small>{popisek}</small><strong>{lekce["nazev"]}</strong></span></a>')
 
 
 def stranka_lekce(lekce, predchozi, dalsi):
@@ -199,13 +206,8 @@ def stranka_lekce(lekce, predchozi, dalsi):
 </ul>
 </div>
 </div>''']
-    navigace = '<nav class="next" aria-label="Další lekce">\n'
-    if predchozi:
-        navigace += f'<a href="/{predchozi["adresa"]}/">Předchozí lekce: {maly(predchozi["nazev"])}</a>\n'
-    navigace += '<a href="/">Zpět na přehled</a>\n'
-    if dalsi:
-        navigace += f'<a href="/{dalsi["adresa"]}/">Další lekce: {maly(dalsi["nazev"])}</a>\n'
-    navigace += '</nav>\n'
+    navigace = (f'<nav class="next" aria-label="Další lekce">\n{sipka(predchozi, "Předchozí lekce", "prev")}\n'
+                f'<a class="home" href="/">Zpět na přehled</a>\n{sipka(dalsi, "Další lekce", "nxt")}\n</nav>\n')
 
     telo = []
     potreby = None

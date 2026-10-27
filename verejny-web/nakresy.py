@@ -181,7 +181,7 @@ NAKRESY.update({
     + sipka_dolu(170, 18, 42) + spag((165, 170), (165, 50)) + spag((170, 170), (170, 50)) + spag((175, 170), (175, 50))
     + paska(161, 74, 18, 14) + paska(161, 132, 18, 14)
     + '<line x1="225" y1="30" x2="225" y2="176" stroke="#9AA6B8" stroke-width="1.2" stroke-dasharray="4 4"/>'
-    + spag((272, 170), (272, 84)) + spag((278, 136), (278, 50)) + paska(264, 100, 22, 20)
+    + spag((272, 170), (272, 84)) + spag((278, 136), (278, 50)) + paska(264, 88, 22, 12) + paska(264, 120, 22, 12)
     + '<text class="lbl" x="75" y="192" text-anchor="middle">jedna se ohne</text>'
     + '<text class="lbl" x="170" y="192" text-anchor="middle">svazek drží</text>'
     + '<text class="lbl" x="275" y="192" text-anchor="middle">prodloužení</text>',

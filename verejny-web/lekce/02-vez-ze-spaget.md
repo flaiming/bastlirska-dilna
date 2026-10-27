@@ -62,7 +62,7 @@ Z rohů základny vyveďte nahoru sloupky a spojte je dalším patrem. Když se 
 
 Jedna dlouhá svislá špageta se pod zátěží ohne a praskne. Svažte jich několik páskou do svazku, ten vydrží mnohem víc.
 
-Když potřebujete delší kus, složte ho ze dvou špaget, které se kus překrývají, a překryv oviňte páskou. Pevnější tím ale nebude, pod zátěží se ohne stejně jako jedna dlouhá.
+Když potřebujete delší kus, složte ho ze dvou špaget, které se kus překrývají, a překryv oviňte páskou na obou koncích. Pevnější tím ale nebude, pod zátěží se ohne stejně jako jedna dlouhá.
 
 {{nakres vez-svazek}}
 

@@ -180,7 +180,7 @@ NAKRESY.update({
     + sipka_dolu(75, 18, 42) + '<path d="M75 170 Q100 110 75 50" fill="none" stroke="#E9B425" stroke-width="4" stroke-linecap="round"/>'
     + sipka_dolu(170, 18, 42) + spag((165, 170), (165, 50)) + spag((170, 170), (170, 50)) + spag((175, 170), (175, 50))
     + paska(161, 74, 18, 14) + paska(161, 132, 18, 14)
-    + sipka_dolu(275, 18, 42) + spag((275, 170), (275, 114)) + spag((275, 106), (275, 50)) + paska(268, 96, 14, 28)
+    + sipka_dolu(275, 18, 42) + spag((272, 170), (272, 84)) + spag((278, 136), (278, 50)) + paska(264, 100, 22, 20)
     + '<text class="lbl" x="75" y="192" text-anchor="middle">jedna se ohne</text>'
     + '<text class="lbl" x="170" y="192" text-anchor="middle">svazek</text>'
     + '<text class="lbl" x="275" y="192" text-anchor="middle">spoj v půlce</text>',

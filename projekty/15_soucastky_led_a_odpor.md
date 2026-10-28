@@ -25,7 +25,8 @@ Příprava:
 1. Postavit vzorek ozdoby a nechat ho svítit přes noc: jak dlouho vydrží baterie, jak svítí bílá, červená a žlutá LED.
 2. Sestavit **objevovací sadu pro dvojici** (krabička): držák 2× AA s vodiči, 4–6 krokosvorek, 3 LED různých barev, odpory 100 Ω, 1 kΩ a 10 kΩ (označené barvou na papírku), 1 baterie CR2032.
 3. Vytisknout **kartičky úkolů** (viz Postup) a **„pas součástek“**: kartička, kam si dítě přilepí LED a odpor a napíše, co dělají. Bude přibývat v dalších lekcích.
-4. Na ozdobu předem vyříznout tvary z kartonu a propíchnout otvor na LED; odizolovat konce vodičů držáku, pokud nejsou.
+4. **Ukázka na laboratorním zdroji** (pro vedoucího): LED s odporem, pomalu přidávat napětí od 0 V. Děti vidí, že LED se rozsvítí až od určitého napětí (červená asi 1,8 V, bílá asi 2,7 V). Omezení proudu nastavit na 20 mA, pak LED nejde spálit ani bez odporu.
+5. Na ozdobu předem vyříznout tvary z kartonu a propíchnout otvor na LED; odizolovat konce vodičů držáku, pokud nejsou.
 
 ## Materiál a nákup
 
@@ -33,7 +34,7 @@ Spotřební (jde domů), počítáno pro 17 dětí + 1 rezervu:
 
 | Položka | Na dítě | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | ---: | --- | --- |
-| [Držák CR2032 s vodiči a vypínačem, Dratek](https://dratek.cz/12690-cr2032/) | 1 | 18 | Koupit | 9 Kč; na AliExpressu 4–8 Kč, ale s delší dodací lhůtou. |
+| [Držák CR2032 s vodiči a vypínačem, Dratek](https://dratek.cz/12690-cr2032/) | 1 | 18 | Koupit | 9 Kč. |
 | Baterie CR2032 | 1 | 18 | Koupit | Möbelix Elonix 4 ks za 18 Kč (akce do 31. 10. 2026), nebo AgfaPhoto 5 ks za 60 Kč (eneshop). Kapacita levných značek bývá nižší než u značkových (běžně kolem 200 mAh); ozdoba bere jednotky mA, takže vydrží desítky hodin svícení. **Výjimka z pravidla „baterie zůstávají“ (rozhodnuto 22. 10.):** CR2032 jde domů s ozdobou, jinak by doma nesvítila. |
 | LED 5 mm (bílá, teple bílá, červená, žlutá) | 1–2 | asi 30 | Skladem | Dítě si vybere barvu. |
 | Odpor 47–100 Ω | 0–1 | 20 | Skladem | Volitelně do série. |
@@ -44,7 +45,7 @@ Vratné (objevovací sady pro 4–5 dvojic):
 
 | Položka | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | --- | --- |
-| Krokosvorkové vodiče | 20–30 | Doplnit (AliExpress levně) | Nejdůležitější pomůcka celé řady. |
+| Krokosvorkové vodiče | 20–30 | Doplnit ([Drátek, 10 ks za 69 Kč](https://dratek.cz/arduino-platforma/885-vodice-10kusu-krokodyl-klip.html)) | Nejdůležitější pomůcka celé řady. |
 | Držák 2× AA s vodiči + dílenské baterie | 5 | Dílenská sada | Stejné baterie jako u hlavolamu a vibrobota. |
 | LED na zkoušení, odpory 100 Ω / 1 kΩ / 10 kΩ | po 5–10 | Skladem | Po lekci zpět do krabičky. |
 | Multimetr | 2 | Skladem | Měření odporu; pípák na hledání spojení. |

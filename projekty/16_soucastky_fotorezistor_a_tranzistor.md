@@ -32,11 +32,11 @@ Vratné, pro 4–5 dvojic (nic z toho nejde domů, pokud se nedělá výrobek):
 
 | Položka | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | --- | --- |
-| Kontaktní pole 170 nebo 400 bodů | 5 | Doplnit; skladem „několik“ | Malá pole na AliExpressu asi za 10–20 Kč. |
+| Kontaktní pole 170 nebo 400 bodů | 5 | Doplnit; skladem „několik“ | Malá pole koupit u českého prodejce (Drátek, Laskakit). |
 | Propojky do kontaktního pole | sada pro 5 míst | Skladem (Dupont) / doplnit | Pevné propojky jsou pro děti lepší než Dupont kabely. |
 | NPN tranzistory | 10–15 | Skladem, ověřit typ | |
 | Fotorezistory | 5–10 | Skladem | |
-| Potenciometry RV09 s hřídelí a knoflíkem: 1 kΩ a 100 kΩ | po 5 | Koupit (AliExpress) | 1 kΩ na stmívání LED, **vždy s pevným odporem 100 Ω v sérii** (na nule by LED neměla ochranu); 100 kΩ na nastavení světla na tmu. Hřídel s knoflíkem je pro děti lepší než trimr na šroubovák. |
+| Potenciometry RV09 s hřídelí a knoflíkem: 1 kΩ a 100 kΩ | po 5 | Koupit (Drátek, Laskakit, GME; AliExpress jen když tu nejsou) | 1 kΩ na stmívání LED, **vždy s pevným odporem 100 Ω v sérii** (na nule by LED neměla ochranu); 100 kΩ na nastavení světla na tmu. Hřídel s knoflíkem je pro děti lepší než trimr na šroubovák. |
 | LED, odpory 100 Ω, 1 kΩ, 47 kΩ | po 10 | Skladem | |
 | Držák 2× AA, případně 3× AA pro dotykový spínač | 5 | Dílenská sada | |
 

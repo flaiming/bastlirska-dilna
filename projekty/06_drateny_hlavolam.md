@@ -40,9 +40,10 @@ Na začátku vedoucí ukáže na sponkovém vypínači uzavřený a rozpojený o
 1. Postavit vzorek. Ověřit, že bzučák pípá na 2 tužkové baterie dost nahlas a že cín drží na zvoleném drátu.
 2. Nařezat a předvrtat podstavce. Průměr otvoru podle drátu, aby drát šel zasunout těsně.
 3. Nastříhat dráty na dráhu (60 cm) a očko (20 cm) a lanka (40 cm). Konce lanek a vodičů odizolovat asi 1 cm.
-4. Pájecí stanoviště: stojánek, mokrá houbička, prkénko jako podložka, brýle, „třetí ruka“ nebo kolíček, cín s kalafunou, větrání. Mikropájku pro děti, trafopájku jen vedoucí.
+4. Pájecí stanoviště: stojánek, mosazná drátěnka na hrot (mokrá houbička jen záloha, hrotu škodí teplotní šok), silikonová pájecí podložka (4 ks, ne papír ani karton), brýle pro zájemce, „třetí ruka“ nebo kolíček, cín s kalafunou, větrání. Mikropájku pro děti, trafopájku jen vedoucí.
 5. Kartička pro Voltíka: vybrat 3–4 pokusy, ideálně se spínačem, LED nebo bzučákem.
 6. Postavit ukázkový sponkový vypínač s bzučákem.
+7. **Zkoušky na laboratorním zdroji** (omezení proudu asi 200 mA): jak hlasitě bzučák pípá na 2,4 V (nabíjecí baterie) a na 3 V; při jakém napětí sepne relé SRD-05VDC na bonus (od 2 V pomalu přidávat do cvaknutí). Sepne-li až nad asi 2,8 V, bonus napájet ze 3× AA a ověřit, že bzučák 4,5 V snese. Zdroj se hodí i na zkoušení hotových hlavolamů místo baterií.
 
 ## Materiál a nákup
 
@@ -90,10 +91,11 @@ Při 7–8 dětech 3 skupinky po 2–3; vedoucí sedí u pájení.
 - **Očko neprojde zatáčkou:** zvětšit očko nebo dráhu v ostrých místech rozevřít.
 - **Snazší varianta:** vedoucí připraví dráhu předem ohnutou; dítě jen pájí a sestavuje.
 - **Rozšíření:** přidat LED s rezistorem paralelně k bzučáku; nebo udělat dráhu ve dvou úrovních.
+- **Bonus pro rychlé: hlavolam s pamětí.** Samodržné relé SRD-05VDC (objednáno 6 ks; cívka 5 V, sepnutí na 3 V ověřit na zdroji, jinak napájet 4,5 V: k držáku 2× AA přidat do série držák 1× AA): kontakt COM–NO paralelně k očku a dráze, cívka a bzučák za nimi, vypínač v přívodu jako reset, dioda 1N4007 přes cívku. Jen pár kusů relé, ne pro všechny; zapojuje se krokosvorkami a relé zůstává v dílně. Cívka bere asi 100 mA, po hře vypnout. Před lekcí vyzkoušet. [Interaktivní schéma](https://claude.ai/artifact/148C6rAzAbfM6g89yegQUa).
 
 ## Bezpečnost
 
-Pájka: hrot má přes 300 °C; pájka vždy ve stojánku, kabel mimo dosah rukou, pod spoj podložka. Děti pájí jen u stolu s vedoucím a mají brýle (cín může odprsknout). Kalafuna kouří: větrat, nedýchat přímo nad spojem. Po pájení umýt ruce. Při popálení chladit pod tekoucí studenou vodou. Trafopájka jen vedoucí. Tavné pistole: děti lepí samy (ze školy jsou zvyklé), ale jen u horkého stolu vedle vedoucího; pistole vždy zpět do stojánku, nesahat na trysku ani na čerstvé lepidlo, při popálení chladit pod studenou tekoucí vodou. Konce drátů jsou ostré: zastřihnout a ohnout dovnitř. Baterie nezkratovat: držák nikdy nespojit napřímo bez bzučáku.
+Pájka: hrot má přes 300 °C; pájka vždy ve stojánku, kabel mimo dosah rukou, pod spoj podložka. Děti pájí jen u stolu s vedoucím. Brýle doporučit, ale nevyžadovat; hlavně při štípání drátu, kdy odštípnutý konec může odletět (konec přidržet, mířit dolů). Kalafuna kouří: větrat, nedýchat přímo nad spojem. Po pájení umýt ruce. Při popálení chladit pod tekoucí studenou vodou. Trafopájka jen vedoucí. Tavné pistole: děti lepí samy (ze školy jsou zvyklé), ale jen u horkého stolu vedle vedoucího; pistole vždy zpět do stojánku, nesahat na trysku ani na čerstvé lepidlo, při popálení chladit pod studenou tekoucí vodou. Konce drátů jsou ostré: zastřihnout a ohnout dovnitř. Baterie nezkratovat: držák nikdy nespojit napřímo bez bzučáku.
 
 ## Inspirace a zdroje
 

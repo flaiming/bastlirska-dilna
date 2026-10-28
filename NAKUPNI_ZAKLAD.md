@@ -9,9 +9,9 @@ Toto není objednávka. U každé položky nejprve zapsat, co už je doma nebo v
 
 Před každým nákupem nejprve projít tento seznam.
 
-- **Stavebnice a měření:** Voltík I a Voltík II (po 1 sadě), 2 multimetry, několik breadboardů, propojovací vodiče Dupont.
+- **Stavebnice a měření:** Voltík I a Voltík II (po 1 sadě), 2 multimetry, regulovatelný laboratorní zdroj Geti QJ1502A (0–15 V, 0–2 A, s omezením proudu; jen pro vedoucího), několik breadboardů, propojovací vodiče Dupont.
 - **Součástky:** rezistory, kondenzátory, tranzistory, hodně různých LED, fotorezistory (LDR), různé vypínače, 2 malé fotovoltaické panely, různé baterie.
-- **Pájení:** 1 mikropájka, 1 trafopájka, 1 pájecí stanice Parkside PLSD 60 C3 (objednána 22. 10. 2026), cín, kalafuna, pájecí kapalina, univerzální pájivá pole, krabice různých drátů, odizolovací kleště.
+- **Pájení:** 1 mikropájka, 1 trafopájka, 1 pájecí stanice Parkside PLSD 60 C3 (objednána 22. 10. 2026), cín, kalafuna, pájecí kapalina, univerzální pájivá pole, krabice různých drátů, odizolovací kleště, 2 třetí ruce (z domu), 4 silikonové pájecí podložky (objednány 28. 10. 2026).
 - **Plošné spoje:** cuprexitové desky a leptací roztok.
 - **Gumičky:** hodně kusů 30 mm a 60 mm a různé menší (zbytek z autíček). Nekupovat.
 - **Kelímky:** 30 kusů (zamýšleno na kreslícího vibrobota, viz karta 05).
@@ -74,9 +74,25 @@ Odpájecí knot Dratek nemá; bere se z Laskakitu (odsávací lícna 2 mm, 1,5 m
 
 **4. Lidl.cz: objednáno 22. 10. 2026** 1× pájecí stanice Parkside PLSD 60 C3, 400 Kč + 49 Kč doprava = 449 Kč. Pro děti tedy 2 pájecí místa (PLSD + mikropájka), trafopájka jen vedoucí. Druhou PLSD dokoupit, pokud se u hlavolamu ukáže, že se na pájení čeká moc dlouho.
 
+**Drátek: objednáno 28. 10. 2026**, 618,68 Kč + poštovné:
+
+| Položka | Ks | Kč/ks | Kč | Pro |
+| --- | ---: | ---: | ---: | --- |
+| Výkonové relé SRD-05VDC-SL-C (cívka 5 V) | 6 | 14 | 84 | bonus k hlavolamu; na 3 V nemusí sepnout, ověřit na zdroji (karta 06) |
+| Usměrňovací dioda 1N4007 | 25 | 1 | 25 | přes cívku relé; odolnější než 1N4148 a s lépe viditelným proužkem, zbytek do elektro linky |
+| Držák na 1× AA DPS DIL | 6 | 7,65 | 46 | do série s držákem 2× AA = 4,5 V pro relé, kdyby na 3 V nesepnulo |
+| [Vodiče s krokosvorkami, 10 ks](https://dratek.cz/arduino-platforma/885-vodice-10kusu-krokodyl-klip.html) | 3 | 69,26 | 208 | bonus s relé, ukázky, hledání chyb, elektro linka |
+| DuPont kabel M s krokosvorkami, 20 cm, 10 ks | 1 | 61 | 61 | připojení vodičů a součástek ke kontaktnímu poli |
+| Štípací kleště DRÁTEK | 3 | 39 | 117 | dílna |
+| Baterie CR2450 | 2 | 39 | 78 | |
+
+Relé, krokosvorky a držáky zůstávají v dílně.
+
 **5. Papírnictví, hobby, lékárna:** ochranné brýle dětské 4 ks (~250 Kč), stahovací pásky (~30), pohyblivá očička a chlupaté drátky (~100), gel na popáleniny (~100). Ventilátor a kolíčky z domu.
 
-**6. AliExpress, zásoba na 2. pololetí, objednat do konce listopadu** (doprava zdarma od 220 Kč), asi 400 Kč: krokosvorkové vodiče 20–30 ks, malá kontaktní pole 170–400 bodů 5 ks, malé potenciometry RV09 s hřídelí (pasují do kontaktního pole) 1 kΩ 5 ks, 10 kΩ 5 ks, 100 kΩ 10 ks + nasazovací knoflíky; na výrobky domů v lekci 18 levné trimry 100 kΩ 20 ks, sada elektrolytických kondenzátorů, [posuvné spínače SS12D00G4](https://www.aliexpress.com/w/wholesale-SS12D00G4.html) 20 ks (asi 40 Kč). NPN tranzistory jen pokud nejsou ve skladu vhodné (nejdřív zkontrolovat typ). Sada rezistorů jen pokud ve skladu chybí hodnoty z tabulky níže.
+**Zásada: kupovat u českých prodejců** (Drátek, Laskakit, GME a podobně), i když jsou o něco dražší. Zboží je stejně většinou z Číny, ale vydělá na něm někdo v ČR. AliExpress jen na to, co tu opravdu není k dostání (např. relé s cívkou na 3 V `SRD-03VDC-SL-C`).
+
+**6. Zásoba na 2. pololetí, objednat do konce listopadu** u českých prodejců, ceny a sklad ověřit před objednáním: malá kontaktní pole 170–400 bodů 5 ks, malé potenciometry RV09 s hřídelí (pasují do kontaktního pole) 1 kΩ 5 ks, 10 kΩ 5 ks, 100 kΩ 10 ks + nasazovací knoflíky; na výrobky domů v lekci 18 levné trimry 100 kΩ 20 ks, sada elektrolytických kondenzátorů, posuvné spínače SS12D00G4 20 ks. NPN tranzistory jen pokud nejsou ve skladu vhodné (nejdřív zkontrolovat typ). Sada rezistorů jen pokud ve skladu chybí hodnoty z tabulky níže.
 
 **Rezistory pro elektro linku (3 V):** k LED červené, žluté, zelené 100 Ω (68–150 Ω), k bílé a modré 22–47 Ω nebo žádný; 220–330 Ω jde také, LED jen slabší. Dále 1 kΩ, 10 kΩ a 47 kΩ. Objevování (lekce 15–17) potřebuje od každé hodnoty asi 10 kusů, vratné. Spotřeba domů až v lekci 18 (blikač nebo světýlko): asi 40 kusů 100–470 Ω a 40 kusů 47 kΩ na 18 dětí. Ozdoba z lekce 15 odpor nepotřebuje.
 

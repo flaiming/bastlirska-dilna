@@ -23,7 +23,8 @@ Příprava:
 
 1. Postavit všechna tři zapojení na 3 V a vybrat hodnoty, které fungují s tranzistory ze skladu.
 2. Kartičky zapojení 1 : 1 (jako v lekci 16); u blikače postup po krocích: nejdřív jedna polovina, vyzkoušet, pak druhá.
-3. Upozornit: elektrolytický kondenzátor má plus a mínus (proužek je mínus); vedoucí kontroluje před připojením baterie.
+3. Při ladění vzorků napájet z laboratorního zdroje (3 V, omezení proudu asi 100 mA): špatně otočený tranzistor nebo zkrat se projeví poklesem napětí, nic se nespálí.
+4. Upozornit: elektrolytický kondenzátor má plus a mínus (proužek je mínus); vedoucí kontroluje před připojením baterie.
 
 ## Materiál a nákup
 
@@ -31,7 +32,7 @@ Vratné, pro 4–5 dvojic:
 
 | Položka | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | --- | --- |
-| Elektrolytické kondenzátory 10, 22, 47, 100, 1000, 2200 µF (do 16–25 V) | po 5–10 | Skladem, doplnit sadou | Sada elektrolytů z AliExpressu je levná. |
+| Elektrolytické kondenzátory 10, 22, 47, 100, 1000, 2200 µF (do 16–25 V) | po 5–10 | Skladem, doplnit sadou | Sadu elektrolytů koupit u českého prodejce. |
 | NPN tranzistory | 10–15 | Skladem | Stejné jako v lekci 16. |
 | Tlačítka do kontaktního pole | 5 | Skladem | |
 | LED, odpory 220 Ω, 1 kΩ, 10 kΩ, 47 kΩ | po 10 | Skladem | |

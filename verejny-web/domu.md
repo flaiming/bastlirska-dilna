@@ -1,7 +1,6 @@
 ---
 popis: Technický kroužek pro děti z 3.–5. třídy. Co jsme postavili, návody na doma a co chystáme dál.
-og_popis: Co jsme na kroužku postavili a jak si to postavit doma.
-og_fotka: vez-kopule.jpg
+og_popis: Technický kroužek pro děti z 3.–5. třídy. Co jsme postavili a jak si to postavit doma.
 perex: Stavíme z kartonu, špejlí, špaget a gumiček. A pak zjišťujeme, proč to jede, drží nebo spadne.
 ---
 

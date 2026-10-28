@@ -2,12 +2,16 @@
 """Sestaví veřejný web do ../site z domu.md, lekce/*.md, sablona.html a static/.
 
 Lekce je jeden Markdown soubor: hlavička mezi --- a pod ní oddíly ## Nadpis {druh #id}.
-Druhy oddílů: galerie, princip, potreby, postup, opravy, pribeh; bez druhu je obyčejný oddíl.
-V textu: > tip nebo poznámka, ![popisek](fotka.jpg), {{nakres jmeno}}, {{model ...}}, {{stahnout ...}}.
+Druhy oddílů: galerie, princip, bezpecnost, potreby, postup, opravy, pribeh; bez druhu je obyčejný oddíl.
+Postupů může být víc, každý si vezme potřeby z oddílu těsně před sebou.
+V textu: ### podnadpis, > tip nebo poznámka, ![popisek](fotka.jpg), {{nakres jmeno}}, {{model ...}}, {{stahnout ...}}.
+
+Lekce bez fotek má místo `prehled_fotky` v hlavičce `prehled_nakres: jmeno`, karta pak ukáže nákres.
 
 Rozpracovaná lekce má v hlavičce `zverejnit: 2026-11-03`. Do toho dne se na web nedostane,
 v náhledu (build.py --koncepty, tedy make nahled) je vidět s označením „Koncept“.
 """
+import contextlib
 import datetime
 import functools
 import hashlib
@@ -26,6 +30,7 @@ from nakresy import NAKRESY, vez
 ZDROJ = Path(__file__).parent
 VYSTUP = ZDROJ.parent / 'site'
 CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+WEB = 'https://bastleni.oram.cz'
 PORADI = ['První', 'Druhá', 'Třetí', 'Čtvrtá', 'Pátá', 'Šestá', 'Sedmá', 'Osmá', 'Devátá', 'Desátá']
 POPISKY = dict(
     (k.strip(), v.strip()) for k, v in
@@ -132,6 +137,8 @@ def md(text, ul='', p='', citace='tip'):
     for b in bloky(text):
         if b.startswith('{{'):
             vysledek.append(prikazy(b))
+        elif b.startswith('### '):
+            vysledek.append(f'<h3>{inline(b[4:])}</h3>')
         elif b.startswith('- '):
             polozky = ''.join(f'<li>{inline(r[2:])}</li>' for r in b.splitlines())
             vysledek.append(f'<ul{trida(ul)}>{polozky}</ul>')
@@ -160,6 +167,21 @@ def galerie(text):
 def oddil(nadpis, druh, id_, text, konec=''):
     if druh == 'princip':
         return f'<section class="principle">\n<h2>{nadpis}</h2>\n<div>\n{md(text)}\n</div>\n</section>'
+    if druh == 'bezpecnost':
+        # pravidla jako očíslovaný seznam „- **Pravidlo** vysvětlení“, ostatní bloky jako obvykle
+        casti = []
+        for b in bloky(text):
+            if b.startswith('- **'):
+                # číslují se jen pravidla, další seznam (co dělat, když se něco stane) už ne
+                znacka = 'ul' if any('class="rules"' in c for c in casti) else 'ol'
+                polozky = ''.join(
+                    '<li><strong>{}</strong> {}</li>'.format(*(inline(x) for x in re.fullmatch(r'- \*\*(.+?)\*\* (.+)', r).groups()))
+                    for r in b.splitlines())
+                casti.append(f'<{znacka} class="rules">{polozky}</{znacka}>')
+            else:
+                casti.append(md(b, ul='more', citace='alarm'))
+        id_ = f' id="{id_}"' if id_ else ''
+        return f'<section class="safety"{id_}>\n<h2>{nadpis}</h2>\n' + '\n'.join(casti) + f'\n{konec}</section>'
     if druh == 'opravy':
         polozky = ''.join(
             '<div><dt>{}</dt><dd>{}</dd></div>\n'.format(*re.fullmatch(r'- \*\*(.+?)\*\* (.+)', r).groups())
@@ -177,14 +199,16 @@ def oddil(nadpis, druh, id_, text, konec=''):
     return f'<section class="after"{id_}>\n<h2>{nadpis}</h2>\n{obsah}\n{konec}</section>'
 
 
-def postup(potreby, kroky, barva):
+def postup(nadpis, id_, potreby, kroky, barva):
+    uvod, *kroky = re.split(r'^### ', kroky, flags=re.M)
     polozky = ''
-    for krok in re.split(r'^### ', kroky, flags=re.M)[1:]:
-        nadpis, _, text = krok.partition('\n')
-        polozky += f'<li>\n<div>\n<h3>{nadpis.strip()}</h3>\n{md(text)}\n</div>\n</li>\n'
-    return (f'<div class="howto">\n<aside class="materials">\n<h2>{potreby[0]}</h2>\n'
+    for krok in kroky:
+        nazev, _, text = krok.partition('\n')
+        polozky += f'<li>\n<div>\n<h3>{nazev.strip()}</h3>\n{md(text)}\n</div>\n</li>\n'
+    id_ = f' id="{id_}"' if id_ else ''
+    return (f'<div class="howto"{id_}>\n<aside class="materials">\n<h2>{potreby[0]}</h2>\n'
             f'{md(potreby[1], citace="note")}\n</aside>\n'
-            f'<div>\n<h2>Postup</h2>\n<ol class="steps" style="--c: var(--{barva})">\n{polozky}</ol>\n</div>\n</div>')
+            f'<div>\n<h2>{nadpis}</h2>\n{md(uvod, p="section-lead")}\n<ol class="steps" style="--c: var(--{barva})">\n{polozky}</ol>\n</div>\n</div>')
 
 
 def cislo(lekce):
@@ -254,23 +278,27 @@ def stranka_lekce(lekce, predchozi, dalsi, pocet_stran=None):
         elif druh == 'potreby':
             potreby = (nadpis, text)
         elif druh == 'postup':
-            telo.append(postup(potreby, text, lekce['barva']))
+            telo.append(postup(nadpis, id_, potreby, text, lekce['barva']))
         else:
             telo.append(oddil(nadpis, druh, id_, text, navigace if i == len(casti) - 1 else ''))
     obsah.append('<div class="wrap">\n' + '\n'.join(telo) + '\n</div>')
     return stranka(
         titulek=f'{lekce["nazev"]} – Bastlířská dílna',
         popis=f'{lekce["popis"]} Lekce technického kroužku Bastlířská dílna.',
-        og_titulek=lekce['nazev'], og_popis=lekce['popis'], og_fotka=lekce['prehled_fotky'].split()[0],
+        og_titulek=lekce['nazev'], og_popis=lekce['popis'], og_typ='article', adresa=f'/{lekce["adresa"]}/',
+        og_obrazek=obrazek_sdileni(lekce['adresa']), og_alt=f'{lekce["nazev"]}, lekce kroužku Bastlířská dílna',
         obsah='\n'.join(obsah))
 
 
 # --- domovská stránka ---
 
 def karta(lekce):
-    fotky = '\n'.join(img(f) for f in lekce['prehled_fotky'].split())
+    if 'prehled_fotky' in lekce:
+        fotky, trida = '\n'.join(img(f) for f in lekce['prehled_fotky'].split()), 'lesson-photos'
+    else:
+        fotky, trida = NAKRESY[lekce['prehled_nakres']], 'lesson-photos lesson-drawing'
     return f'''<article class="lesson">
-<div class="lesson-photos">
+<div class="{trida}">
 {fotky}
 </div>
 <div>
@@ -350,7 +378,8 @@ def stranka_domu(lekce):
             trida = 'section'
         obsah.append(f'<section class="{trida}" id="{id_}">\n<div class="wrap">\n<h2>{nadpis}</h2>\n{vnitrek}\n</div>\n</section>')
     return stranka(titulek='Bastlířská dílna', popis=meta['popis'], og_titulek='Bastlířská dílna',
-                   og_popis=meta['og_popis'], og_fotka=meta['og_fotka'], obsah='\n\n'.join(obsah))
+                   og_popis=meta['og_popis'], og_typ='website', adresa='/', og_obrazek=obrazek_sdileni('domu'),
+                   og_alt='Bastlířská dílna, technický kroužek pro děti', obsah='\n\n'.join(obsah))
 
 
 # --- šablona a zápis ---
@@ -373,25 +402,96 @@ class TichyServer(http.server.SimpleHTTPRequestHandler):
         pass
 
 
-def vytvor_pdf(lekce):
-    """Vytiskne stránky lekcí do PDF přes Chrome bez okna. Vzhled tisku je v @media print ve styles.css."""
+@contextlib.contextmanager
+def chrome():
+    """Pustí site/ na náhodném portu a vrátí funkci, která otevře zadanou cestu v Chromu bez okna."""
     if not Path(CHROME).exists():
-        raise SystemExit(f'PDF návodů potřebuje Google Chrome ({CHROME})')
+        raise SystemExit(f'PDF návodů a náhledy pro sdílení potřebují Google Chrome ({CHROME})')
     server = http.server.ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(TichyServer, directory=VYSTUP))
     threading.Thread(target=server.serve_forever, daemon=True).start()
-    pocty = {}
     try:
         with tempfile.TemporaryDirectory() as profil:
-            for l in lekce:
-                cil = VYSTUP / l['adresa'] / nazev_pdf(l)
-                subprocess.run([CHROME, '--headless', '--disable-gpu', '--no-pdf-header-footer',
-                                f'--user-data-dir={profil}', '--virtual-time-budget=10000',
-                                f'--print-to-pdf={cil}', f'http://127.0.0.1:{server.server_port}/{l["adresa"]}/'],
+            def spust(cesta, *volby):
+                subprocess.run([CHROME, '--headless', '--disable-gpu', '--hide-scrollbars', f'--user-data-dir={profil}',
+                                '--virtual-time-budget=10000', *volby, f'http://127.0.0.1:{server.server_port}{cesta}'],
                                check=True, capture_output=True)
-                pocty[l['adresa']] = len(re.findall(rb'/Type\s*/Page[^s]', cil.read_bytes()))
+            yield spust
     finally:
         server.shutdown()
+
+
+def vytvor_pdf(lekce):
+    """Vytiskne stránky lekcí do PDF přes Chrome bez okna. Vzhled tisku je v @media print ve styles.css."""
+    pocty = {}
+    with chrome() as spust:
+        for l in lekce:
+            cil = VYSTUP / l['adresa'] / nazev_pdf(l)
+            spust(f'/{l["adresa"]}/', '--no-pdf-header-footer', f'--print-to-pdf={cil}')
+            pocty[l['adresa']] = len(re.findall(rb'/Type\s*/Page[^s]', cil.read_bytes()))
     return pocty
+
+
+# --- náhledy pro sdílení na sociálních sítích, 1200 × 630 jako u Facebooku ---
+
+SDILENI = """<!doctype html>
+<html lang="cs"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<style>
+html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+.karta { position: relative; display: grid; grid-template-columns: 1fr 500px; height: 630px; }
+.text { padding: 56px 48px 96px 72px; display: flex; flex-direction: column; justify-content: center; }
+h1 { font-size: 104px; font-weight: 800; font-stretch: 78%; font-variation-settings: "wdth" 78; line-height: 0.92;
+  letter-spacing: -0.012em; margin: 0 0 28px; text-wrap: balance; }
+h1 span { display: block; }
+h1 span + span { color: var(--blue); }
+.text p { font-size: 30px; line-height: 1.35; margin: 0; color: var(--ink-soft); }
+.text .lesson-no { font-size: 28px; gap: 16px; margin: 0 0 22px; color: var(--ink-soft); }
+.lesson-no .blob { width: 64px; height: 56px; font-size: 30px; }
+.web { position: absolute; left: 72px; bottom: 44px; font-size: 24px; font-weight: 700; }
+.web::before { content: ""; display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: var(--pink); margin-right: 12px; }
+.obraz { overflow: hidden; }
+.obraz img { width: 100%; height: 100%; object-fit: cover; }
+.obraz.nakres { background: var(--paper); display: grid; place-items: center; padding: 32px; }
+.obraz .diagram { margin: 0; padding: 0; max-width: none; width: 100%; }
+.obraz figcaption { display: none; }
+.obraz .tower { display: block; max-width: none; width: auto; height: 590px; margin: 30px auto 0; }
+.tower .s, .tower .b, .tower .top { animation: none; stroke-dashoffset: 0; scale: 1; }
+</style></head><body>
+<div class="karta">
+<div class="text">{text}</div>
+<div class="obraz{trida}">{obraz}</div>
+<div class="web">bastleni.oram.cz</div>
+</div>
+</body></html>"""
+
+
+def obrazek_sdileni(jmeno):
+    # otisk obsahu v adrese, jinak Facebook ukazuje starý obrázek ze své mezipaměti
+    otisk = hashlib.md5((VYSTUP / 'sdileni' / f'{jmeno}.jpg').read_bytes()).hexdigest()[:8]
+    return f'{WEB}/sdileni/{jmeno}.jpg?v={otisk}'
+
+
+def vytvor_nahledy(lekce, domu):
+    """Vyfotí karty pro sdílení v Chromu bez okna a uloží je jako sdileni/*.jpg."""
+    karty = {'domu': ('<h1><span>Bastlířská</span><span>dílna</span></h1>' f'<p>{domu["perex"]}</p>', vez(), '')}
+    for l in lekce:
+        if 'prehled_fotky' in l:
+            obraz, trida = f'<img src="/foto/{l["prehled_fotky"].split()[0]}" alt="">', ''
+        else:
+            obraz, trida = NAKRESY[l['prehled_nakres']], ' nakres'
+        karty[l['adresa']] = (cislo(l) + f'<h1>{l["nazev"]}</h1><p>{l["popis"]}</p>', obraz, trida)
+    slozka = VYSTUP / 'sdileni'
+    slozka.mkdir()
+    with chrome() as spust:
+        for jmeno, (text, obraz, trida) in karty.items():
+            html, png = slozka / f'{jmeno}.html', slozka / f'{jmeno}.png'
+            html.write_text(SDILENI.replace('{text}', text).replace('{obraz}', obraz).replace('{trida}', trida))
+            spust(f'/sdileni/{jmeno}.html', '--window-size=1200,630', f'--screenshot={png}')
+            subprocess.run(['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', '85', png, '--out', slozka / f'{jmeno}.jpg'],
+                           check=True, capture_output=True)
+            png.unlink()
+            html.unlink()
 
 
 def zapis_lekce(lekce, pocty=None):
@@ -420,6 +520,7 @@ def main():
 
     shutil.rmtree(VYSTUP, ignore_errors=True)
     shutil.copytree(ZDROJ / 'static', VYSTUP, ignore=shutil.ignore_patterns('.DS_Store'))
+    vytvor_nahledy(lekce, nacti(ZDROJ / 'domu.md')[0])
     (VYSTUP / 'index.html').write_text(stranka_domu(lekce))
     # dvakrát: PDF se tiskne z hotové stránky a tlačítko pak potřebuje znát počet stran
     zapis_lekce(lekce)

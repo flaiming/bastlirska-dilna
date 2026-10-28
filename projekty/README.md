@@ -22,5 +22,6 @@ Každé téma dostane vlastní kartu s funkčním návrhem, přípravou vedoucí
 | 16 | [Objevujeme součástky II: fotorezistor a tranzistor](16_soucastky_fotorezistor_a_tranzistor.md) | Osnova; 2. pololetí |
 | 17 | [Objevujeme součástky III: kondenzátor a blikač](17_soucastky_kondenzator_a_blikac.md) | Osnova; 2. pololetí |
 | 18 | [Vlastní plošný spoj](18_vlastni_plosny_spoj.md) | Osnova; 2 lekce, 2. pololetí |
+| 19 | [Tepelní detektivové: termokamera, teplo a infračervené záření](19_tepelni_detektivove.md) | Návrh; lekce bez elektriky, zatím ne na web |
 
 Pro nové téma zkopírovat [šablonu](SABLONA.md), vybrat konkrétní funkční variantu a vyzkoušet ji před nákupem celé sady. Společné suroviny a nářadí vést v [nákupním základu](../NAKUPNI_ZAKLAD.md), aby se stejné věci nenakupovaly opakovaně. Množství pro konkrétní lekci zůstává v její kartě.

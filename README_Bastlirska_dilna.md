@@ -37,6 +37,7 @@ Plán kombinuje mechaniku, elektřinu, jednoduché pohony a pokusy. Jde o zásob
 16. **Objevujeme součástky II: fotorezistor a tranzistor** – první kontaktní pole, dotykový spínač, světlo na tmu (obsahuje téma 9).
 17. **Objevujeme součástky III: kondenzátor a blikač** – kyblík na elektřinu, schodišťové světlo, blikač na kontaktním poli.
 18. **Vlastní plošný spoj** – dvě lekce: kreslení na cuprexit, leptání (vedoucí), pájení blikače nebo světýlka (rozvíjí téma 11).
+19. **Tepelní detektivové** – termokamera k mobilu: stopy a tajné zprávy teplem, sklo a igelit, lesklé věci, dílna pod kamerou (horký vrut, vrtačka v provozu), teplo z tření a chemie (ohřívač rukou, studicí sáček); soutěž „zachraň kostku ledu“ s izolanty.
 
 U vibrobotů stojí za vyzkoušení kartáčkový robot, robot na šikmých nožkách, kreslící varianta nebo jednoduchý 3D tištěný podvozek. Předtištěná základna může dětem usnadnit stavbu, ale prostor pro změny mají tvořit nožky, vyvážení a umístění motorku. Konkrétní podobu lekce ještě vybrat.
 

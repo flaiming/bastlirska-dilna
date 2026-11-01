@@ -7,9 +7,9 @@ perex: Provlečte očko po zakroucené drátěné dráze tak, aby se jí nedotkl
 kdy: skupina A 3. listopadu, skupina B 10. listopadu 2026
 jak_dlouho: 2 hodiny
 domu: hlavolam bez baterií, doma stačí vložit 2 tužkové baterie
-zverejnit: 2026-11-10
-prehled: Z drátu, bzučáku a baterií vznikl hlavolam, ve kterém se očko musí provléct po zakroucené dráze bez dotyku. Přitom jsme si poprvé vyzkoušeli pájení.
-prehled_kdy: Skupina A 3. listopadu, skupina B 10. listopadu 2026.
+zverejnit: 2026-11-01
+prehled: Z drátu, bzučáku a baterií postavíme hlavolam, ve kterém se očko musí provléct po zakroucené dráze bez dotyku. Přitom si poprvé vyzkoušíme pájení.
+prehled_kdy: Skupina A 3. listopadu, skupina B 10. listopadu 2026. Návod je připravený předem, fotky přidáme po lekci.
 prehled_nakres: hlavolam
 tlacitko: Návod na hlavolam
 ---
@@ -37,11 +37,11 @@ Hrot páječky má přes 300 °C, víc než trouba, ve které se peče pizza. Sp
 
 ### Když se něco stane
 
-- **Spálili jste se?** Hned dejte místo pod tekoucí studenou vodu a nechte ho chladit aspoň 10 minut. Řekněte to vedoucímu. Nemažte ho krémem ani máslem a puchýř nepropichujte.
+- **Spálili jste se?** Hned dejte místo pod tekoucí studenou vodu a nechte ho chladit aspoň 10 minut, klidně déle, dokud to bolí. Řekněte to vedoucímu. Nemažte ho krémem ani máslem a puchýř nepropichujte.
 - **Kápl na vás cín?** Taky hned pod vodu. Ztuhlý cín pak sám odpadne, neodtrhávejte ho.
 - **Cítíte spálený plast?** Zvedněte ruce od stolu a zavolejte vedoucího. Nejspíš se kabel dotkl hrotu.
 
-> Doma pájejte jen s dospělým. Rady pro rodiče jsou dole na stránce.
+> Doma pájejte jen s dospělým. [Rady pro rodiče najdete dole na stránce.](#doma)
 
 ## Na pájení budete potřebovat {potreby}
 
@@ -179,7 +179,7 @@ Relé je vypínač, který ovládá elektromagnet. Když cívkou relé teče pro
 Pájet se dá i doma, ale děti jen s dospělým u stolu. Pár rad pro rodiče:
 
 - **Páječka:** stačí jednoduchá pájecí stanice nebo mikropájka s nastavitelnou teplotou a stojánkem. Trafopájka je na děti zbytečně silná a těžká.
-- **Teplota:** pro běžný cín s olovem stačí asi 320 až 340 °C, bezolovnatý potřebuje 350 až 370 °C. Vyšší teplota hrot rychleji opotřebuje a kalafuna se spálí dřív, než udělá svou práci.
+- **Teplota:** pro běžný cín s olovem stačí asi 300 °C, bezolovnatý potřebuje asi 340 °C. Na tlustý drát, který rychle odvádí teplo, přidejte 20 až 30 °C. Vyšší teplota hrot rychleji opotřebuje a kalafuna se spálí dřív, než udělá svou práci.
 - **Cín:** tenký cín s kalafunou kolem 1 mm. Olovnatý se pájí snáz, ale obsahuje olovo, proto u pájení nejíst a pak si umýt ruce. Bezolovnatý potřebuje vyšší teplotu a spoje z něj bývají matnější.
 - **Místo:** pevný stůl, nehořlavá podložka (silikonová pájecí podložka, dlaždice), větrání nebo malý ventilátor, který odfukuje kouř od obličeje. Kouř z kalafuny není zdravý, ani když je cín bez olova.
 - **Hrot:** čistěte ho mosaznou drátěnkou a pocínujte ho, než páječku odložíte. Lesklý hrot vydrží mnohem déle.
@@ -191,3 +191,13 @@ Pájet se dá i doma, ale děti jen s dospělým u stolu. Pár rad pro rodiče:
 - Postavte dráhu ve dvou patrech nebo s ostrou spirálou.
 - Udělejte závod: kdo projede dráhu nejrychleji, ale každé pípnutí přidá 5 vteřin.
 - Zkuste projet dráhu levou rukou. Jde to hůř, nebo líp?
+
+## Zdroje
+
+Z čeho jsme při přípravě vycházeli:
+
+- [Návod jak na pájení](https://www.conrad.cz/cs/clanky/naradi-a-dilna/navod-jak-na-pajeni.html) (Conrad): tři fáze pájení, čištění hrotu, odletující konce drátu.
+- [Pájení: Jak pájet? Průvodce krok za krokem](https://botland.cz/blog/pajeni-jak-pajet-pruvodce/) (Botland): postup pájení, příprava drátů, smršťovací bužírka.
+- [Teplota tání pájecích slitin](https://www.marmot-shop.cz/a/teplota-tani-pajecich-slitin-kompletni-pruvodce) (Marmot, výrobce cínu): teploty tání a nastavení hrotu páječky.
+- [První pomoc při popálení](https://cnn.iprima.cz/dokazali-byste-pomoci-prvni-pomoc-pri-popaleni-110867) (CNN Prima News, rady lékaře pražské záchranky): chladit vodou a nic na popáleninu nemazat.
+- [Jak ošetřit popáleniny](https://www.drmax.cz/clanky/jak-osetrit-popaleniny) (Dr. Max): chladit aspoň 10 minut, puchýře nepropichovat.

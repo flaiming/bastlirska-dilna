@@ -351,7 +351,7 @@ ol.rules li::before { content: counter(pravidlo); position: absolute; left: 0; t
   display: grid; place-items: center; border-radius: 50%; background: var(--wall); color: var(--ink); font-weight: 800; font-size: 0.95rem; }
 ul.rules li::before { content: ""; position: absolute; left: 0.45rem; top: 1.05em; width: 0.9rem; height: 0.9rem; border-radius: 50%;
   background: var(--pink); }
-.safety .alarm { margin: 20px 0 0; padding: 12px 16px; background: var(--wall); border-radius: 8px; font-weight: 700; max-width: var(--measure); }
+.safety .alarm { margin: 20px 0 0; padding: 12px 16px; background: var(--wall); border-radius: 8px; font-weight: 700; max-width: none; }
 .howto .section-lead { color: var(--ink-soft); }
 
 @media (max-width: 820px) { ol.rules, .rules { grid-template-columns: minmax(0, 1fr); } }

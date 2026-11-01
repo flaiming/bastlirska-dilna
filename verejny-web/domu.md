@@ -1,12 +1,12 @@
 ---
-popis: Technický kroužek pro děti z 3.–5. třídy. Co jsme postavili, návody na doma a co chystáme dál.
-og_popis: Technický kroužek pro děti z 3.–5. třídy. Co jsme postavili a jak si to postavit doma.
+popis: Technický kroužek pro děti z 3.–5. třídy. Co stavíme, návody na doma a co chystáme dál.
+og_popis: Technický kroužek pro děti z 3.–5. třídy. Co stavíme a jak si to postavit doma.
 perex: Stavíme z kartonu, špejlí, špaget a gumiček. A pak zjišťujeme, proč to jede, drží nebo spadne.
 ---
 
 Technický kroužek pro děti z 3.–5. třídy. Každé úterý dvě hodiny, dvě skupiny se střídají po týdnu. Tady najdete, co jsme už postavili, a návody, jak si to zkusit doma.
 
-## Co jsme postavili {lekce #postavili}
+## Co stavíme {lekce #postavili}
 
 Ke každé lekci je návod, podle kterého si výrobek můžete postavit doma, a pár poznámek, co se nám povedlo a co ne.
 

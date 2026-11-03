@@ -4,12 +4,12 @@ barva: orange
 nazev: Drátěný hlavolam
 popis: Hlavolam s bzučákem: provést očko po zakroucené dráze tak, aby se jí nedotklo. A k tomu první pájení.
 perex: Provlečte očko po zakroucené drátěné dráze tak, aby se jí nedotklo. Když se dotkne, pípne bzučák. Spoje si každý zapájí sám.
-kdy: skupina A 3. listopadu (dokončení 1. prosince), skupina B 10. listopadu 2026
+kdy: skupina A 3. listopadu (dokončení 1. prosince), skupina B 10. a 24. listopadu 2026
 jak_dlouho: 2 hodiny
 domu: hlavolam bez baterií, doma stačí vložit 2 tužkové baterie
 zverejnit: 2026-11-01
 prehled: Z drátu, bzučáku a baterií stavíme hlavolam, ve kterém se očko musí provléct po zakroucené dráze bez dotyku. Přitom si poprvé zkoušíme pájení.
-prehled_kdy: Skupina A 3. listopadu, kdo nestihl, dokončí 1. prosince. Skupina B 10. listopadu 2026.
+prehled_kdy: Skupina A 3. listopadu, kdo nestihl, dokončí 1. prosince. Skupina B 10. listopadu zapájí obvod a 24. listopadu ohne dráhu a hlavolam dokončí.
 prehled_nakres: hlavolam
 prehled_fotky: hlavolam-pajeni.jpg hlavolam-draha.jpg hlavolam-pajeci-lavice.jpg
 tlacitko: Návod na hlavolam

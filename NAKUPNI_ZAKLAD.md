@@ -37,7 +37,7 @@ Podrobnosti v kartách [06](projekty/06_drateny_hlavolam.md) a [05](projekty/05_
 | Excentr (3D tisk, [model](modely/excentr.scad)) | vlastní tisk | 20 | – | – | Nahrazuje pastorek z Techfunu (nekupovat); závaží šroubek M3 a matice ze skladu. |
 | Stahovací pásky | papírnictví / hobby | 1 balení | – | ~30 | Vibrobot, pojistka motoru; jinak se lepí tavnou pistolí. |
 | Pohyblivá očička, chlupaté (plyšové) drátky | papírnictví / hobby | asi 50 + 1 balení | – | ~100 | Zdobení vibrobotů; sponky na tykadla skladem. |
-| Holý měděný drát 1,5–2 mm | elektro / hobby | asi 16 m | – | – | Hlavolam, **koupit před 10. 11.** Pozink ze zásoby nevyhověl (špatně se pájí a vede, bzučák chrčí). Jde i vodič CY 2,5 mm² bez izolace. |
+| Holý měděný drát 1,5–2 mm | elektro / hobby | asi 16 m | – | – | Hlavolam, **koupit před 24. 11.** (skupina B ohýbá dráhy až tehdy) Pozink ze zásoby nevyhověl (špatně se pájí a vede, bzučák chrčí). Jde i vodič CY 2,5 mm² bez izolace. |
 | Prkénka asi 25 × 8 cm | skladem | 20 | – | – | Podstavce hlavolamu; dráha se přišroubuje. |
 
 **Celkem orientačně 1 200 Kč** + poštovné (18 sad na výrobek, baterie jen jako dílenská sada, excentry z 3D tisku); objednáno 22. 10. 2026 z Dratku a Laskakitu. Z rozpočtu asi 7 800 Kč na pololetí.

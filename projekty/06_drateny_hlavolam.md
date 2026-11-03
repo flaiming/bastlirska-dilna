@@ -1,6 +1,6 @@
 # 06 Drátěný hlavolam s bzučákem (Elektrická dílna I)
 
-**Stav:** skupina A 3. 11. 2026 (nedokončeno, pokračuje 1. 12.); skupina B 10. 11. podle upraveného plánu níže  
+**Stav:** skupina A 3. 11. 2026 (nedokončeno, pokračuje 1. 12.); skupina B na dvě lekce: 10. 11. pájení obvodu, 24. 11. dráha a kompletace  
 **Pro koho:** 3.–5. třída; skupina A 9 dětí, skupina B 8 dětí, obvykle chybí 1–2  
 **Délka:** přibližně 120 minut  
 **Kdy:** 3. lekce každé skupiny, první lekce s pájením  
@@ -110,26 +110,27 @@ Klasický „drátěný hlavolam“ (buzz wire game). Úvodní ukázka použív�
 - **Baterie:** některé děti neví, jak vložit baterie do držáku. Ukázat to na začátku (plochý konec, mínus, k pružince).
 - **Pořadí:** lepší by bylo začít obvody spojovanými bez pájení (krokosvorky) a pak už jen pájet. Hodně dětí zná Boffina nebo Voltíka a obvody zapojovalo, ale úroveň se hodně liší.
 
-### Úpravy pro skupinu B (10. 11.)
+### Úpravy pro skupinu B: hlavolam na dvě lekce
+
+**10. 11.: jen pájení obvodu, bez ohýbání drátu.** Každé dítě zapájí elektriku hlavolamu: držák baterií, vypínač, bzučák a dvě volná lanka (červené k budoucí dráze, modré k budoucímu očku). Hotový obvod vyzkouší tak, že volné konce lanek spojí: bzučák pípne. To je přesně to, co pak udělá očko na dráze.
 
 **Před lekcí:**
 
-- Koupit měděný drát (viz materiál) a dráhy i očka nastříhat předem.
 - Dvě spolehlivé pájky: opravit trafopájku (nový hrot), nebo sehnat zdroj k mikropájce. Když nepůjde ani jedno, zvážit druhou Parkside PLSD.
+- Lanka nastříhat a odizolovat předem: červené krátké mezi baterií, vypínačem a bzučákem, červené 15 cm k dráze, modré 40 cm k očku.
 - Na držáky baterií fixou nakreslit + a −.
-
-**Postup:** méně věcí najednou, bez rotace tří stanovišť a bez relé.
 
 | Čas | Co dělají děti a vedoucí |
 | --- | --- |
-| 0–25 min | **Obvod bez pájení (všichni):** každý dostane držák, 2 baterie, bzučák a 2–3 krokosvorky. Vedoucí ukáže, jak se vkládají baterie. Děti zapojí bzučák a zkoumají, kdy pípá a kdy ne (otočený bzučák, rozpojená svorka, dva dráty na dotyk). Tím je princip hlavolamu hotový. |
-| 25–35 min | Ukázka pájení a pravidla u pájecí lavice. |
-| 35–100 min | **Stavba dráhy a očka (všichni u lavic)** a zároveň **pájení po dvou** u vedoucího, pořadí podle toho, kdo má hotovou dráhu. Rozcvičku zkrátit na jeden spoj. Kdo čeká nebo je hotový: Voltík. |
-| 100–120 min | Kompletace, zkouška, baterie zpět do krabičky, úklid. |
+| 0–15 min | **Všichni:** jak se vkládají baterie (plochý mínus k pružince), ukázka hotového obvodu, pravidla u pájení. |
+| 15–100 min | **Pájení po dvou** u vedoucího: rozcvička jeden spoj, pak obvod podle [nákresu zapojení](https://bastleni.oram.cz/drateny-hlavolam/#postup). Asi 6 spojů na dítě. Kdo čeká nebo je hotový: Voltík, případně přilepí obvod tavnou pistolí na prkénko. |
+| 100–120 min | Zkouška obvodu (spojit volné konce lanek), baterie zpět do krabičky, úklid. Obvody se podepíšou a zůstanou v dílně. |
 
-Kdo nestihne, dokončí 24. 11.; vibrobot se pak posune. Pokud se ukáže, že to na jednu lekci nejde ani takhle, rozdělit hlavolam natrvalo na dvě lekce: 1. obvody s krokosvorkami a stavba dráhy, 2. jen pájení a kompletace.
+**24. 11.: dráha a kompletace.** Ohnout dráhu a očko z měděného drátu, zastrčit dráhu do prkénka, připájet červené lanko k dráze a modré k očku, zkouška a hra. Vibrobot se u skupiny B posouvá.
+
+Pokud se rozdělení osvědčí, dělat hlavolam napříště rovnou na dvě lekce: 1. pájení obvodu, 2. dráha a kompletace.
 
 ### Zbývá doplnit
 
 - Kolik dětí ze skupiny A hlavolam nakonec dodělalo (po 1. 12.).
-- Skupina B: jak dopadl upravený postup, kolik minut pájení vyšlo na dítě, spotřeba materiálu.
+- Skupina B: kolik minut pájení vyšlo na dítě, zda se obvod stihl za jednu lekci, spotřeba materiálu.

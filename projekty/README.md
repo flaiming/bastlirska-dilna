@@ -9,7 +9,7 @@ Každé téma dostane vlastní kartu s funkčním návrhem, přípravou vedoucí
 | 03 | [Autíčko na gumičku](03_auticko_na_gumicku.md) | Odučeno oběma skupinám (říjen 2026) |
 | 04 | Balónkové nebo vrtulové autíčko | Balónkový pohon vyzkoušen v rámci lekce 03 |
 | 05 | [Vibrační robot](05_vibracni_robot.md) | Návrh; kartáče koupeny, čeká na vzorek; 4. lekce |
-| 06 | [Drátěný hlavolam](06_drateny_hlavolam.md) | Skupina A 3. 11. 2026, nedokončeno (pokračuje 1. 12.); skupina B 10. 11. |
+| 06 | [Drátěný hlavolam](06_drateny_hlavolam.md) | Skupina A 3. 11. 2026, nedokončeno (pokračuje 1. 12.); skupina B 10. 11. pájení obvodu, 24. 11. dráha a kompletace |
 | 07 | Jednoduchý alarm | K rozpracování |
 | 08 | Motorové autíčko | K rozpracování |
 | 09 | Světlo reagující na tmu | Součást lekce 16 |

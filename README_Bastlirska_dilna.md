@@ -137,7 +137,7 @@ Protože se skupiny střídají, je užitečné vést u každého tématu stav *
 | --- | --- | --- |
 | 1 | Autíčko na gumičku | Odučeno |
 | 2 | Věž a most ze špaget | Odučeno; jen věže |
-| 3 | [Elektrická dílna I: drátěný hlavolam](projekty/06_drateny_hlavolam.md) | Skupina A 3. 11.: nestihlo se, dokončí 1. 12. Skupina B 10. 11. zjednodušeně: nejdřív obvod s krokosvorkami, pak stavba dráhy a pájení po dvou; nestihnuté dokončí 24. 11. |
+| 3 | [Elektrická dílna I: drátěný hlavolam](projekty/06_drateny_hlavolam.md) | Skupina A 3. 11.: nestihlo se, dokončí 1. 12. Skupina B na dvě lekce: 10. 11. jen pájení obvodu (baterie, vypínač, bzučák), 24. 11. dráha a kompletace. |
 | 4 | [Vibrobot](projekty/05_vibracni_robot.md) | Kartáčkový robot; pájení vodičů k motorku a vypínači. Posouvá se podle toho, kdy skupiny dodělají hlavolam. |
 | 5–7 | Podle hlasování | Návrh: 5 něco bez elektriky (balónky, kytara), 6 [Součástky I: svítící ozdoba](projekty/15_soucastky_led_a_odpor.md) na začátku prosince, 7 podle hlasování. Elektrická linka (16–18, alarm, 555) pokračuje ve 2. pololetí. |
 

@@ -32,7 +32,7 @@ Podrobnosti v kartách [06](projekty/06_drateny_hlavolam.md) a [05](projekty/05_
 | [Aktivní bzučák **3,3 V** (varianta LA216000A)](https://www.laskakit.cz/aktivni-bzucak-3-3v-5v/?variantId=22805) | Laskakit | 18 | 6 | 108 | Hlavolam. Varianta na 3,3 V = správně na 2× AA (5V verze je na 3 V znatelně tišší). Skladem 97. Delší vývod je plus. |
 | [Držák 2× AA DPS DIL](https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html) | Dratek | 36 | 12 | 432 | 18 hlavolam + 18 vibrobot. Bez drátů, dva pájecí vývody; skladem 80. U vibrobota baterie pojistit gumičkou nebo páskou. |
 | [DC motor 3–5 V, 18 000 ot/min](https://dratek.cz/arduino-platforma/2987-dc-motor-3-5v-17-18000rpm.html) | Dratek | 18 | 25 | 450 | Vibrobot; vzorek otestován. |
-| [Kolébkový vypínač 15 × 10,5 mm](https://dratek.cz/arduino-platforma/7699-kolebkovy-vypinac-ac-3a-250v.html) | Dratek | 18 | 4,80 | 86 | Vibrobot; množstevní cena od 10 ks. |
+| [Kolébkový vypínač 15 × 10,5 mm](https://dratek.cz/arduino-platforma/7699-kolebkovy-vypinac-ac-3a-250v.html) | Dratek | 18 + 18 | 4,80 | 86 + 86 | Vibrobot a od 3. 11. i hlavolam; množstevní cena od 10 ks. Ověřit, kolik zbylo po hlavolamu skupiny A. |
 | Baterie AA (dílenská sada) | skladem | – | – | 0 | Nekupovat: 16 alkalických + 10 nabíjecích ve skladu, sdílí je hlavolam i vibrobot a obě skupiny. Výrobky jdou domů bez baterií. |
 | Excentr (3D tisk, [model](modely/excentr.scad)) | vlastní tisk | 20 | – | – | Nahrazuje pastorek z Techfunu (nekupovat); závaží šroubek M3 a matice ze skladu. |
 | Stahovací pásky | papírnictví / hobby | 1 balení | – | ~30 | Vibrobot, pojistka motoru; jinak se lepí tavnou pistolí. |

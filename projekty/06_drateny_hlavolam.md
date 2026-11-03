@@ -31,7 +31,7 @@ Na začátku vedoucí ukáže na sponkovém vypínači uzavřený a rozpojený o
 - **Dráha:** holý **měděný** drát 1,5–2 mm, asi 60 cm. **Pozinkovaný ne** (vyzkoušeno se skupinou A): špatně se pájí a špatně vede, bzučák při opřeném očku chrčí místo pípání. Kdo už má dráhu z pozinku, přichytí lanko k dráze šroubkem s podložkou do podstavce (konec dráhy i odizolované lanko pod hlavičku šroubku). Kyselou pájecí vodu nepoužívat. Děti ho zprohýbají do vln a smyček, konce se zastrčí do otvorů a zajistí tavným lepidlem.
 - **Odkládací místa:** oba konce dráhy omotat asi 3 cm izolepy. Tam se očko odkládá na startu a v cíli a nepípá.
 - **Očko:** měděný drát asi 20 cm; na konci ohnout očko o průměru 1,5–2 cm, zbytek je rukojeť omotaná izolepou. Očko nechat s **malou mezerou** (háček), aby se dalo nasadit na hotovou dráhu. Uzavřené očko se musí navléknout dřív, než se zalepí druhý konec dráhy.
-- **Elektrika:** plus baterie → bzučák → drát ke konci dráhy. Mínus baterie → dlouhé ohebné lanko → očko. Dotyk očka s dráhou obvod uzavře.
+- **Elektrika:** plus baterie → vypínač → bzučák → drát ke konci dráhy (vše červené lanko). Mínus baterie → dlouhé ohebné modré lanko → očko. Dotyk očka s dráhou obvod uzavře.
 
 **Záložní bzučák:** Voltík I a II mají každý svůj bzučák. Na zkoušení hlavolamů v lekci stačí, ale domů si pak děti hlavolam bez bzučáku odnesou. Proto bzučák za 5 Kč koupit a Voltíka nechat jako zálohu.
 
@@ -52,7 +52,8 @@ Počítáno na **20 hlavolamů** (17 dětí + rezerva).
 | Položka | Na dítě | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | ---: | --- | --- |
 | [Aktivní bzučák 3,3 V, Laskakit](https://www.laskakit.cz/aktivni-bzucak-3-3v-5v/?variantId=22805) | 1 | 17 + 1 | Koupit | 6 Kč, varianta LA216000A na 3,3 V; na 2× AA pípá naplno. Delší vývod je plus. |
-| [Držák 2× AA DPS DIL, Dratek](https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html) | 1 | 17 + 1 | Koupit | 12 Kč. Bez drátů: děti připájí vodiče k vývodům. Vypínač není potřeba. |
+| [Držák 2× AA DPS DIL, Dratek](https://dratek.cz/arduino-platforma/122975-drzak-baterie-2x-aa-dps-dil.html) | 1 | 17 + 1 | Koupit | 12 Kč. Bez drátů: děti připájí vodiče k vývodům. |
+| [Kolébkový vypínač 15 × 10,5 mm, Dratek](https://dratek.cz/arduino-platforma/7699-kolebkovy-vypinac-ac-3a-250v.html) | 1 | 17 + 1 | Koupit | 4,80 Kč od 10 ks. V plusovém přívodu mezi baterií a bzučákem; doma se hlavolam vypne a baterie se nevybijí. Stejný typ jako u vibrobota. |
 | Baterie AA (dílenská sada) | 2 po dobu lekce | 13 párů | Skladem (16 alkalických + 10 nabíjecích), sdílená s vibrobotem | Zůstávají v dílně, děti si je neodnášejí. |
 | Holý měděný drát 1,5–2 mm | 80 cm | asi 16 m | **Koupit** (pozink ze zásoby nevyhověl) | Na dráhu a očko; ne pozinkovaný ani ocelový. Jde i instalační vodič CY 2,5 mm² (drát 1,8 mm) s odstraněnou izolací. Pozor na „měděný“ bižuterní drát: bývá lakovaný a nevede. |
 | Ohebné lanko | 50 cm | asi 10 m | Skladem (krabice drátů) | K očku a od bzučáku k dráze. |

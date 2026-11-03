@@ -258,6 +258,7 @@ def vez():
 # --- drátěný hlavolam a pájení ---
 MED, MED_TMAVA = '#C9763A', '#8E4A1E'
 CIN = '#B7C0CB'
+MODRA = '#2F6FE0'
 PASKA = '#2E4A7A'
 def med(d, sirka=4):
     return f'<path d="{d}" fill="none" stroke="{MED}" stroke-width="{sirka}" stroke-linecap="round" stroke-linejoin="round"/>'
@@ -270,24 +271,37 @@ def izolepa(x, y, w, h):
                     for i in range(3, int(w) - 2, 5))
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="2" fill="{PASKA}"/>' + pruhy
 
+CERNA, KOLEBKA = '#23272E', '#4A515C'
+def vypinac_bok(x, y, w=22, h=14, nozicky=0):
+    """Černý kolébkový vypínač z boku: tělo s límcem, nakloněná kolébka, vespod volitelně dva ploché kontakty."""
+    k = (f'<rect x="{x + w * .25 - 2:.1f}" y="{y + h}" width="4" height="{nozicky}" fill="#9AA6B8"/>'
+         f'<rect x="{x + w * .75 - 2:.1f}" y="{y + h}" width="4" height="{nozicky}" fill="#9AA6B8"/>') if nozicky else ''
+    return (k + f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="2" fill="{CERNA}"/>'
+            f'<rect x="{x - 2}" y="{y}" width="{w + 4}" height="3" rx="1" fill="{CERNA}"/>'
+            f'<path d="M{x + 3} {y} L{x + 3} {y - h * .3:.1f} L{x + w - 3} {y - h * .6:.1f} L{x + w - 3} {y} Z" fill="{KOLEBKA}"/>'
+            f'<line x1="{x + w - 7}" y1="{y - h * .45:.1f}" x2="{x + w - 7}" y2="{y - h * .15:.1f}" stroke="#fff" stroke-width="1.2"/>')
+
 draha = 'M70 170 V128 C70 98 98 88 114 102 C130 116 128 134 148 132 C170 130 168 92 192 92 C214 92 210 122 228 120 C248 118 256 92 242 90 C228 88 230 116 252 118 C268 120 270 112 270 128 V170'
 hlavolam = (
     f'<rect x="40" y="170" width="260" height="16" rx="3" {KAR}/>'
     + '<text class="hint" x="282" y="181" text-anchor="end">prkýnko</text>'
     # baterie a bzučák přilepené na prkýnku
-    + f'<rect x="84" y="150" width="62" height="20" rx="3" fill="#3B4A63"/><rect x="146" y="155" width="4" height="10" fill="#3B4A63"/>'
-    + '<text x="115" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">2× AA</text>'
-    + '<rect x="170" y="152" width="22" height="18" rx="3" fill="#1B2B4B"/><text x="181" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">+</text>'
+    + f'<rect x="80" y="150" width="56" height="20" rx="3" fill="#3B4A63"/><rect x="136" y="155" width="4" height="10" fill="#3B4A63"/>'
+    + '<text x="108" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">2× AA</text>'
+    + vypinac_bok(150, 156)
+    + '<rect x="182" y="152" width="22" height="18" rx="3" fill="#1B2B4B"/><text x="193" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">+</text>'
     + med(draha) + izolepa(65, 128, 10, 28) + izolepa(265, 128, 10, 28)
-    + kabel('M150 160 C158 160 160 166 172 166', '#E0402B', 3)
-    + kabel('M190 166 C220 166 240 165 266 165', '#13A39A', 3) + spoj(269, 165, 3.5)
+    + kabel('M140 160 C145 160 146 164 150 164', '#E0402B', 3)
+    + kabel('M172 164 C176 164 178 166 184 166', '#E0402B', 3)
+    + kabel('M202 166 C226 166 244 165 266 165', '#E0402B', 3) + spoj(269, 165, 3.5)
     # očko na dráze, rukojeť nahoru, lanko k baterii
     + f'<ellipse cx="192" cy="92" rx="5" ry="13" fill="none" stroke="{MED_TMAVA}" stroke-width="3"/>'
     + med('M192 80 L196 30', 3) + izolepa(191, 30, 10, 34)
-    + kabel('M196 30 C200 6 120 4 60 40 C20 64 30 150 84 160', '#E9B425', 3)
+    + kabel('M196 30 C200 6 120 4 60 40 C20 64 30 150 80 160', MODRA, 3)
     + note(70, 142, 22, 120, 'start', 'end') + note(270, 142, 318, 120, 'cíl')
     + note(115, 108, 120, 62, 'dráha', 'middle') + note(201, 46, 236, 34, 'očko s rukojetí')
-    + note(181, 152, 214, 140, 'bzučák')
+    + note(193, 152, 214, 140, 'bzučák')
+    + note(161, 170, 161, 190, 'vypínač', 'middle')
 )
 
 def krokosvorka(x, y=130):
@@ -307,8 +321,8 @@ def treti_ruka():
 
 NAKRESY.update({
  'hlavolam': svg(21, hlavolam,
-    'Hotový hlavolam: dráha je zastrčená v prkýnku, na koncích izolepa. Baterie, bzučák a očko jsou spojené lanky.',
-    '0 0 340 196'),
+    'Hotový hlavolam: dráha je zastrčená v prkýnku, na koncích izolepa. Baterie, vypínač, bzučák a očko jsou spojené lanky.',
+    '0 0 340 208'),
  'pajeni-postup': svg(22,
     # drát upnutý vlevo, páječka zprava shora, cín zleva zdola
     kabel('M30 130 H122', '#2F6FE0', 9) + med('M120 130 H196', 4) + treti_ruka()
@@ -352,7 +366,7 @@ NAKRESY.update({
  'ocko': svg(24,
     f'<path d="M128 85 A28 28 0 1 0 114 109.2" fill="none" stroke="{MED}" stroke-width="4" stroke-linecap="round"/>'
     + med('M128 85 H262') + izolepa(150, 79, 100, 12)
-    + kabel('M262 85 C282 85 292 110 304 128', '#E9B425', 4) + spoj(262, 85, 4)
+    + kabel('M262 85 C282 85 292 110 304 128', MODRA, 4) + spoj(262, 85, 4)
     + dim_v(62, 57, 113, '1,5–2 cm')
     + note(117, 103, 140, 126, 'mezera, aby šlo očko')
     + '<text class="lbl" x="144" y="144">nasadit na dráhu</text>'
@@ -367,17 +381,20 @@ NAKRESY.update({
     + '<rect x="152" y="74" width="10" height="6" fill="#9AA6B8"/><rect x="152" y="120" width="10" height="6" fill="#9AA6B8"/>'
     + '<text class="lbl" x="166" y="72" style="font-size:15px">+</text><text class="lbl" x="166" y="140" style="font-size:15px">−</text>'
     # bzučák z boku: delší nožka je plus
-    + '<rect x="196" y="20" width="40" height="26" rx="4" fill="#1B2B4B"/><text x="206" y="38" font-size="12" font-weight="700" fill="#fff">+</text>'
-    + '<line x1="206" y1="46" x2="206" y2="86" stroke="#9AA6B8" stroke-width="2.5"/><line x1="226" y1="46" x2="226" y2="72" stroke="#9AA6B8" stroke-width="2.5"/>'
-    + kabel('M162 77 C184 77 196 86 206 86', '#E0402B', 3.5) + spoj(162, 77) + spoj(206, 86)
-    + kabel('M226 72 C250 72 270 84 300 84', '#13A39A', 3.5) + spoj(226, 72)
+    + '<rect x="236" y="20" width="40" height="26" rx="4" fill="#1B2B4B"/><text x="246" y="38" font-size="12" font-weight="700" fill="#fff">+</text>'
+    + '<line x1="246" y1="46" x2="246" y2="86" stroke="#9AA6B8" stroke-width="2.5"/><line x1="266" y1="46" x2="266" y2="72" stroke="#9AA6B8" stroke-width="2.5"/>'
+    + vypinac_bok(182, 58, 36, 18, 14)
+    + kabel('M162 77 C178 77 186 90 191 90', '#E0402B', 3.5) + spoj(162, 77) + spoj(191, 90)
+    + kabel('M209 90 C224 90 234 86 246 86', '#E0402B', 3.5) + spoj(209, 90) + spoj(246, 86)
+    + kabel('M266 72 C280 72 290 84 300 84', '#E0402B', 3.5) + spoj(266, 72)
     + '<line x1="300" y1="84" x2="324" y2="84" stroke="#1B2B4B" stroke-width="2" marker-end="url(#sip{n})"/>'
     + '<text class="lbl" x="322" y="104" text-anchor="end">k dráze</text>'
-    + kabel('M162 123 C200 123 240 150 300 150', '#E9B425', 3.5) + spoj(162, 123)
+    + kabel('M162 123 C200 123 240 150 300 150', MODRA, 3.5) + spoj(162, 123)
     + '<line x1="300" y1="150" x2="324" y2="150" stroke="#1B2B4B" stroke-width="2" marker-end="url(#sip{n})"/>'
     + '<text class="lbl" x="322" y="170" text-anchor="end">k očku</text>'
-    + note(236, 33, 262, 33, 'bzučák') + note(206, 66, 186, 50, 'delší nožka +', 'end'),
-    'Zapojení: plus baterie k delší nožce bzučáku, druhá nožka k dráze, mínus baterie dlouhým lankem k očku. Tečky jsou pájené spoje.',
+    + note(276, 33, 292, 33, 'bzučák') + note(246, 91, 240, 104, 'delší nožka +', 'end')
+    + note(200, 50, 200, 40, 'vypínač', 'middle'),
+    'Zapojení: plus baterie přes vypínač k delší nožce bzučáku, druhá nožka k dráze, mínus baterie dlouhým lankem k očku. Tečky jsou pájené spoje.',
     '0 8 340 172'),
 })
 

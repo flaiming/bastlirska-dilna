@@ -156,6 +156,7 @@ Holý spoj omotejte izolepou, aby se nedotkl jiného drátu. Na kroužku nám p�
 - Holý měděný drát 1,5 až 2 mm: 60 cm na dráhu a 20 cm na očko
 - Ohebné lanko, 40 cm k očku a 15 cm k dráze
 - Aktivní bzučák na 3 V
+- Malý kolébkový vypínač
 - Držák na 2 tužkové baterie (AA) a 2 baterie
 - Prkýnko asi 25 × 8 cm se dvěma otvory 20 cm od sebe
 - Izolepu
@@ -192,7 +193,7 @@ Konec 20cm drátu omotejte kolem fixy a vzniklé očko trochu rozevřete, aby m�
 
 ### Zapájejte elektriku
 
-Na hlavolamu jsou čtyři spoje. Plus baterie spojte s delší nožkou bzučáku, ta je taky plus. Ke druhé nožce bzučáku připájejte krátké lanko, povede k dráze. K mínusu baterie připájejte dlouhé lanko a jeho druhý konec připájejte na konec rukojeti očka. Holé spoje zaizolujte. Rukojeť omotejte izolepou, ať se dobře drží.
+Plus baterie spojte kouskem lanka s jedním kontaktem vypínače. Druhý kontakt vypínače spojte s delší nožkou bzučáku, ta je plus. Ke druhé nožce bzučáku připájejte krátké lanko, povede k dráze. K mínusu baterie připájejte dlouhé lanko a jeho druhý konec připájejte na konec rukojeti očka. Holé spoje zaizolujte. Rukojeť omotejte izolepou, ať se dobře drží.
 
 {{nakres zapojeni}}
 
@@ -200,15 +201,15 @@ Na hlavolamu jsou čtyři spoje. Plus baterie spojte s delší nožkou bzučáku
 
 ### Sestavte hlavolam
 
-Konce dráhy zastrčte do otvorů v prkýnku a zalepte tavnou pistolí. Volné lanko od bzučáku připájejte ke konci dráhy těsně nad prkýnkem. Držák s bateriemi a bzučák přilepte na prkýnko. Lepí se jen u stolu s vedoucím.
+Konce dráhy zastrčte do otvorů v prkýnku a zalepte tavnou pistolí. Volné lanko od bzučáku připájejte ke konci dráhy těsně nad prkýnkem. Držák s bateriemi, vypínač a bzučák přilepte na prkýnko. Lepí se jen u stolu s vedoucím.
 
 ### Zahrajte si
 
-Vložte baterie: plochý konec baterie (mínus) patří k pružince. Dotkněte se očkem dráhy. Bzučák musí pípnout. Pak očko položte na izolepu na startu a zkuste dojet do cíle bez pípnutí. Kdo to dá nejrychleji? A kdo projede bez jediného pípnutí?
+Vložte baterie: plochý konec baterie (mínus) patří k pružince. Zapněte vypínač a dotkněte se očkem dráhy. Bzučák musí pípnout. Pak očko položte na izolepu na startu a zkuste dojet do cíle bez pípnutí. Kdo to dá nejrychleji? A kdo projede bez jediného pípnutí?
 
 ## Když to nefunguje {opravy}
 
-- **Nepípá ani při dotyku** Bzučák je otočený obráceně, nebo některý spoj nevede. Zkontrolujte plus k delší nožce a zatáhněte za každý spoj. Vedoucí může spoj proměřit multimetrem.
+- **Nepípá ani při dotyku** Vypínač je vypnutý, bzučák je otočený obráceně, nebo některý spoj nevede. Zkontrolujte plus k delší nožce a zatáhněte za každý spoj. Vedoucí může spoj proměřit multimetrem.
 - **Nepípá vůbec, ani když se dráty spojí** Zkontrolujte baterie: plochým koncem k pružince, obě otočené podle značek + a − v držáku.
 - **Pípá pořád** Očko leží na holé dráze, nebo se holý konec lanka dotýká dráhy či baterie. Spoje zaizolujte.
 - **Cín se nechytá drátu** Drát je špinavý nebo zoxidovaný: obruste ho smirkovým papírem. Nebo je hrot špinavý a nehřeje, nebo jde o pozinkovaný či ocelový drát.

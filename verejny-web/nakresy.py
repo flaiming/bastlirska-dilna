@@ -336,6 +336,21 @@ NAKRESY.update({
     'Hrot ohřívá drát shora, cín se přikládá z druhé strany k drátu a roztaví se jeho teplem.', '0 20 340 186'),
 })
 
+def pruzinka(x, y):
+    """Pružinka v držáku baterií, 10 px na šířku, střed výšky v y."""
+    body = ' '.join(f'{x + i * 2},{y + (-8 if i % 2 else 8)}' for i in range(6))
+    return f'<polyline points="{body}" fill="none" stroke="#9AA6B8" stroke-width="2" stroke-linejoin="round"/>'
+def clanek(x, y, plus_vpravo=True):
+    """Tužková baterie 84 × 30 px: plochý mínus, plus s hrbolkem, znaménka na obalu."""
+    hx = x + 84 if plus_vpravo else x - 4
+    plus_x, minus_x = (x + 74, x + 10) if plus_vpravo else (x + 10, x + 74)
+    return (f'<rect x="{hx}" y="{y + 10}" width="4" height="10" rx="1" fill="#9AA6B8"/>'
+            f'<rect x="{x}" y="{y}" width="84" height="30" rx="4" fill="#E9B425"/>'
+            f'<text x="{x + 42}" y="{y + 13}" text-anchor="middle" font-size="10" font-weight="700" fill="#1B2B4B">AA</text>'
+            f'<text x="{x + 42}" y="{y + 25}" text-anchor="middle" font-size="10" font-weight="700" fill="#1B2B4B">1,5 V</text>'
+            f'<text x="{plus_x}" y="{y + 21}" text-anchor="middle" font-size="14" font-weight="700" fill="#1B2B4B">+</text>'
+            f'<text x="{minus_x}" y="{y + 21}" text-anchor="middle" font-size="14" font-weight="700" fill="#1B2B4B">−</text>')
+
 def zkrut(x, y, w=26, holy=4):
     """Dva zkroucené drátky, konce v izolaci. holy je kus holého drátu mezi izolací a zkrutem."""
     a = f'M{x - w} {y} ' + ' '.join(f'Q{x - w + 6.5 + 13 * i} {y + (-5 if i % 2 else 5)} {x - w + 13 * (i + 1)} {y}' for i in range(4))
@@ -375,9 +390,10 @@ NAKRESY.update({
  'zapojeni': svg(25,
     # držák shora: dva články vedle sebe, vývody vpravo
     '<rect x="24" y="56" width="128" height="88" rx="6" fill="#3B4A63"/>'
-    + ''.join(f'<rect x="34" y="{y}" width="104" height="30" rx="5" fill="#E9B425"/><rect x="34" y="{y}" width="26" height="30" rx="5" fill="#1B2B4B"/>' for y in (64, 106))
-    + '<text x="100" y="84" text-anchor="middle" font-size="11" font-weight="700" fill="#1B2B4B">AA</text>'
-    + '<text x="100" y="126" text-anchor="middle" font-size="11" font-weight="700" fill="#1B2B4B">AA</text>'
+    # články v sérii, každý otočený obráceně: plochý mínus vždy k pružince
+    + ''.join(f'<polyline points="{b}" fill="none" stroke="#9AA6B8" stroke-width="3" stroke-linejoin="round"/>'
+              for b in ('35,79 31,79 31,121 39,121', '133,79 144,79 144,77 152,77', '137,121 144,121 144,123 152,123'))
+    + clanek(46, 64, plus_vpravo=True) + pruzinka(34, 79) + clanek(42, 106, plus_vpravo=False) + pruzinka(128, 121)
     + '<rect x="152" y="74" width="10" height="6" fill="#9AA6B8"/><rect x="152" y="120" width="10" height="6" fill="#9AA6B8"/>'
     + '<text class="lbl" x="166" y="72" style="font-size:15px">+</text><text class="lbl" x="166" y="140" style="font-size:15px">−</text>'
     # bzučák z boku: delší nožka je plus
@@ -394,7 +410,7 @@ NAKRESY.update({
     + '<text class="lbl" x="322" y="170" text-anchor="end">k očku</text>'
     + note(276, 33, 292, 33, 'bzučák') + note(246, 91, 240, 104, 'delší nožka +', 'end')
     + note(200, 50, 200, 40, 'vypínač', 'middle'),
-    'Zapojení: plus baterie přes vypínač k delší nožce bzučáku, druhá nožka k dráze, mínus baterie dlouhým lankem k očku. Tečky jsou pájené spoje.',
+    'Zapojení: plus baterie přes vypínač k delší nožce bzučáku, druhá nožka k dráze, mínus baterie dlouhým lankem k očku. Baterie jsou v držáku každá obráceně, plochým mínusem k pružince. Tečky jsou pájené spoje.',
     '0 8 340 172'),
 })
 

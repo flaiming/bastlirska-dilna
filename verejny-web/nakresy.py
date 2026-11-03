@@ -347,9 +347,9 @@ def clanek(x, y, plus_vpravo=True):
     tx = x + 38 if plus_vpravo else x + 46
     return (f'<rect x="{hx}" y="{y + 10}" width="4" height="10" rx="1" fill="#9AA6B8"/>'
             f'<rect x="{x}" y="{y}" width="84" height="30" rx="4" fill="#E9B425"/>'
-            # tmavší konec u plusu jako u běžných baterií
-            + (f'<rect x="{x + 62}" y="{y}" width="22" height="30" rx="4" fill="#1B2B4B"/><rect x="{x + 62}" y="{y}" width="6" height="30" fill="#1B2B4B"/>' if plus_vpravo
-               else f'<rect x="{x}" y="{y}" width="22" height="30" rx="4" fill="#1B2B4B"/><rect x="{x + 16}" y="{y}" width="6" height="30" fill="#1B2B4B"/>')
+            # hnědý konec u plusu jako u běžných baterií
+            + (f'<rect x="{x + 62}" y="{y}" width="22" height="30" rx="4" fill="#9A5527"/><rect x="{x + 62}" y="{y}" width="6" height="30" fill="#9A5527"/>' if plus_vpravo
+               else f'<rect x="{x}" y="{y}" width="22" height="30" rx="4" fill="#9A5527"/><rect x="{x + 16}" y="{y}" width="6" height="30" fill="#9A5527"/>')
             + 
             f'<text x="{tx}" y="{y + 13}" text-anchor="middle" font-size="10" font-weight="700" fill="#1B2B4B">AA</text>'
             f'<text x="{tx}" y="{y + 25}" text-anchor="middle" font-size="10" font-weight="700" fill="#1B2B4B">1,5 V</text>'

@@ -14,6 +14,7 @@ Co dítě vyrobí nebo vyzkouší? Jakou jednu hlavní věc má pochopit?
 - Vybrané zapojení/konstrukce a jednoduchý náčrt nebo fotografie vzorku.
 - Co předem nastříhat, navrtat, vytisknout nebo vyzkoušet.
 - Jak ověřit, že materiály do sebe pasují a vzorek se vejde do dvou hodin.
+- **Prototyp doma:** postavit celý výrobek ze stejného materiálu a stejným nářadím jako děti. Zapsat, co nefungovalo, a teprve pak nakoupit materiál pro všechny.
 
 ## Materiál a nákup
 

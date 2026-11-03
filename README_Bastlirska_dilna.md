@@ -113,7 +113,8 @@ Před nákupem ověřit napětí a typ baterií, průměry hřídelí motorků, 
 Pro každou lekci založit krátkou kartu s těmito body:
 
 - **Cíl:** co děti postaví a jaký princip si vyzkoušejí.
-- **Příprava vedoucího:** případný předtisk, předvrtání, nastříhání nebo vyzkoušení funkčního vzorku.
+- **Prototyp doma (povinně):** vedoucí si výrobek předem celý postaví ze stejného materiálu a stejným nářadím jako děti a vychytá základní problémy (materiál, nářadí, čas). U hlavolamu se to nestalo, a tak se až na lekci ukázalo, že pozinkovaný drát nejde pájet a špatně vede.
+- **Příprava vedoucího:** případný předtisk, předvrtání, nastříhání.
 - **Materiál:** vratný materiál na pracovní místa a spotřební materiál pro jednu skupinu i pro celý běh.
 - **Postup a čas:** úvodní ukázka, stavba, ladění, společné porovnání výsledků a úklid.
 - **Varianty:** jednodušší cesta k funkčnímu výsledku a rozšíření pro rychlejší děti.

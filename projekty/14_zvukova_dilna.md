@@ -108,7 +108,7 @@ Při jiné délce L se pražce přepočítají zlomky výše.
 | Kolík | Drží? | Pro děti | Verdikt |
 | --- | --- | --- | --- |
 | Špejle prostrčená kartonem (tření) | Tah 5 N na poloměru 1,5 mm chce moment asi 8–10 N·mm. Tření v kartonové díře je zhruba stejně velké, takže kolík se vrací a díra se rozdrolí. | snadné | ne |
-| Šroubek do kartonu | V kartonu se závit vytrhne, potřeba šroubovák, šroub při otáčení zajíždí. Ve dřevě by držel, ale prkýnka jsou pro hlavolam. | střední | ne |
+| Šroubek do kartonu | V kartonu se závit vytrhne, potřeba šroubovák, šroub při otáčení zajíždí. Ve dřevě by držel, ale prkénka jsou pro hlavolam. | střední | ne |
 | Kolíček na prádlo (sevře konec gumičky u zářezu) | drží spolehlivě | snadné | nenavíjí, nutno koupit; záloha |
 | **Klika z velké sponky se zapichovacím hrotem** | Gumička se navíjí na drát o poloměru asi 1 mm, takže moment je jen asi 5 N·mm. Na konci ramene 15 mm stačí 0,35 N a zapíchnutý hrot to udrží. Ladí se plynule. | nadzvednout, otočit, zamáčknout | **ano** |
 
@@ -131,7 +131,7 @@ Prakticky:
 - Díry pro vruty předvrtá vedoucí (vrták asi 2 mm), aby děti šroubovaly rukou.
 - Vruty z krabičky šroubků: na všechny kolíky stejný typ hlavy, aby stačil jeden šroubovák na stůl. Imbusové vruty do dřeva jsou méně běžné; křížové (PH/PZ) stačí.
 - Šroubováky: 3–4 na skupinu; doma se kytara ladí běžným šroubovákem.
-- Laťka 2 × 2 cm: asi 2,5 m na 20 kytar (hobby market, kolem 50 Kč); nařezat předem. Prkýnka ze zásoby jsou určená pro hlavolam.
+- Laťka 2 × 2 cm: asi 2,5 m na 20 kytar (hobby market, kolem 50 Kč); nařezat předem. Prkénka ze zásoby jsou určená pro hlavolam.
 - Konec u kobylky může mít místo sloupků ze špejle pevné vruty (zaháknutí struny), což je pevnější než špejle v kartonu.
 
 **Ověřit na vzorku:** jestli svislý vrut gumičku neprořízne, jestli se smyčka při otáčení navíjí a neprokluzuje, kolik otáček je potřeba na naladění a jestli karton u špalíku nepraská.

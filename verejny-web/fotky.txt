@@ -15,7 +15,7 @@ vez-zatez.jpg         | Zkouška nosnosti: na stavbu ze špaget se pokládá kel
 vez-kostka.jpg        | Nízká stavba ze špaget s trojúhelníkovým půdorysem, plastelínou v rozích a páskou nahoře
 vez-paska.jpg         | Vysoká tenká věž ze špaget zpevněná průhlednou páskou
 hlavolam-pajeci-lavice.jpg | Pájecí lavice: dvě páječky ve stojáncích, třetí ruce, modré silikonové podložky, štípačky a malý ventilátor
-hlavolam-lepeni.jpg   | Dítě drží tavnou pistoli a ohnutý drát nad prkýnkem, vedle leží kleště a vytištěný návod
-hlavolam-draha.jpg    | Prkýnko se zprohýbanou drátěnou dráhou na silikonové podložce, vedle bzučák a kousky barevného lanka
-hlavolam-pajeni.jpg   | Dítě pájí spoj na prkýnku s drátěnou dráhou a držákem baterií, v druhé ruce drží cín
-hlavolam-rozdelane.jpg | Lavice s rozdělanými hlavolamy: prkýnka, ohnuté dráty, lanka a odstřižené kousky izolace
+hlavolam-lepeni.jpg   | Dítě drží tavnou pistoli a ohnutý drát nad prkénkem, vedle leží kleště a vytištěný návod
+hlavolam-draha.jpg    | Prkénko se zprohýbanou drátěnou dráhou na silikonové podložce, vedle bzučák a kousky barevného lanka
+hlavolam-pajeni.jpg   | Dítě pájí spoj na prkénku s drátěnou dráhou a držákem baterií, v druhé ruce drží cín
+hlavolam-rozdelane.jpg | Lavice s rozdělanými hlavolamy: prkénka, ohnuté dráty, lanka a odstřižené kousky izolace

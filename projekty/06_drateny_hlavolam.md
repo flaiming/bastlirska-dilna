@@ -27,7 +27,7 @@ Na začátku vedoucí ukáže na sponkovém vypínači uzavřený a rozpojený o
    (−)  └──── ohebné lanko 40 cm ──── očko na rukojeti
 ```
 
-- **Podstavec:** prkýnko přibližně 25 × 8 cm (skladem) se dvěma předvrtanými otvory asi 20 cm od sebe. Konec dráhy se zastrčí do otvoru a u jednoho konce se k prkýnku **přišroubuje** vrutem s podložkou spolu s odizolovaným koncem lanka od bzučáku. To je zároveň elektrický spoj, takže funguje i s pozinkovaným drátem.
+- **Podstavec:** prkénko přibližně 25 × 8 cm (skladem) se dvěma předvrtanými otvory asi 20 cm od sebe. Konec dráhy se zastrčí do otvoru a u jednoho konce se k prkénku **přišroubuje** vrutem s podložkou spolu s odizolovaným koncem lanka od bzučáku. To je zároveň elektrický spoj, takže funguje i s pozinkovaným drátem.
 - **Dráha:** holý **měděný** drát 1,5–2 mm, asi 60 cm. **Pozinkovaný ne** (vyzkoušeno se skupinou A): špatně se pájí a špatně vede, bzučák při opřeném očku chrčí místo pípání. Kdo už má dráhu z pozinku, přichytí lanko k dráze šroubkem s podložkou do podstavce (konec dráhy i odizolované lanko pod hlavičku šroubku). Kyselou pájecí vodu nepoužívat. Děti ho zprohýbají do vln a smyček, konce se zastrčí do otvorů a zajistí tavným lepidlem.
 - **Odkládací místa:** oba konce dráhy omotat asi 3 cm izolepy. Tam se očko odkládá na startu a v cíli a nepípá.
 - **Očko:** měděný drát asi 20 cm; na konci ohnout očko o průměru 1,5–2 cm, zbytek je rukojeť omotaná izolepou. Očko nechat s **malou mezerou** (háček), aby se dalo nasadit na hotovou dráhu. Uzavřené očko se musí navléknout dřív, než se zalepí druhý konec dráhy.
@@ -57,8 +57,8 @@ Počítáno na **20 hlavolamů** (17 dětí + rezerva).
 | Baterie AA (dílenská sada) | 2 po dobu lekce | 13 párů | Skladem (16 alkalických + 10 nabíjecích), sdílená s vibrobotem | Zůstávají v dílně, děti si je neodnášejí. |
 | Holý měděný drát 1,5–2 mm | 80 cm | asi 16 m | **Koupit** (pozink ze zásoby nevyhověl) | Na dráhu a očko; ne pozinkovaný ani ocelový. Jde i instalační vodič CY 2,5 mm² (drát 1,8 mm) s odstraněnou izolací. Pozor na „měděný“ bižuterní drát: bývá lakovaný a nevede. |
 | Ohebné lanko | 50 cm | asi 10 m | Skladem (krabice drátů) | K očku a od bzučáku k dráze. |
-| Prkýnko asi 25 × 8 cm | 1 | 20 | Skladem | Konce dráhy a lanka se přišroubují. |
-| Vruty do dřeva s podložkou | 2 | asi 45 | Skladem (krabička šroubků) | Stažení konce dráhy a lanka k prkýnku. |
+| Prkénko asi 25 × 8 cm | 1 | 20 | Skladem | Konce dráhy a lanka se přišroubují. |
+| Vruty do dřeva s podložkou | 2 | asi 45 | Skladem (krabička šroubků) | Stažení konce dráhy a lanka k prkénku. |
 | Izolepa | kousky | 1–2 role | Skladem / koupit | Konce dráhy, rukojeť, izolace spojů. |
 | Cín s kalafunou | – | – | Skladem | |
 | Tavné lepidlo | – | několik tyčinek | Skladem | Zajištění dráhy v podstavci; lepí děti u horkého stolu. |

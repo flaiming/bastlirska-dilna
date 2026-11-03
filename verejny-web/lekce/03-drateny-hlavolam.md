@@ -158,7 +158,7 @@ Holý spoj omotejte izolepou, aby se nedotkl jiného drátu. Na kroužku nám p�
 - Aktivní bzučák na 3 V
 - Malý kolébkový vypínač
 - Držák na 2 tužkové baterie (AA) a 2 baterie
-- Prkýnko asi 25 × 8 cm se dvěma otvory 20 cm od sebe
+- Prkénko asi 25 × 8 cm se dvěma otvory 20 cm od sebe
 - Izolepu
 - Tavnou pistoli
 - Kleště a štípačky
@@ -179,7 +179,7 @@ Než začnete pájet hlavolam, spojte podle [návodu na pájení](#pajeni) dva k
 
 ### Ohněte dráhu
 
-Tvar si nejdřív nakreslete na papír. Pak drát ohýbejte rukama a v ostrých místech kleštěmi. Udělejte vlny, kopce nebo smyčku, jen ne moc ostré zatáčky, očko by jimi neprošlo. Konce nechte rovné a dlouhé asi 5 cm, zastrčí se do prkýnka. Oba konce omotejte asi 3 cm izolepy.
+Tvar si nejdřív nakreslete na papír. Pak drát ohýbejte rukama a v ostrých místech kleštěmi. Udělejte vlny, kopce nebo smyčku, jen ne moc ostré zatáčky, očko by jimi neprošlo. Konce nechte rovné a dlouhé asi 5 cm, zastrčí se do prkénka. Oba konce omotejte asi 3 cm izolepy.
 
 {{nakres hlavolam}}
 
@@ -201,7 +201,7 @@ Plus baterie spojte kouskem lanka s jedním kontaktem vypínače. Druhý kontakt
 
 ### Sestavte hlavolam
 
-Konce dráhy zastrčte do otvorů v prkýnku a zalepte tavnou pistolí. Volné lanko od bzučáku připájejte ke konci dráhy těsně nad prkýnkem. Držák s bateriemi, vypínač a bzučák přilepte na prkýnko. Lepí se jen u stolu s vedoucím.
+Konce dráhy zastrčte do otvorů v prkénku a zalepte tavnou pistolí. Volné lanko od bzučáku připájejte ke konci dráhy těsně nad prkénkem. Držák s bateriemi, vypínač a bzučák přilepte na prkénko. Lepí se jen u stolu s vedoucím.
 
 ### Zahrajte si
 

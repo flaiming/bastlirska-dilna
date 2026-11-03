@@ -38,7 +38,7 @@ Podrobnosti v kartách [06](projekty/06_drateny_hlavolam.md) a [05](projekty/05_
 | Stahovací pásky | papírnictví / hobby | 1 balení | – | ~30 | Vibrobot, pojistka motoru; jinak se lepí tavnou pistolí. |
 | Pohyblivá očička, chlupaté (plyšové) drátky | papírnictví / hobby | asi 50 + 1 balení | – | ~100 | Zdobení vibrobotů; sponky na tykadla skladem. |
 | Holý měděný drát 1,5–2 mm | elektro / hobby | asi 16 m | – | – | Hlavolam, **koupit před 10. 11.** Pozink ze zásoby nevyhověl (špatně se pájí a vede, bzučák chrčí). Jde i vodič CY 2,5 mm² bez izolace. |
-| Prkýnka asi 25 × 8 cm | skladem | 20 | – | – | Podstavce hlavolamu; dráha se přišroubuje. |
+| Prkénka asi 25 × 8 cm | skladem | 20 | – | – | Podstavce hlavolamu; dráha se přišroubuje. |
 
 **Celkem orientačně 1 200 Kč** + poštovné (18 sad na výrobek, baterie jen jako dílenská sada, excentry z 3D tisku); objednáno 22. 10. 2026 z Dratku a Laskakitu. Z rozpočtu asi 7 800 Kč na pololetí.
 
@@ -115,7 +115,7 @@ Pravidlo: **co je zapájené nebo zalepené ve výrobku, jde domů; co se jen za
 
 | Jde domů s výrobkem (spotřební, počítat na dítě) | Zůstává v dílně (vratné, počítat na pracovní místo) |
 | --- | --- |
-| Motorek, vypínač, bzučák, držák baterií, LED a rezistory zapájené ve výrobku, kartáč, prkýnko, drát | **Baterie** (dílenská sada AA, knoflíkové), krokosvorky, Voltík I a II, kontaktní pole a součástky v nich, multimetry, nářadí, pájky |
+| Motorek, vypínač, bzučák, držák baterií, LED a rezistory zapájené ve výrobku, kartáč, prkénko, drát | **Baterie** (dílenská sada AA, knoflíkové), krokosvorky, Voltík I a II, kontaktní pole a součástky v nich, multimetry, nářadí, pájky |
 
 - **Baterie:** výjimka je knoflíková CR2032 u svítící ozdoby (karta 15), ta jde domů s výrobkem. Jinak výrobky odcházejí domů prázdné se štítkem „doma vložit 2× AA“. Na konci lekce vedoucí sbírá baterie zpět a počítá páry. Dílenská sada: 10 párů AA + rezerva v jedné krabičce; vybité články průběžně vyřazovat (multimetr pod asi 1,3 V).
 - **Ukázky a pokusy, které nejdou domů** (alarm, blikač, světlo na tmu na kontaktním poli): stavět ze vratných součástek a po lekci rozebrat. Pokud má jít domů i zapojení, udělat jednoduchou zapájenou verzi a počítat ji jako spotřební.

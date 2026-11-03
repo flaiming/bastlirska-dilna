@@ -284,12 +284,12 @@ def vypinac_bok(x, y, w=22, h=14, nozicky=0):
 draha = 'M70 170 V128 C70 98 98 88 114 102 C130 116 128 134 148 132 C170 130 168 92 192 92 C214 92 210 122 228 120 C248 118 256 92 242 90 C228 88 230 116 252 118 C268 120 270 112 270 128 V170'
 hlavolam = (
     f'<rect x="40" y="170" width="260" height="16" rx="3" {KAR}/>'
-    + '<text class="hint" x="282" y="181" text-anchor="end">prkýnko</text>'
-    # baterie a bzučák přilepené na prkýnku
+    + '<text class="hint" x="282" y="181" text-anchor="end">prkénko</text>'
+    # baterie a bzučák přilepené na prkénku
     + f'<rect x="80" y="150" width="56" height="20" rx="3" fill="#3B4A63"/><rect x="136" y="155" width="4" height="10" fill="#3B4A63"/>'
     + '<text x="108" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">2× AA</text>'
     + vypinac_bok(150, 156)
-    + '<rect x="182" y="152" width="22" height="18" rx="3" fill="#1B2B4B"/><text x="193" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">+</text>'
+    + '<rect x="182" y="152" width="22" height="18" rx="3" fill="#1B2B4B"/><text x="188" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">+</text>'
     + med(draha) + izolepa(65, 128, 10, 28) + izolepa(265, 128, 10, 28)
     + kabel('M140 160 C145 160 146 164 150 164', '#E0402B', 3)
     + kabel('M172 164 C176 164 178 166 184 166', '#E0402B', 3)
@@ -321,8 +321,8 @@ def treti_ruka():
 
 NAKRESY.update({
  'hlavolam': svg(21, hlavolam,
-    'Hotový hlavolam: dráha je zastrčená v prkýnku, na koncích izolepa. Baterie, vypínač, bzučák a očko jsou spojené lanky.',
-    '0 0 340 208'),
+    'Hotový hlavolam: dráha je zastrčená v prkénku, na koncích izolepa. Baterie, vypínač, bzučák a očko jsou spojené lanky.',
+    '-16 0 356 208'),
  'pajeni-postup': svg(22,
     # drát upnutý vlevo, páječka zprava shora, cín zleva zdola
     kabel('M30 130 H122', '#2F6FE0', 9) + med('M120 130 H196', 4) + treti_ruka()
@@ -381,7 +381,7 @@ NAKRESY.update({
     + '<rect x="152" y="74" width="10" height="6" fill="#9AA6B8"/><rect x="152" y="120" width="10" height="6" fill="#9AA6B8"/>'
     + '<text class="lbl" x="166" y="72" style="font-size:15px">+</text><text class="lbl" x="166" y="140" style="font-size:15px">−</text>'
     # bzučák z boku: delší nožka je plus
-    + '<rect x="236" y="20" width="40" height="26" rx="4" fill="#1B2B4B"/><text x="246" y="38" font-size="12" font-weight="700" fill="#fff">+</text>'
+    + '<rect x="236" y="20" width="40" height="26" rx="4" fill="#1B2B4B"/><text x="246" y="38" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">+</text>'
     + '<line x1="246" y1="46" x2="246" y2="86" stroke="#9AA6B8" stroke-width="2.5"/><line x1="266" y1="46" x2="266" y2="72" stroke="#9AA6B8" stroke-width="2.5"/>'
     + vypinac_bok(182, 58, 36, 18, 14)
     + kabel('M162 77 C178 77 186 90 191 90', '#E0402B', 3.5) + spoj(162, 77) + spoj(191, 90)

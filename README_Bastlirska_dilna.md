@@ -47,6 +47,23 @@ Podrobné návody vznikají postupně ve složce [projekty](projekty/README.md).
 
 Z původního zásobníku jsme vyřadili **elektromagnetický jeřáb, katapult, telegraf, mechanický automat a loďku na gumičku**. Balónkové pokusy jsme naopak přidali. Původní seznam 16 nápadů proto není aktuální osnovou.
 
+### Nápady z jiných kroužků
+
+Inspirace z FB skupiny Vedoucí elektrokroužků (prošlo se období 10/2024–10/2026, podrobný výpis v [inspirace/fb_vedouci_elektrokrouzku.md](inspirace/fb_vedouci_elektrokrouzku.md)). Zatím nejsou v zásobníku, jen k vyzkoušení:
+
+- **Domácí telefon s uhlíkovým mikrofonem** – Hughesův mikrofon z tuh, bez hotových dílů; ve skupině je k tomu podrobný video tutoriál a STL krabičky. Navazuje na kelímkový telefon ze Zvukové dílny (14).
+- **Stavebnice na pájení pro úplné začátečníky** – AMAVET Most používá a má české návody (PDF): hvězdička SMD, RGB srdce, barevná hudba, svítilna na 1,5 V, zvonek, vánoční stromeček, plápolající svíčka. Cena 50–85 Kč za kus. Hodí se k pájecí dílně (11) nebo na předvánoční lekci. Prodávají se hlavně na AliExpressu, nejdřív hledat podobné u nás (pajenicko.cz).
+- **Useless box s obvodem 555 a elektronická kostka** – konstrukce kroužku DDM Náměšť nad Oslavou ([elektrokrouzek.cz](https://www.elektrokrouzek.cz/cs/clanky), [GitHub](https://github.com/Elektrokrouzek-cz)). Spíš pro starší děti; kandidát na závěrečnou výzvu (12). Useless box podle vedoucích dobře láká děti při náboru.
+- **Skutečný vodní model obvodu** (DDM Náměšť, [výpis](inspirace/elektrokrouzek_namest.md)) – nádrž, hadice, ventily a vrtulka jako průtokoměr; svorka na hadici = odpor, vyšší hladina = vyšší napětí, plnění druhé nádrže = kondenzátor. Postavit z PET lahví jako úvod k Součástkám I a znovu použít u kondenzátoru. Soutěž: napusť přesně půl hrnku.
+- **Webkamera na televizi** – mobil nad stolem vedoucího ukazuje pájení všem najednou.
+- **Svítilna z vodovodní trubky** (DDM Náměšť) – krytky z 3D tisku, dvě LED, vypínač; užitečný výrobek domů, upravit na 2× AA.
+- **Materiály AMAVET Most** ve [sdílené složce](https://1drv.ms/f/c/6743f05608acfbd8/IgB_iz_27F9tRKZNIfhk_g_PAYyokZ09pqIg53pP_WtMW34): pexeso a schematické značky (k Pasu součástek), úvodní hodina, přehled stavebnic, letáky kroužků.
+- **Z praxe ostatních vedoucích:** ochranné brýle při pájení nikdo nepoužívá a nepotřeboval; víc vadí kouř, takže větrat a děti nesmí foukat přímo do spoje. Děti píchají horkým hrotem do plastových stojánků, vyplatí se celokovové. Osvědčilo se pájecí pero T12 65 W s USB-C PD (pajenicko.cz).
+
+### Akce mimo kroužek
+
+- **Rednetcon 2027 – festival techniky**, Náměšť nad Oslavou, **neděle 21. 2. 2027**. Malá a příjemná akce (vedoucí tam byl loni s rodinou). Pořadatelé hledají, kdo by ukázal něco na stánku; zvážit stánek s výrobky kroužku, nebo aspoň dát rodinám tip na výlet.
+
 ## Elektrická linka: jak pojmout elektroniku
 
 Elektřina se v kroužku staví po schodech. Každý schod přidá **jednu až dvě nové součástky** a **jeden nový způsob stavění**, nikdy víc najednou.
@@ -118,13 +135,13 @@ Protože se skupiny střídají, je užitečné vést u každého tématu stav *
 | # | Lekce | Obsah |
 | --- | --- | --- |
 | 1 | Autíčko na gumičku | Odučeno |
-| 2 | Věž a most ze špaget | + hlasování dětí, kam dál |
-| 3 | [Elektrická dílna I: drátěný hlavolam](projekty/06_drateny_hlavolam.md) | Stanoviště: pájení s vedoucím (rozcvička + dráty k bzučáku) · stavba hlavolamu · Voltík; úvod přes sponkový vypínač |
-| 4 | [Vibrobot](projekty/05_vibracni_robot.md) | Kartáčkový robot; pájení vodičů k motorku a vypínači |
+| 2 | Věž a most ze špaget | Odučeno; jen věže |
+| 3 | [Elektrická dílna I: drátěný hlavolam](projekty/06_drateny_hlavolam.md) | Skupina A 3. 11.: nestihlo se, dokončí 1. 12. Skupina B 10. 11. zjednodušeně: nejdřív obvod s krokosvorkami, pak stavba dráhy a pájení po dvou; nestihnuté dokončí 24. 11. |
+| 4 | [Vibrobot](projekty/05_vibracni_robot.md) | Kartáčkový robot; pájení vodičů k motorku a vypínači. Posouvá se podle toho, kdy skupiny dodělají hlavolam. |
 | 5–7 | Podle hlasování | Návrh: 5 něco bez elektriky (balónky, kytara), 6 [Součástky I: svítící ozdoba](projekty/15_soucastky_led_a_odpor.md) na začátku prosince, 7 podle hlasování. Elektrická linka (16–18, alarm, 555) pokračuje ve 2. pololetí. |
 
 ## Termíny do konce 1. pololetí
 
 Úterky 20. 10. 2026 – 26. 1. 2027 bez 17. 11. (státní svátek) a 29. 12. (vánoční prázdniny): **13 termínů**, tedy 6–7 na skupinu podle toho, jak se po vynechaném týdnu posune střídání. 22. 12. je ještě školní den, ale ověřit, zda kroužek proběhne. Termíny prázdnin ověřit ve školním kalendáři.
 
-_Aktualizováno: 16. 10. 2026. Původně: 29. 9. 2026. Dokument zachycuje dosavadní rozhodnutí a odděluje je od pracovních odhadů._
+_Aktualizováno: 3. 11. 2026. Původně: 29. 9. 2026. Dokument zachycuje dosavadní rozhodnutí a odděluje je od pracovních odhadů._

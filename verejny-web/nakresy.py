@@ -290,30 +290,44 @@ hlavolam = (
     + note(181, 152, 214, 140, 'bzučák')
 )
 
+def krokosvorka(x, y=130):
+    """Krokosvorka shora zakousnutá do kabelu, střed kabelu v (x, y)."""
+    zuby = ' '.join(f'L{x - 4 + 2 * i} {y + (9 if i % 2 else 7)}' for i in range(1, 4))
+    return (f'<path d="M{x - 5} {y - 30} H{x + 5} V{y - 12} L{x + 4} {y + 7} {zuby} L{x - 4} {y + 7} L{x - 5} {y - 12} Z" fill="#9AA3AE" stroke="#5B6577" stroke-width="1"/>'
+            f'<circle cx="{x}" cy="{y - 20}" r="2" fill="#5B6577"/>')
+
+
+def treti_ruka():
+    """Stojánek s ramenem a krokosvorkou, která drží kabel."""
+    return ('<rect x="4" y="192" width="78" height="12" rx="4" fill="#5B6577"/><rect x="14" y="58" width="6" height="136" fill="#8A939F"/>'
+            '<path d="M17 58 L60 48 L84 100" fill="none" stroke="#5B6577" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
+            + ''.join(f'<circle cx="{cx}" cy="{cy}" r="3.5" fill="#1B2B4B"/>' for cx, cy in ((17, 58), (60, 48)))
+            + krokosvorka(84) + '<text class="hint" x="68" y="46">třetí ruka</text>')
+
+
 NAKRESY.update({
  'hlavolam': svg(21, hlavolam,
     'Hotový hlavolam: dráha je zastrčená v prkýnku, na koncích izolepa. Baterie, bzučák a očko jsou spojené lanky.',
     '0 0 340 196'),
  'pajeni-postup': svg(22,
     # drát upnutý vlevo, páječka zprava shora, cín zleva zdola
-    kabel('M20 130 H122', '#2F6FE0', 9) + med('M120 130 H196', 4)
-    + '<path d="M18 116 L58 124 L58 136 L18 144 Z" fill="#7A8696"/><text class="hint" x="20" y="162">třetí ruka</text>'
+    kabel('M30 130 H122', '#2F6FE0', 9) + med('M120 130 H196', 4) + treti_ruka()
     + '<g transform="translate(173 128) rotate(-36)">'
     + '<path d="M0 0 L28 -4 L28 4 Z" fill="#8A939F"/><rect x="28" y="-3" width="62" height="6" fill="#B9C1CB"/>'
     + '<rect x="86" y="-6" width="10" height="12" rx="2" fill="#5B6577"/><rect x="96" y="-9" width="84" height="18" rx="8" fill="#1B2B4B"/></g>'
     + f'<path d="M166 135 C162 158 158 182 155 206" fill="none" stroke="{CIN}" stroke-width="3" stroke-linecap="round"/>'
     + f'<ellipse cx="169" cy="131" rx="7" ry="4" fill="{CIN}"/><ellipse cx="167" cy="130" rx="2" ry="1" fill="#fff"/>'
-    + note(178, 124, 228, 150, 'hrot ohřívá drát') + note(161, 166, 140, 176, 'cín přikládej k drátu,', 'end')
-    + '<text class="lbl" x="136" y="194" text-anchor="end">ne na hrot</text>',
+    + note(188, 118, 230, 138, 'hrot ohřívá drát') + note(162, 162, 192, 176, 'cín přikládej k drátu,')
+    + '<text class="lbl" x="196" y="194">ne na hrot</text>',
     'Hrot ohřívá drát shora, cín se přikládá z druhé strany k drátu a roztaví se jeho teplem.', '0 20 340 186'),
 })
 
-def zkrut(x, y, w=26):
-    """Dva zkroucené drátky, konce v izolaci."""
+def zkrut(x, y, w=26, holy=4):
+    """Dva zkroucené drátky, konce v izolaci. holy je kus holého drátu mezi izolací a zkrutem."""
     a = f'M{x - w} {y} ' + ' '.join(f'Q{x - w + 6.5 + 13 * i} {y + (-5 if i % 2 else 5)} {x - w + 13 * (i + 1)} {y}' for i in range(4))
     b = f'M{x - w} {y} ' + ' '.join(f'Q{x - w + 6.5 + 13 * i} {y + (5 if i % 2 else -5)} {x - w + 13 * (i + 1)} {y}' for i in range(4))
-    return (kabel(f'M{x - 46} {y} H{x - w - 4}', '#2F6FE0', 9) + kabel(f'M{x + w + 4} {y} H{x + 46}', '#E0402B', 9)
-            + med(f'M{x - w - 6} {y} H{x - w}', 3) + med(f'M{x + w} {y} H{x + w + 6}', 3) + med(a, 3) + med(b, 3))
+    return (kabel(f'M{x - w - holy - 16} {y} H{x - w - holy}', '#2F6FE0', 9) + kabel(f'M{x + w + holy} {y} H{x + w + holy + 16}', '#2F6FE0', 9)
+            + med(f'M{x - w - holy - 2} {y} H{x - w}', 3) + med(f'M{x + w} {y} H{x + w + holy + 2}', 3) + med(a, 3) + med(b, 3))
 
 def popisek(x, y, *radky, znak='', barva='#1B2B4B'):
     t = f'<text class="lbl" x="{x}" y="{y}" text-anchor="middle" style="fill:{barva};font-size:14px">{znak}</text>' if znak else ''
@@ -409,3 +423,79 @@ rele = (
 NAKRESY['hlavolam-rele'] = svg(26, rele,
     'Schéma v klidu, vypínač je zapnutý. Kontakt relé je zapojený vedle očka a dráhy: když ho cívka přitáhne, vede proud místo nich.',
     '0 0 340 162')
+
+TMAVA = '#1B2B4B'
+pramenky = ''.join(med(f'M180 80 Q192 80 204 {80 + d}', 1.4) for d in (-7, -3.5, 0, 3.5, 7))
+NAKRESY['odizolovani'] = svg(27,
+    kabel('M11 80 H97', '#2F6FE0', 9) + '<line x1="81" y1="70" x2="81" y2="90" stroke="#1B2B4B" stroke-width="1.5" stroke-dasharray="3 2"/>'
+    + dim_h(81, 101, 64, '1 cm') + popisek(57, 112, 'kleštěmi asi', '1 cm od konce', znak='1. naříznout', barva=TMAVA)
+    + kabel('M124 80 H176', '#2F6FE0', 9) + pramenky + kabel('M212 80 H222', '#2F6FE0', 9)
+    + popisek(170, 112, 'izolace sjede,', 'drátky trčí', znak='2. stáhnout', barva=TMAVA)
+    + kabel('M237 80 H289', '#2F6FE0', 9) + med('M289 80 H317', 4)
+    + ''.join(f'<line x1="{x}" y1="78" x2="{x + 3}" y2="82" stroke="{MED_TMAVA}" stroke-width="1"/>' for x in range(292, 315, 4))
+    + popisek(283, 112, 'prsty do sebe,', 'ať neodstávají', znak='3. zakroutit', barva=TMAVA),
+    'Odizolování lanka: naříznout izolaci asi 1 cm od konce, stáhnout ji a tenké drátky zakroutit do sebe.', '0 50 340 102')
+NAKRESY['spojeni'] = svg(28,
+    zkrut(85, 80, holy=12) + popisek(85, 112, 'konce zakruťte', 'do sebe', znak='zakroucené', barva=TMAVA)
+    # háčky provlečené jako dva články řetězu: nahoře je přes pravý levý, dole pravý přes levý
+    + kabel('M200 89 H226', '#2F6FE0', 9) + med('M224 89 H248 A9 9 0 1 0 239 80', 3)
+    + kabel('M284 71 H310', '#2F6FE0', 9) + med('M286 71 H262 A9 9 0 1 0 271 80', 3).replace(MED, MED_TMAVA)
+    + '<path d="M256.16 76.2 A9 9 0 0 0 253.16 72.63" fill="none" style="stroke:var(--paper)" stroke-width="7"/>'
+    + med('M256.16 76.2 A9 9 0 0 0 253.16 72.63', 3)
+    + popisek(255, 112, 'zahákněte', 'jeden za druhý', znak='dva háčky', barva=TMAVA),
+    'Dva způsoby, jak drátky spojit před pájením: zakroutit do sebe, nebo zaháknout jako dva háčky.', '0 50 340 102')
+
+
+# --- ikony nářadí pro kartičky „Co budeme používat“, viewBox 120 × 80 ---
+
+SEDA, SEDA_SVETLA, SEDA_TMAVA, MOSAZ = '#8A939F', '#B9C1CB', '#5B6577', '#C9A23A'
+cara = 'fill="none" stroke-linecap="round" stroke-linejoin="round"'
+
+
+def kleste(cerist, rukojeti):
+    """Kleště ležící čelistmi doleva, kloub v (52, 40)."""
+    return (f'<path d="M52 38 C70 30 90 24 112 24" {cara} stroke="{rukojeti}" stroke-width="8"/>'
+            f'<path d="M52 42 C70 50 90 56 112 56" {cara} stroke="{rukojeti}" stroke-width="8"/>'
+            + cerist + f'<circle cx="52" cy="40" r="4.5" fill="{SEDA_TMAVA}"/>')
+
+
+IKONY = {
+    'pajecka': f'<rect x="8" y="64" width="56" height="10" rx="3" fill="{SEDA_TMAVA}"/><rect x="28" y="54" width="4" height="12" fill="{SEDA}"/>'
+        '<path d="M20 60 L30 55 L30 51 Z" fill="#8A939F"/><path d="M29 52 L62 34" stroke="#B9C1CB" stroke-width="4"/>'
+        '<rect x="60" y="28" width="8" height="9" rx="2" fill="#5B6577" transform="rotate(-30 64 32)"/>'
+        '<path d="M70 28 L106 8" stroke="#1B2B4B" stroke-width="12" stroke-linecap="round"/>'
+        + ''.join(f'<ellipse cx="{30 + 6 * i}" cy="{56 - 3.4 * i}" rx="4" ry="9" fill="none" stroke="{SEDA}" stroke-width="1.6" transform="rotate(-30 {30 + 6 * i} {56 - 3.4 * i})"/>' for i in range(5)),
+    'cin': f'<path d="M62 60 C80 70 98 62 112 46" {cara} stroke="{CIN}" stroke-width="3"/>'
+        f'<circle cx="44" cy="40" r="27" fill="#DDE2E8" stroke="{SEDA}" stroke-width="2"/><circle cx="44" cy="40" r="20" fill="{CIN}"/>'
+        + ''.join(f'<circle cx="44" cy="40" r="{r}" fill="none" stroke="#9AA3AE" stroke-width="0.8"/>' for r in (12, 15, 18))
+        + f'<circle cx="44" cy="40" r="8" fill="#fff" stroke="{SEDA}" stroke-width="2"/>',
+    'dratenka': ''.join(f'<circle cx="{34 + 4.2 * i}" cy="{44 + (-6 if i % 2 else 2)}" r="8" fill="none" stroke="{MOSAZ}" stroke-width="1.6"/>' for i in range(13))
+        + f'<path d="M20 48 L28 68 H92 L100 48 Z" fill="{SEDA_TMAVA}"/><ellipse cx="60" cy="48" rx="40" ry="5" fill="none" stroke="{SEDA}" stroke-width="2"/>',
+    'treti-ruka': f'<rect x="8" y="66" width="50" height="9" rx="3" fill="{SEDA_TMAVA}"/><rect x="17" y="18" width="5" height="50" fill="{SEDA}"/>'
+        f'<path d="M20 20 L56 12 L80 22" {cara} stroke="{SEDA_TMAVA}" stroke-width="3"/>'
+        + ''.join(f'<circle cx="{x}" cy="{y}" r="3.2" fill="#1B2B4B"/>' for x, y in ((20, 20), (56, 12)))
+        + kabel('M64 52 H94', '#2F6FE0', 8) + med('M94 52 H112', 3) + krokosvorka(80, 52),
+    'podlozka': '<rect x="8" y="14" width="104" height="54" rx="7" fill="#2E8C82"/>'
+        + ''.join(f'<circle cx="{x}" cy="30" r="7" fill="#4FB0A5"/>' for x in (26, 46, 66))
+        + '<rect x="80" y="22" width="22" height="16" rx="3" fill="#4FB0A5"/><rect x="20" y="46" width="82" height="12" rx="3" fill="#4FB0A5"/>',
+    'odizolovaci-kleste': kleste(
+        f'<path d="M54 35 L10 37 L10 40 L54 40 Z" fill="{SEDA}"/><path d="M54 40 L10 40 L10 43 L54 45 Z" fill="{SEDA_TMAVA}"/>'
+        + ''.join(f'<circle cx="{x}" cy="40" r="{r}" fill="#fff" stroke="#1B2B4B" stroke-width="1"/>' for x, r in ((22, 1.8), (31, 2.3), (41, 2.8))),
+        '#E0402B'),
+    'stipacky': kleste(
+        f'<path d="M54 32 L24 36 L14 40 L54 40 Z" fill="{SEDA}"/><path d="M54 40 L14 40 L24 44 L54 48 Z" fill="{SEDA_TMAVA}"/>',
+        '#E9B425'),
+    'drat-lanko': kabel('M10 24 H62', '#2F6FE0', 9) + med('M62 24 H82', 4)
+        + kabel('M10 56 H62', '#2F6FE0', 9) + ''.join(med(f'M62 56 Q72 56 82 {56 + d}', 1.3) for d in (-6, -3, 0, 3, 6))
+        + '<text class="ikona-popisek" x="88" y="28">drát</text><text class="ikona-popisek" x="88" y="60">lanko</text>',
+    'izolepa': '<path d="M44 62 H106 L102 65 L106 68 H44 Z" fill="#1B2B4B"/>'
+        '<circle cx="44" cy="40" r="27" fill="#1B2B4B"/><circle cx="44" cy="40" r="14" style="fill:var(--paper)" stroke="#C8CDD3" stroke-width="4"/>',
+    'bryle': '<path d="M14 38 H4 M106 38 H116" stroke="#1B2B4B" stroke-width="4" stroke-linecap="round"/>'
+        + ''.join(f'<rect x="{x}" y="22" width="44" height="32" rx="13" fill="#D6ECF5" stroke="#1B2B4B" stroke-width="3.5"/>'
+                  f'<path d="M{x + 9} 30 L{x + 17} 30" stroke="#fff" stroke-width="3" stroke-linecap="round"/>' for x in (12, 64))
+        + '<path d="M56 34 Q60 29 64 34" fill="none" stroke="#1B2B4B" stroke-width="3.5"/>',
+}
+
+
+def ikona(jmeno):
+    return f'<svg class="ikona" viewBox="0 0 120 80" aria-hidden="true">{IKONY[jmeno]}</svg>'

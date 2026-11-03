@@ -37,7 +37,7 @@ Podrobnosti v kartách [06](projekty/06_drateny_hlavolam.md) a [05](projekty/05_
 | Excentr (3D tisk, [model](modely/excentr.scad)) | vlastní tisk | 20 | – | – | Nahrazuje pastorek z Techfunu (nekupovat); závaží šroubek M3 a matice ze skladu. |
 | Stahovací pásky | papírnictví / hobby | 1 balení | – | ~30 | Vibrobot, pojistka motoru; jinak se lepí tavnou pistolí. |
 | Pohyblivá očička, chlupaté (plyšové) drátky | papírnictví / hobby | asi 50 + 1 balení | – | ~100 | Zdobení vibrobotů; sponky na tykadla skladem. |
-| Holý drát 1,5–2 mm (měď, nebo pozink ze zásoby) | krabice drátů / hobby | asi 16 m | – | – | Hlavolam; pozink se zkouší, zda jde pájet. |
+| Holý měděný drát 1,5–2 mm | elektro / hobby | asi 16 m | – | – | Hlavolam, **koupit před 10. 11.** Pozink ze zásoby nevyhověl (špatně se pájí a vede, bzučák chrčí). Jde i vodič CY 2,5 mm² bez izolace. |
 | Prkýnka asi 25 × 8 cm | skladem | 20 | – | – | Podstavce hlavolamu; dráha se přišroubuje. |
 
 **Celkem orientačně 1 200 Kč** + poštovné (18 sad na výrobek, baterie jen jako dílenská sada, excentry z 3D tisku); objednáno 22. 10. 2026 z Dratku a Laskakitu. Z rozpočtu asi 7 800 Kč na pololetí.
@@ -72,7 +72,7 @@ Odpájecí knot Dratek nemá; bere se z Laskakitu (odsávací lícna 2 mm, 1,5 m
 
 **3. Techfun: odpadá.** Místo pastorků tištěný excentr ([model](modely/excentr.scad)), šroubky a matice M3 ze skladu.
 
-**4. Lidl.cz: objednáno 22. 10. 2026** 1× pájecí stanice Parkside PLSD 60 C3, 400 Kč + 49 Kč doprava = 449 Kč. Pro děti tedy 2 pájecí místa (PLSD + mikropájka), trafopájka jen vedoucí. Druhou PLSD dokoupit, pokud se u hlavolamu ukáže, že se na pájení čeká moc dlouho.
+**4. Lidl.cz: objednáno 22. 10. 2026** 1× pájecí stanice Parkside PLSD 60 C3, 400 Kč + 49 Kč doprava = 449 Kč. Pro děti tedy 2 pájecí místa (PLSD + mikropájka), trafopájka jen vedoucí. Na hlavolamu (3. 11.) se ukázalo, že vedoucí uhlídá **nejvýš dvě pájecí místa**. Musí ale obě vydržet celou lekci: trafopájce odešel hrot a mikropájka neměla zdroj. Opravit trafopájku nebo sehnat zdroj k mikropájce, jinak dokoupit druhou PLSD.
 
 **Drátek: objednáno 28. 10. 2026**, 618,68 Kč + poštovné:
 

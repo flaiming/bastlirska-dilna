@@ -11,6 +11,7 @@ Kroužek běží každé úterý dvě hodiny, dvě skupiny po 8–9 dětech se s
 | [README_Bastlirska_dilna.md](README_Bastlirska_dilna.md) | Hlavní přehled: zásobník témat, plán lekcí, termíny, koncepce elektro lekcí |
 | [projekty/](projekty/README.md) | Projektové karty: cíl, příprava vedoucího, materiál, postup na dvě hodiny, ladění, bezpečnost, zkušenosti po lekci |
 | [NAKUPNI_ZAKLAD.md](NAKUPNI_ZAKLAD.md) | Sklad, nákupy podle obchodů, co si děti odnesou a co zůstává v dílně |
+| [inspirace/](inspirace/) | Výpisky z jiných kroužků a komunit (např. FB skupina vedoucích elektrokroužků) |
 | [modely/](modely/) | 3D modely pro tisk (OpenSCAD + STL), např. excentr pro vibrobota |
 | [web/](web/) | Generátor HTML přehledu z Markdownu |
 | [verejny-web/](verejny-web/) | Zdroje veřejného webu [bastleni.oram.cz](https://bastleni.oram.cz) |

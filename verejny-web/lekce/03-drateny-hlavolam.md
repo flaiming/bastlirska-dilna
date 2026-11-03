@@ -4,15 +4,24 @@ barva: orange
 nazev: Drátěný hlavolam
 popis: Hlavolam s bzučákem: provést očko po zakroucené dráze tak, aby se jí nedotklo. A k tomu první pájení.
 perex: Provlečte očko po zakroucené drátěné dráze tak, aby se jí nedotklo. Když se dotkne, pípne bzučák. Spoje si každý zapájí sám.
-kdy: skupina A 3. listopadu, skupina B 10. listopadu 2026
+kdy: skupina A 3. listopadu (dokončení 1. prosince), skupina B 10. listopadu 2026
 jak_dlouho: 2 hodiny
 domu: hlavolam bez baterií, doma stačí vložit 2 tužkové baterie
 zverejnit: 2026-11-01
-prehled: Z drátu, bzučáku a baterií postavíme hlavolam, ve kterém se očko musí provléct po zakroucené dráze bez dotyku. Přitom si poprvé vyzkoušíme pájení.
-prehled_kdy: Skupina A 3. listopadu, skupina B 10. listopadu 2026. Návod je připravený předem, fotky přidáme po lekci.
+prehled: Z drátu, bzučáku a baterií stavíme hlavolam, ve kterém se očko musí provléct po zakroucené dráze bez dotyku. Přitom si poprvé zkoušíme pájení.
+prehled_kdy: Skupina A 3. listopadu, kdo nestihl, dokončí 1. prosince. Skupina B 10. listopadu 2026.
 prehled_nakres: hlavolam
+prehled_fotky: hlavolam-pajeni.jpg hlavolam-draha.jpg hlavolam-pajeci-lavice.jpg
 tlacitko: Návod na hlavolam
 ---
+
+## Fotky {galerie}
+
+- hlavolam-pajeni.jpg
+- hlavolam-draha.jpg
+- hlavolam-lepeni.jpg
+- hlavolam-pajeci-lavice.jpg: Pájecí lavice
+- hlavolam-rozdelane.jpg
 
 ## Proč to pípá {princip}
 
@@ -43,6 +52,50 @@ Hrot páječky má přes 300 °C, víc než trouba, ve které se peče pizza. Sp
 
 > Doma pájejte jen s dospělým. [Rady pro rodiče najdete dole na stránce.](#doma)
 
+## Co budeme používat {nastroje #naradi}
+
+Tohle všechno bude na stole u pájení. Co k čemu je a jak s tím zacházet:
+
+### Páječka se stojánkem {pajecka}
+
+Ohřeje hrot na víc než 300 °C. Držte ji za rukojeť jako tužku, a kdykoli ji pustíte z ruky, vraťte ji do stojánku. Zapíná a vypíná ji vedoucí.
+
+### Cín s kalafunou {cin}
+
+Tenký drátek z měkkého kovu, uvnitř je kalafuna. Ta při pájení zasyčí a vyčistí kov, aby se ho cín chytil. Odviňte si kousek a přikládejte ho k drátu, ne na hrot.
+
+### Mosazná drátěnka {dratenka}
+
+Čistí hrot. Zapíchněte do ní hrot párkrát před pájením a pokaždé, když zčerná. Vlhká houbička jde taky, ale hrotu víc škodí.
+
+### Třetí ruka {treti-ruka}
+
+Stojánek s krokosvorkou drží drát místo vašich prstů, které by se o horký drát spálily. Drát upněte tak, aby konec trčel do vzduchu.
+
+### Silikonová podložka {podlozka}
+
+Nehořlavá podložka pod ruce a pod spoj. Horký hrot ani cín ji nepropálí. Papír nebo karton pod páječku nepatří.
+
+### Odizolovací kleště {odizolovaci-kleste}
+
+Sloupnou izolaci z konce drátu. Drát vložte do otvoru, který odpovídá jeho tloušťce, asi 1 cm od konce. Stiskněte a izolaci stáhněte.
+
+### Štípačky {stipacky}
+
+Ustřihnou drát i lanko. Odštípnutý konec odletí, proto ho přidržte prstem a mířte jím dolů, ne na sebe ani na souseda.
+
+### Drát a lanko {drat-lanko}
+
+Oba mají izolaci. Drát má uvnitř jeden silný drátek, je tuhý a drží tvar. Lanko má hodně tenkých drátků a je ohebné, hodí se tam, kde se s ním hýbe. Dráhu ohneme z holého drátu bez izolace.
+
+### Izolepa {izolepa}
+
+Izolační páska. Omotejte jí holý spoj, aby se nedotkl jiného drátu. Úhlednější je smršťovací bužírka, ale tu na kroužku nepoužíváme.
+
+### Ochranné brýle {bryle}
+
+Kdo chce, vezme si je. Hodí se hlavně při štípání drátu, kdy může odštípnutý konec odletět.
+
 ## Na pájení budete potřebovat {potreby}
 
 - Páječku se stojánkem, nejlépe s nastavitelnou teplotou
@@ -72,9 +125,11 @@ Hrot párkrát zapíchněte do mosazné drátěnky. Jde to i vlhkou houbičkou, 
 
 Z konce lanka sloupněte odizolovacími kleštěmi asi 1 cm izolace. Tenké drátky uvnitř zakruťte prsty do sebe, ať neodstávají. Drát upněte do třetí ruky nebo ho přilepte páskou ke stolu tak, aby konec trčel do vzduchu.
 
+{{nakres odizolovani}}
+
 ### Pocínujte konec drátu
 
-Hrot přiložte k drátu a v duchu napočítejte do dvou. Pak přiložte cín k drátu z druhé strany, ne na hrot. Když je drát dost teplý, cín se roztaví sám a nasákne mezi drátky. Odtáhněte cín a hned potom páječku. Celé to trvá jen pár vteřin. Když se cín ani po 5 vteřinách neroztaví, déle nedržte a zavolejte vedoucího, hrot je nejspíš špinavý. Při dlouhém držení se začne tavit izolace na lanku.
+Pocínovat znamená potáhnout konec drátu tenkou vrstvou cínu. Pocínované konce se pak spojí mnohem snáz. Hrot přiložte k drátu a v duchu napočítejte do dvou. Pak přiložte cín k drátu z druhé strany, ne na hrot. Když je drát dost teplý, cín se roztaví sám a nasákne mezi drátky. Odtáhněte cín a hned potom páječku. Celé to trvá jen pár vteřin. Když se cín ani po 5 vteřinách neroztaví, déle nedržte a zavolejte vedoucího, hrot je nejspíš špinavý. Při dlouhém držení se začne tavit izolace na lanku.
 
 {{nakres pajeni-postup}}
 
@@ -84,6 +139,8 @@ Hrot přiložte k drátu a v duchu napočítejte do dvou. Pak přiložte cín k 
 
 Oba pocínované konce zakruťte do sebe nebo je zahákněte jako dva háčky, aby držely i bez cínu. Jde to i tak, že je třetí ruka podrží těsně vedle sebe. Cín spoj jen pojistí a zajistí, že bude vést. Nahřejte spoj, přidejte trochu cínu a odtáhněte nejdřív cín, pak páječku. Pak spojem pár vteřin nehýbejte, dokud cín neztuhne. Když se spoj při chladnutí pohne, cín v něm popraská a spoj nebude vést.
 
+{{nakres spojeni}}
+
 ### Zkontrolujte spoj
 
 Dobrý spoj je lesklý a hladký a cín zatekl mezi dráty, takže je pod ním pořád vidět jejich tvar. Matná šedá kulička je studený spoj: cín se roztavil na hrotu, ale drát zůstal studený. Takový spoj znovu nahřejte, klidně s kapkou cínu navíc. Nakonec za spoj zatáhněte. Dobrý spoj vydrží.
@@ -92,7 +149,7 @@ Dobrý spoj je lesklý a hladký a cín zatekl mezi dráty, takže je pod ním p
 
 ### Zaizolujte a ukliďte
 
-Holý spoj omotejte izolepou, aby se nedotkl jiného drátu. Kdo chce spoj izolovat smršťovací bužírkou, musí ji navléknout na drát ještě před pájením. Potom už ji přes spoj nenavlékne. Páječku vraťte do stojánku, vypne ji vedoucí. Umyjte si ruce.
+Holý spoj omotejte izolepou, aby se nedotkl jiného drátu. Na kroužku nám páska stačí. Úhlednější je smršťovací bužírka, ta se ale musí navléknout na drát ještě před pájením a po zapájení se smrští teplem, třeba horkovzdušnou pistolí. Páječku vraťte do stojánku, vypne ji vedoucí. Umyjte si ruce.
 
 ## Co budete potřebovat na hlavolam {potreby}
 
@@ -107,7 +164,7 @@ Holý spoj omotejte izolepou, aby se nedotkl jiného drátu. Kdo chce spoj izolo
 - Fixu na namotání očka
 - Páječku a cín, viz výše
 
-> Měděný drát jde dobře pájet. Pozinkovaný drát se dá ohýbat stejně, ale cín na něm skoro nedrží.
+> Měděný drát jde dobře pájet. Pozinkovaný jsme zkusili: cín na něm skoro nedrží a hůř vede, takže bzučák při dotyku spíš chrčí, než pípá.
 
 ## Postup {postup}
 
@@ -147,11 +204,12 @@ Konce dráhy zastrčte do otvorů v prkýnku a zalepte tavnou pistolí. Volné l
 
 ### Zahrajte si
 
-Vložte baterie a dotkněte se očkem dráhy. Bzučák musí pípnout. Pak očko položte na izolepu na startu a zkuste dojet do cíle bez pípnutí. Kdo to dá nejrychleji? A kdo projede bez jediného pípnutí?
+Vložte baterie: plochý konec baterie (mínus) patří k pružince. Dotkněte se očkem dráhy. Bzučák musí pípnout. Pak očko položte na izolepu na startu a zkuste dojet do cíle bez pípnutí. Kdo to dá nejrychleji? A kdo projede bez jediného pípnutí?
 
 ## Když to nefunguje {opravy}
 
 - **Nepípá ani při dotyku** Bzučák je otočený obráceně, nebo některý spoj nevede. Zkontrolujte plus k delší nožce a zatáhněte za každý spoj. Vedoucí může spoj proměřit multimetrem.
+- **Nepípá vůbec, ani když se dráty spojí** Zkontrolujte baterie: plochým koncem k pružince, obě otočené podle značek + a − v držáku.
 - **Pípá pořád** Očko leží na holé dráze, nebo se holý konec lanka dotýká dráhy či baterie. Spoje zaizolujte.
 - **Cín se nechytá drátu** Drát je špinavý nebo zoxidovaný: obruste ho smirkovým papírem. Nebo je hrot špinavý a nehřeje, nebo jde o pozinkovaný či ocelový drát.
 - **Spoj je šedá kulička** Studený spoj. Nahřejte ho znovu a nechte cín pořádně roztéct.

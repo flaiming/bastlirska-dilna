@@ -25,7 +25,7 @@ import tempfile
 import threading
 from pathlib import Path
 
-from nakresy import NAKRESY, vez
+from nakresy import NAKRESY, ikona, vez
 
 ZDROJ = Path(__file__).parent
 VYSTUP = ZDROJ.parent / 'site'
@@ -187,6 +187,15 @@ def oddil(nadpis, druh, id_, text, konec=''):
             '<div><dt>{}</dt><dd>{}</dd></div>\n'.format(*re.fullmatch(r'- \*\*(.+?)\*\* (.+)', r).groups())
             for r in text.strip().splitlines())
         obsah = f'<dl class="fixes">\n{polozky}</dl>'
+    elif druh == 'nastroje':
+        # kartičky „### Název {ikona}“ s textem pod nadpisem, úvod nad nimi jako obvykle
+        uvod, *karty = re.split(r'^### ', text, flags=re.M)
+        polozky = ''
+        for karta in karty:
+            radek, _, popis = karta.partition('\n')
+            nazev, jmeno = re.fullmatch(r'(.+?) \{(.+)\}', radek.strip()).groups()
+            polozky += f'<li>{ikona(jmeno)}<h3>{nazev}</h3>\n{md(popis)}</li>\n'
+        obsah = md(uvod, p='section-lead') + f'\n<ul class="prints tools">\n{polozky}</ul>'
     elif druh == 'pribeh':
         bb = bloky(text)
         fotky = [b for b in bb if b.startswith('![')]

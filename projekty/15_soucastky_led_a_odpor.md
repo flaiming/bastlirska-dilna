@@ -1,6 +1,6 @@
 # 15 Objevujeme součástky I: LED a odpor (svítící ozdoba)
 
-**Stav:** návrh; před lekcí postavit vzorek ozdoby a vyzkoušet kartičky objevování  
+**Stav:** návrh; boxy CR2032 a baterie pořízené (23. 11. 2026). Před lekcí postavit vzorek ozdoby a vyzkoušet kartičky objevování. Kandidát na samostatnou lekci hned 24. 11. pro skupinu B, viz [Varianta: hned příště](#varianta-hned-příště)  
 **Pro koho:** 3.–5. třída; skupina A 9 dětí, skupina B 8 dětí, obvykle chybí 1–2  
 **Délka:** přibližně 120 minut  
 **Kdy:** Elektrická dílna III, po hlavolamu a vibrobotovi; nejlépe na začátku prosince (ozdoba)  
@@ -23,7 +23,7 @@ Vysvětlovat přes vodu v hadici: baterie je čerpadlo, odpor je zúžená hadic
 Příprava:
 
 1. Postavit vzorek ozdoby a nechat ho svítit přes noc: jak dlouho vydrží baterie, jak svítí bílá, červená a žlutá LED.
-2. Sestavit **objevovací sadu pro dvojici** (krabička): držák 2× AA s vodiči, 4–6 krokosvorek, 3 LED různých barev, odpory 100 Ω, 1 kΩ a 10 kΩ (označené barvou na papírku), 1 baterie CR2032.
+2. Sestavit **objevovací sadu pro dvojici** (krabička): držák 2× AA s vodiči, 4–6 krokosvorek, 3 LED různých barev, odpory 100 Ω, 1 kΩ a 10 kΩ (označené barvou na papírku). Baterie CR2032 v sadě není: každé dítě dostane na začátku svou, se kterou objevuje a kterou si pak vloží do ozdoby.
 3. Vytisknout **kartičky úkolů** (viz Postup) a **„pas součástek“**: kartička, kam si dítě přilepí LED a odpor a napíše, co dělají. Bude přibývat v dalších lekcích.
 4. **Ukázka na laboratorním zdroji** (pro vedoucího): LED s odporem, pomalu přidávat napětí od 0 V. Děti vidí, že LED se rozsvítí až od určitého napětí (červená asi 1,8 V, bílá asi 2,7 V). Omezení proudu nastavit na 20 mA, pak LED nejde spálit ani bez odporu.
 5. Na ozdobu předem vyříznout tvary z kartonu a propíchnout otvor na LED; odizolovat konce vodičů držáku, pokud nejsou.
@@ -34,8 +34,8 @@ Spotřební (jde domů), počítáno pro 17 dětí + 1 rezervu:
 
 | Položka | Na dítě | Celkem | Koupit / zajistit / skladem | Poznámka |
 | --- | ---: | ---: | --- | --- |
-| [Držák CR2032 s vodiči a vypínačem, Dratek](https://dratek.cz/12690-cr2032/) | 1 | 18 | Koupit | 9 Kč. |
-| Baterie CR2032 | 1 | 18 | Koupit | Möbelix Elonix 4 ks za 18 Kč (akce do 31. 10. 2026), nebo AgfaPhoto 5 ks za 60 Kč (eneshop). Kapacita levných značek bývá nižší než u značkových (běžně kolem 200 mAh); ozdoba bere jednotky mA, takže vydrží desítky hodin svícení. **Výjimka z pravidla „baterie zůstávají“ (rozhodnuto 22. 10.):** CR2032 jde domů s ozdobou, jinak by doma nesvítila. |
+| [Držák CR2032 s vodiči a vypínačem, Dratek](https://dratek.cz/12690-cr2032/) | 1 | 18 | Pořízeno | 9 Kč. 18 kusů. |
+| Baterie CR2032 | 1 | 18 | Pořízeno, 20 ks (AgfaPhoto, viz nákupní základ) | Möbelix Elonix 4 ks za 18 Kč (akce do 31. 10. 2026), nebo AgfaPhoto 5 ks za 60 Kč (eneshop). Kapacita levných značek bývá nižší než u značkových (běžně kolem 200 mAh); ozdoba bere jednotky mA, takže vydrží desítky hodin svícení. **Výjimka z pravidla „baterie zůstávají“ (rozhodnuto 22. 10.):** CR2032 jde domů s ozdobou, jinak by doma nesvítila. |
 | LED 5 mm (bílá, teple bílá, červená, žlutá) | 1–2 | asi 30 | Skladem | Dítě si vybere barvu. |
 | Odpor 47–100 Ω | 0–1 | 20 | Skladem | Volitelně do série. |
 | Karton, filc, ozdobné drátky | – | – | Skladem / zbytky | Tělo ozdoby. |
@@ -55,11 +55,31 @@ Vratné (objevovací sady pro 4–5 dvojic):
 
 | Čas | Co dělají děti a vedoucí |
 | --- | --- |
-| 0–15 min | **Tajemná součástka:** každý dostane LED a baterii CR2032. Rozsvítí ji? Proč jen jedním směrem? Najít delší nožičku. Vedoucí ukáže hadicový model. |
+| 0–15 min | **Tajemná součástka:** každý dostane LED a baterii CR2032 (tu pak vloží do své ozdoby, nikam jinam se nerozdává). Rozsvítí ji? Proč jen jedním směrem? Najít delší nožičku. Vedoucí ukáže hadicový model. |
 | 15–50 min | **Objevování ve dvojicích s kartičkami** (dvojice si bere kartičky postupně, vedoucí obchází): ① LED na 2× AA přes odpor; otočit LED. ② Vyměnit odpor 100 Ω → 1 kΩ → 10 kΩ: co se stane se světlem? ③ Dvě LED za sebou a vedle sebe. ④ Barvy: svítí všechny stejně? ⑤ Multimetrem změřit tři odpory a rozluštit proužky jako šifru. |
 | 50–60 min | Společně: co jsme zjistili. Pas součástek: nalepit LED a odpor, napsat „jednosměrka“ a „brzda“. |
 | 60–105 min | **Výrobek, stanoviště:** ① pájení u vedoucího (2 místa: PLSD a mikropájka): LED k vodičům držáku, volitelně odpor do série, spoje omotat izolepou · ② tělo ozdoby: tvar, zdobení, přilepit držák · ③ kdo čeká, dostane rozšiřující kartičku (kolik LED rozsvítí jedna CR2032?). |
 | 105–120 min | Zhasnout světla ve třídě a rozsvítit ozdoby. Úklid, objevovací sady zpět do krabiček. |
+
+## Varianta: hned příště
+
+Rozmyšleno 23. 11. 2026 pro případ, že by skupina B 24. 11. neměla obvody hlavolamu z minula. Lekce je samostatná, na hlavolam nenavazuje, a 2× AA držáky z objevování zůstávají v dílně, takže se žádné nové nespotřebují. Domů jde jen box CR2032, baterie, LED a tělo ozdoby.
+
+**Posun termínů:** skupina B 24. 11. ozdoba a 8. 12. hlavolam 2, skupina A 1. 12. hlavolam 2 a 15. 12. ozdoba. Obě skupiny mají ozdobu před Vánoci. Riziko zapomenutých obvodů se jen odkládá na 8. 12., připomínka rodičům je pořád potřeba, jen je na ni víc času.
+
+**Příprava na večer před lekcí, nutná:**
+
+1. Vzorek ozdoby. Ověřit na skutečném boxu: barvy vodičů (který je plus), jak se vkládá baterie a otevírá víčko, kde je vypínač a na kterou stranu boxu smí lepidlo, aby šla baterie vyměnit. Zkusit, jak na CR2032 svítí červená, žlutá, zelená a bílá LED (bílá na knoflíkové baterii jde, na rozdíl od 2× AA se 100 Ω v hlavolamu).
+2. Objevovací sady pro 4 dvojice: držák 2× AA s bateriemi, 6 krokosvorek, 3 LED, odpory 100 Ω, 1 kΩ a 10 kΩ.
+3. Karton na tvary, asi 10 × 10 cm na dítě, a tužka nebo špejle na propíchnutí otvoru na LED.
+
+**Může odpadnout:** tištěné kartičky (úkoly napsat na tabuli), pas součástek, ukázka na laboratorním zdroji, kontaktní pole.
+
+**Na co při pájení dohlédnout:**
+
+- LED nejdřív přiložit k vodičům boxu se zapnutým vypínačem a zkusit, jestli svítí. Teprve pak pájet.
+- Nožky LED nezkracovat, dokud není připájená. Po zkrácení už nejde poznat, která byla delší.
+- Holé spoje se nesmí dotknout: jeden omotat izolepou, nebo spoje posunout, aby nebyly vedle sebe.
 
 ## Tipy při stavbě a když to nefunguje
 

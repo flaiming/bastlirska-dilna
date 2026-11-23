@@ -179,7 +179,7 @@ Než začnete pájet hlavolam, spojte podle [návodu na pájení](#pajeni) dva k
 
 ### Ohněte dráhu
 
-Tvar si nejdřív nakreslete na papír. Pak drát ohýbejte rukama a v ostrých místech kleštěmi. Udělejte vlny, kopce nebo smyčku, jen ne moc ostré zatáčky, očko by jimi neprošlo. Konce nechte rovné a dlouhé asi 5 cm, zastrčí se do prkénka. Oba konce omotejte asi 3 cm izolepy.
+Drát ohýbejte rukama a v ostrých místech kleštěmi. Udělejte vlny, kopce nebo smyčku, jen ne moc ostré zatáčky, očko by jimi neprošlo. Konce nechte rovné a dlouhé asi 5 cm, zastrčí se do prkénka. Oba konce omotejte asi 3 cm izolepy.
 
 {{nakres hlavolam}}
 
@@ -217,21 +217,6 @@ Vložte baterie: plochý konec baterie (mínus) patří k pružince. Zapněte vy
 - **Roztavila se izolace** Páječka byla u drátu moc dlouho. Ustřihněte poškozený kus, odizolujte znovu a pájejte kratší dobu.
 - **Očko neprojde zatáčkou** Zatáčku rozevřete, nebo očko zvětšete.
 - **Pípá jen slabě** Baterie jsou vybité, nebo jsou to nabíjecí s nižším napětím. Zkuste nové alkalické.
-
-## Bonus: hlavolam s pamětí {#bonus}
-
-Pro ty, kdo budou hotoví dřív. Obyčejný hlavolam pípá jen během dotyku. S relé pípá dál, dokud ho nevypnete, takže nikdo nezapře, že se dotkl.
-
-Relé je vypínač, který ovládá elektromagnet. Když cívkou relé teče proud, přitáhne kovový jazýček a ten sepne kontakt. Je to slyšet jako cvaknutí.
-
-{{nakres hlavolam-rele}}
-
-- **Dotyk:** očko se dotkne dráhy a proud teče do cívky a do bzučáku. Relé cvakne a sepne svůj kontakt.
-- **Drží samo:** kontakt relé je zapojený vedle očka a dráhy. Proud jím teče dál, i když očko z dráhy zvednete, takže cívka si kontakt drží sama.
-- **Reset:** vypínač proud přeruší, relé kontakt pustí a je ticho. Po zapnutí se hraje znovu.
-- **Co je potřeba:** relé s cívkou na 3 V (například SRD-03VDC, zapojují se jeho vývody COM a NO), vypínač a dioda 1N4007 přes cívku proužkem k plusu. Dioda není nutná, ale chrání před napěťovou špičkou, kterou cívka udělá při vypnutí.
-
-> Relé máme jen pár kusů, takže si ho vyzkouší, kdo bude rychlý. Zapojuje se krokosvorkami a pak zůstává v dílně. Cívka bere hodně proudu, takže hlavolam s relé po hře vypínejte.
 
 ## Pájení doma {#doma}
 

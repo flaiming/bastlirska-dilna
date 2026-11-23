@@ -43,7 +43,7 @@ Na začátku vedoucí ukáže na sponkovém vypínači uzavřený a rozpojený o
 4. Pájecí stanoviště: stojánek, mosazná drátěnka na hrot (mokrá houbička jen záloha, hrotu škodí teplotní šok), silikonová pájecí podložka (4 ks, ne papír ani karton), brýle pro zájemce, „třetí ruka“ nebo kolíček, cín s kalafunou, větrání. Mikropájku pro děti, trafopájku jen vedoucí.
 5. Kartička pro Voltíka: vybrat 3–4 pokusy, ideálně se spínačem, LED nebo bzučákem.
 6. Postavit ukázkový sponkový vypínač s bzučákem.
-7. **Zkoušky na laboratorním zdroji** (omezení proudu asi 200 mA): jak hlasitě bzučák pípá na 2,4 V (nabíjecí baterie) a na 3 V; při jakém napětí sepne relé SRD-05VDC na bonus (od 2 V pomalu přidávat do cvaknutí). Sepne-li až nad asi 2,8 V, bonus napájet ze 3× AA a ověřit, že bzučák 4,5 V snese. Zdroj se hodí i na zkoušení hotových hlavolamů místo baterií.
+7. **Zkoušky na laboratorním zdroji** (omezení proudu asi 200 mA): jak hlasitě bzučák pípá na 2,4 V (nabíjecí baterie) a na 3 V; při jakém napětí sepne relé SRD-05VDC na bonus (od 2 V pomalu přidávat do cvaknutí). Sepne-li až nad asi 2,8 V, bonus napájet ze 3× AA a ověřit, že bzučák 4,5 V snese. **Vyzkoušeno 23. 11. 2026:** relé na 4,5 V sepne, bzučák funguje i na 5 V. Bonus s relé tedy na 4,5 V: kryt na 2× AA a do série kryt na 1× AA (6 krytů = 6 relé). Zdroj se hodí i na zkoušení hotových hlavolamů místo baterií.
 
 ## Materiál a nákup
 
@@ -92,7 +92,7 @@ Při 7–8 dětech 3 skupinky po 2–3; vedoucí sedí u pájení.
 - **Očko neprojde zatáčkou:** zvětšit očko nebo dráhu v ostrých místech rozevřít.
 - **Snazší varianta:** vedoucí připraví dráhu předem ohnutou; dítě jen pájí a sestavuje.
 - **Rozšíření:** přidat LED s rezistorem paralelně k bzučáku; nebo udělat dráhu ve dvou úrovních.
-- **Bonus pro rychlé: hlavolam s pamětí.** Samodržné relé SRD-05VDC (objednáno 6 ks; cívka 5 V, sepnutí na 3 V ověřit na zdroji, jinak napájet 4,5 V: k držáku 2× AA přidat do série držák 1× AA): kontakt COM–NO paralelně k očku a dráze, cívka a bzučák za nimi, vypínač v přívodu jako reset, dioda 1N4007 přes cívku. Jen pár kusů relé, ne pro všechny; zapojuje se krokosvorkami a relé zůstává v dílně. Cívka bere asi 100 mA, po hře vypnout. Před lekcí vyzkoušet. [Interaktivní schéma](https://claude.ai/artifact/148C6rAzAbfM6g89yegQUa).
+- **Záloha, hlavolam s pamětí (na jindy):** po dotyku pípá dál, dokud se nevypne vypínač. Modul ze dvou tranzistorů (PNP BC557, NPN BC547) a čtyř odporů (2× 10 kΩ, 2× 4,7 kΩ) se připojí třemi krokosvorkami k hotovému hlavolamu: plus bzučáku, mínus bzučáku (začátek lanka k dráze), mínus baterie. Na 3 V **vyzkoušeno 22. 11. 2026, funguje.** V klidu nebere nic, bzučák pípá naplno. Pro děti na druhé pájení moc složité (asi 12 drobných spojů); kdyby, tak hotové moduly od vedoucího jako ukázka, nebo až po lekci 16 (tranzistor). [Schéma s animací proudu](https://claude.ai/artifact/RGj6RqMQZ2J5iqj1GPspXb). Relé SRD-05VDC na 3 V nesepne (potřebuje asi 3,75 V) a cívka bere asi 100 mA. Na 4,5 V ale sepne, proto bonus s relé ve verzi se třemi bateriemi (viz lekce 4 na webu). **Plán 23. 11.:** bonus ve dvou variantách, 6 relé na 4,5 V a 2 moduly s tranzistory, které vedoucí spájí předem. Děti modul připojí třemi lanky nebo krokosvorkami (+ na delší nožku bzučáku, X na kratší, − na mínus baterií). Relé mají oba kontaktní vývody NO (bez proudu nesepnuté nic), stačí zapojit jeden.
 
 ## Bezpečnost
 
@@ -127,6 +127,23 @@ Klasický „drátěný hlavolam“ (buzz wire game). Úvodní ukázka použív�
 | 100–120 min | Zkouška obvodu (spojit volné konce lanek), baterie zpět do krabičky, úklid. Obvody se podepíšou a zůstanou v dílně. |
 
 **24. 11.: dráha a kompletace.** Ohnout dráhu a očko z měděného drátu, zastrčit dráhu do prkénka, připájet červené lanko k dráze a modré k očku, zkouška a hra. Vibrobot se u skupiny B posouvá.
+
+Obvody si děti 10. 11. odnesly domů a mají je přinést. Zbývají jen 2 bzučáky a 2 vypínače, držáků baterií je dost. Pro ty, kdo obvod zapomenou:
+
+- Dráhu a očko ohýbá každý bez ohledu na obvod; to je první půlka lekce.
+- **Vypínač není nutný:** hlavolam bez dotyku nebere proud. Stačí, aby očko v klidu leželo na izolepě.
+- **Světelný hlavolam místo bzučáku:** LED s odporem 100 Ω (skladem), asi 4 spoje: plus držáku → odpor → delší nožka LED, kratší nožka → lanko k dráze, mínus držáku → lanko k očku. Bzučák se dá připájet příště.
+- Prvním dvěma zapomnětlivcům dát zbylé bzučáky a vypínače. Pondělní připomínka rodičům, ať obvod přibalí.
+
+| Čas | Co dělají děti a vedoucí |
+| --- | --- |
+| 0–10 min | Rozdat obvody, zkouška spojením lanek. Kdo obvod nemá, dostane držák a LED s odporem (nebo zbylý bzučák). Ukázka hotového hlavolamu. |
+| 10–50 min | **Všichni ohýbají** dráhu a očko, konce dráhy omotat izolepou. U pájky mezitím ti bez obvodu: nový obvod se světlem (asi 4 spoje). |
+| 50–85 min | Dráha do prkénka (tavná pistole u vedoucího), u pájky po dvou: červené lanko k dráze, modré k očku (2 spoje na dítě). Zkouška. |
+| 85–105 min | Hra a závody (na čas, každé pípnutí +5 s). Rychlí u pájky: **světlo k pípání**, LED s odporem 100 Ω vedle bzučáku ([návod na webu](https://bastleni.oram.cz/drateny-hlavolam-2/#svetlo)), 3 spoje. |
+| 105–120 min | Baterie zpět do krabičky, úklid. Hlavolam jde domů. |
+
+LED: jen červené, žluté nebo zelené s odporem 100 Ω. Bílé a modré potřebují skoro 3 V, na 2× AA svítí slabě i s menším odporem, proto je nerozdávat. Před lekcí vyzkoušet na vzorku, že LED vedle bzučáku na 2× AA svítí dost. Kdo připojuje LED: nejdřív vyndat baterie a sundat izolepu ze spojů na nožkách bzučáku, po pájení znovu zaizolovat. Při lepení obvodu na prkénko nechat nožky bzučáku bez lepidla.
 
 Pokud se rozdělení osvědčí, dělat hlavolam napříště rovnou na dvě lekce: 1. pájení obvodu, 2. dráha a kompletace.
 

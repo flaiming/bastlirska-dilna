@@ -5,6 +5,8 @@ Lekce je jeden Markdown soubor: hlavička mezi --- a pod ní oddíly ## Nadpis {
 Druhy oddílů: galerie, princip, bezpecnost, potreby, postup, opravy, pribeh; bez druhu je obyčejný oddíl.
 Postupů může být víc, každý si vezme potřeby z oddílu těsně před sebou.
 V textu: ### podnadpis, > tip nebo poznámka, ![popisek](fotka.jpg), {{nakres jmeno}}, {{model ...}}, {{stahnout ...}}.
+{{tisk soubor | Nadpis | nakres nakres}} dá tlačítko na PDF /tisk/soubor.pdf: jedna strana A4 s nadpisem a nákresy pod sebou,
+třeba nápověda k zapojení, kterou si vedoucí vytiskne pro každého.
 
 Lekce bez fotek má místo `prehled_fotky` v hlavičce `prehled_nakres: jmeno`, karta pak ukáže nákres.
 
@@ -114,6 +116,15 @@ def stahnout(soubor, nazev, popis, hlavni):
             f'<span><strong>{nazev}</strong><small>{popis}</small></span></a>')
 
 
+TISKY = {}  # soubor: (nadpis, [nákresy]), naplní se při vykreslování lekcí
+
+
+def tisk(soubor, nadpis, nakresy):
+    TISKY[soubor] = (nadpis, nakresy.split())
+    return (f'<a class="dl dl-alt" href="/tisk/{soubor}.pdf" download>{IKONA}'
+            f'<span><strong>{nadpis}</strong><small>PDF na tisk, A4, 1 strana</small></span></a>')
+
+
 def prikazy(blok):
     """Řádky {{...}} v jednom bloku; po sobě jdoucí modely a stahování se seskupí."""
     radky = [re.fullmatch(r'\{\{(\w+) ?(.*)\}\}', r.strip()).groups() for r in blok.splitlines()]
@@ -125,6 +136,8 @@ def prikazy(blok):
         return '<ul class="prints">' + ''.join(model(*a) for a in argumenty) + '</ul>'
     if druh == 'stahnout':
         return '<div class="downloads">' + ''.join(stahnout(*a, i == 0) for i, a in enumerate(argumenty)) + '</div>'
+    if druh == 'tisk':
+        return '<div class="downloads">' + ''.join(tisk(*a) for a in argumenty) + '</div>'
     raise SystemExit(f'Neznámý příkaz {{{{{druh}}}}}')
 
 
@@ -440,6 +453,41 @@ def vytvor_pdf(lekce):
     return pocty
 
 
+TISK = """<!doctype html>
+<html lang="cs"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<style>
+@page { size: A4; margin: 12mm 14mm; @bottom-right { content: none; } }
+body { background: #fff; margin: 0; }
+.web { margin: 0; font-size: 10pt; color: var(--ink-soft); }
+h1 { font-size: 26pt; margin: 1mm 0 4mm; }
+.diagram { max-width: none; margin: 0 0 5mm; padding: 0; break-inside: avoid; }
+.diagram + .diagram { width: 72%; margin: 0 auto; }
+.diagram figcaption { font-size: 10pt; padding-top: 2mm; }
+</style></head><body>
+<p class="web">Bastlířská dílna · bastleni.oram.cz</p>
+<h1>{nadpis}</h1>
+{nakresy}
+</body></html>"""
+
+
+def vytvor_tisky():
+    """Stránky z {{tisk ...}} vytiskne do tisk/*.pdf, každou na jednu stranu A4."""
+    if not TISKY:
+        return
+    slozka = VYSTUP / 'tisk'
+    slozka.mkdir()
+    with chrome() as spust:
+        for soubor, (nadpis, nakresy) in TISKY.items():
+            html, pdf = slozka / f'{soubor}.html', slozka / f'{soubor}.pdf'
+            html.write_text(TISK.replace('{nadpis}', nadpis).replace('{nakresy}', ''.join(NAKRESY[n] for n in nakresy)))
+            spust(f'/tisk/{soubor}.html', '--no-pdf-header-footer', f'--print-to-pdf={pdf}')
+            html.unlink()
+            if (stran := len(re.findall(rb'/Type\s*/Page[^s]', pdf.read_bytes()))) != 1:
+                raise SystemExit(f'{pdf.name} má {stran} strany, má mít jednu')
+
+
 # --- náhledy pro sdílení na sociálních sítích, 1200 × 630 jako u Facebooku ---
 
 SDILENI = """<!doctype html>
@@ -533,6 +581,7 @@ def main():
     (VYSTUP / 'index.html').write_text(stranka_domu(lekce))
     # dvakrát: PDF se tiskne z hotové stránky a tlačítko pak potřebuje znát počet stran
     zapis_lekce(lekce)
+    vytvor_tisky()
     zapis_lekce(lekce, vytvor_pdf(lekce))
     print(f'Hotovo: {VYSTUP} ({len(lekce)} lekcí)')
 

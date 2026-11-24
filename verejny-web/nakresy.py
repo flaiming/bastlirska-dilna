@@ -917,22 +917,38 @@ modul = (
     + drat('M162 100 H300') + odpor_vodorovne(196, 232, 100, R4K7)
     + drat('M162 140 H300') + odpor_vodorovne(196, 232, 140, R4K7)
     + drat('M300 140 V180') + odpor_svisle(300, 146, 174, R10K)
-    # tři lanka ven
-    + kabel('M162 60 V32 H420', CERVENA, 3.5) + kabel('M300 100 V72 H420', ORANZOVA, 3.5) + kabel('M300 180 V208 H420', MODRA, 3.5)
-    + ''.join(spoj(x, y, 4) for x, y in ((162, 60), (162, 100), (162, 140), (300, 100), (300, 140), (300, 180)))
+)
+modul_spoje = (
+    ''.join(spoj(x, y, 4) for x, y in ((162, 60), (162, 100), (162, 140), (300, 100), (300, 140), (300, 180)))
     + ''.join(f'<text class="hint" x="{x}" y="{y}" text-anchor="middle">{t}</text>' for x, y, t in
               ((124, 55, 'E'), (124, 95, 'B'), (124, 135, 'C'), (322, 95, 'C'), (322, 135, 'B'), (322, 175, 'E')))
     + '<text class="lbl" x="44" y="96" text-anchor="end">PNP</text><text class="hint" x="44" y="110" text-anchor="end">BC557</text>'
     + '<text class="lbl" x="376" y="136">NPN</text><text class="hint" x="376" y="150">BC547</text>'
     + '<text class="lbl" x="152" y="84" text-anchor="end">10 kΩ</text><text class="lbl" x="214" y="90" text-anchor="middle">4,7 kΩ</text>'
     + '<text class="lbl" x="214" y="162" text-anchor="middle">4,7 kΩ</text><text class="lbl" x="290" y="164" text-anchor="end">10 kΩ</text>'
-    + '<text class="lbl" x="424" y="36">+</text><text class="hint" x="416" y="26" text-anchor="end">k delší nožce bzučáku</text>'
-    + '<text class="lbl" x="424" y="76">X</text><text class="hint" x="416" y="66" text-anchor="end">ke kratší nožce bzučáku</text>'
-    + '<text class="lbl" x="424" y="212">−</text><text class="hint" x="416" y="224" text-anchor="end">k mínusu baterií</text>'
 )
-NAKRESY['hlavolam-tranzistory-modul'] = svg(40, modul,
-    'Modul paměti ze dvou tranzistorů. Tranzistory leží plochou stranou s nápisem nahoru. Odpory 10 kΩ (hnědá, černá, oranžová) drží tranzistory v klidu zavřené, přes odpory 4,7 kΩ (žlutá, fialová, červená) se navzájem otevírají. Tři lanka vedou k hlavolamu.',
-    '0 14 440 218')
+# celé zapojení: obvod z minula (baterie, vypínač, bzučák, lanka k dráze a k očku) a modul posunutý o (60, 60)
+hlavolam_tranzistory_zapojeni = (
+    '<rect x="68" y="106" width="406" height="150" rx="8" fill="none" stroke="#9AA6B8" stroke-width="1.2" stroke-dasharray="5 4"/>'
+    + '<g transform="translate(60 60)">' + modul + '</g>'
+    + drzak(20, 30, 90, 40, '2× AA') + vypinac_bok(140, 36) + bzucak(300, 20)
+    + kabel('M110 40 C124 40 128 44 140 44', CERVENA, 3)
+    + kabel('M162 44 C230 44 270 92 310 86', CERVENA, 3)
+    + kabel('M330 80 C340 70 350 50 380 50 H476', CERVENA, 3)
+    + kabel('M110 60 C100 84 20 76 20 110 V290', MODRA, 3)
+    # modul: + na delší nožku bzučáku, X na kratší, − na mínus baterií
+    + kabel('M222 120 V110 C222 96 300 112 310 88', CERVENA, 3)
+    + kabel('M360 160 V115 C360 95 335 98 330 82', ORANZOVA, 3)
+    + kabel('M110 60 C130 62 120 100 60 100 Q40 100 40 120 V262 Q40 274 52 274 H348 Q360 274 360 262 V240', MODRA, 3)
+    + '<g transform="translate(60 60)">' + modul_spoje + '</g>'
+    + ''.join(spoj(x, y, 3.5) for x, y in ((110, 40), (110, 60), (162, 44), (310, 86), (330, 80)))
+    + note(151, 51, 151, 72, 'vypínač', 'middle') + note(299, 33, 280, 28, 'bzučák', 'end')
+    + '<text class="hint" x="78" y="250">modul od vedoucího</text>'
+    + '<text class="lbl" x="480" y="54">k dráze</text><text class="lbl" x="22" y="306" text-anchor="middle">k očku</text>'
+)
+NAKRESY['hlavolam-tranzistory-zapojeni'] = svg(40, hlavolam_tranzistory_zapojeni,
+    'Celé zapojení s modulem z tranzistorů. Obvod z minula zůstává: plus baterií přes vypínač na delší nožku bzučáku, z kratší nožky lanko k dráze a z mínusu baterií lanko k očku. Modul se připojí třemi lanky: + (červené) na delší nožku bzučáku, X (oranžové) na kratší nožku a − (modré) na mínus baterií. Tranzistory leží plochou stranou s nápisem nahoru. Odpory 10 kΩ mají proužky hnědý, černý, oranžový, odpory 4,7 kΩ žlutý, fialový, červený.',
+    '0 10 540 305')
 
 # schéma hlavolamu s modulem z tranzistorů, ve stejném stylu jako schéma s relé
 def tranzistor_zn(cx, cy, baze_vlevo, pnp):

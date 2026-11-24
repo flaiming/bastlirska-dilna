@@ -123,6 +123,8 @@ Hlavolam s relé se zapojuje podle schématu, tedy trochu jinak než základní:
 
 {{nakres hlavolam-rele-zapojeni}}
 
+{{tisk napoveda-rele | Nápověda k zapojení s relé | hlavolam-rele-zapojeni hlavolam-rele}}
+
 > Vyzkoušeli jsme to: relé SRD-05VDC na 4,5 V spolehlivě cvakne a bzučák vydrží i 5 V. Na samotné dvě baterie relé nesepne. Cívka bere hodně proudu, takže hlavolam s relé po hře vypínejte.
 
 ### S tranzistory
@@ -137,7 +139,9 @@ Modul má hodně drobných spojů, proto ho připraví vedoucí. Vy ho připojí
 
 {{nakres hlavolam-tranzistory}}
 
-{{nakres hlavolam-tranzistory-modul}}
+{{nakres hlavolam-tranzistory-zapojeni}}
+
+{{tisk napoveda-tranzistory | Nápověda k zapojení s tranzistory | hlavolam-tranzistory-zapojeni hlavolam-tranzistory}}
 
 - **Čeká:** odpory 10 kΩ drží oba tranzistory zavřené a neteče nic.
 - **Dotyk:** očko spojí X s mínusem a bzučák pípne. Zároveň přes odpor 4,7 kΩ teče malý proud z báze tranzistoru PNP a ten se otevře.

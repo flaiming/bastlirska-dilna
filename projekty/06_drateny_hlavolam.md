@@ -110,6 +110,10 @@ Klasický „drátěný hlavolam“ (buzz wire game). Úvodní ukázka použív�
 - **Baterie:** některé děti neví, jak vložit baterie do držáku. Ukázat to na začátku (plochý konec, mínus, k pružince).
 - **Pořadí:** lepší by bylo začít obvody spojovanými bez pájení (krokosvorky) a pak už jen pájet. Hodně dětí zná Boffina nebo Voltíka a obvody zapojovalo, ale úroveň se hodně liší.
 
+- **Skupina B, 24. 11. 2026 (dráha a kompletace):** na děti moc složité. Schémata ani nákresy zapojení nepochopily a podle nich nezapojily, vedoucí to dělal v podstatě za ně. Komplikovaly to i dvě varianty bonusu (relé a tranzistory) najednou.
+- **Plán pro skupinu A, 1. 12.:** stejná lekce, ale jen varianta s tranzistory. Vedoucí předpájí modul paměti **všem**, děti ho jen připojí třemi lanky. Relé zůstává jen jako bonus pro rychlé.
+- **Napříště obecně:** pájení se vyhýbat, zdržuje a komplikuje. Zvládnou se asi **2 spoje na dítě**, víc ne. Jedna varianta na lekci, složitější díly připraví vedoucí předem. Schémata dětem nedávat jako návod k zapojení.
+
 ### Úpravy pro skupinu B: hlavolam na dvě lekce
 
 **10. 11.: jen pájení obvodu, bez ohýbání drátu.** Každé dítě zapájí elektriku hlavolamu: držák baterií, vypínač, bzučák a dvě volná lanka (červené k budoucí dráze, modré k budoucímu očku). Hotový obvod vyzkouší tak, že volné konce lanek spojí: bzučák pípne. To je přesně to, co pak udělá očko na dráze.

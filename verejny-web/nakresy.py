@@ -562,6 +562,22 @@ POCINOVANE = 'fill="#C3CAD3" stroke="#7D8794" stroke-width="1.2"'
 EXCENTR = '#13A39A'
 
 
+def kryt_bok(x, y, w, h):
+    """Zavřený černý kryt na baterie z boku, nahoře u pravého konce posuvný vypínač."""
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="3" fill="{CERNA}"/>'
+            f'<line x1="{x + 2}" y1="{y + 7}" x2="{x + w - 2}" y2="{y + 7}" stroke="#3A4049" stroke-width="1.2"/>'
+            f'<rect x="{x + w - 18}" y="{y - 4}" width="10" height="5" rx="1" fill="{KOLEBKA}"/>')
+def kryt_shora(x, y, w, h):
+    """Zavřený černý kryt na baterie shora, u pravého konce posuvný vypínač ON/OFF."""
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="5" fill="{CERNA}"/>'
+            f'<rect x="{x + 5}" y="{y + 5}" width="{w - 10}" height="{h - 10}" rx="3" fill="none" stroke="#3A4049" stroke-width="1.2"/>'
+            f'<rect x="{x + w - 26}" y="{y + 10}" width="12" height="22" rx="2" fill="#15181D"/>'
+            f'<rect x="{x + w - 24}" y="{y + 12}" width="8" height="9" rx="1" fill="{KOLEBKA}"/>'
+            f'<text x="{x + w - 30}" y="{y + 18}" text-anchor="end" font-size="6" fill="#8A939F">ON</text>'
+            f'<text x="{x + w - 30}" y="{y + 30}" text-anchor="end" font-size="6" fill="#8A939F">OFF</text>'
+            f'<text x="{x + (w - 30) / 2}" y="{y + h / 2 + 4}" text-anchor="middle" font-size="11" font-weight="700" fill="#B7C0CB">2× AA</text>')
+
+
 def motor_bok(x, y, w=44, h=28):
     """Motorek z boku: zadní víčko s vývody vlevo v x, plechové tělo, vpravo ložisko a hřídel."""
     return (f'<rect x="{x - 5}" y="{y + 6}" width="5" height="3" fill="#9AA6B8"/>'
@@ -577,14 +593,9 @@ vibrobot = (
     + ''.join(f'<line x1="{x}" y1="150" x2="{x + 9}" y2="178" stroke="{STETINA}" stroke-width="2" stroke-linecap="round"/>'
               for x in range(48, 284, 6))
     + f'<rect x="40" y="128" width="250" height="22" rx="6" {DREVO}/>'
-    # druhý drát od mínusu vede za vypínačem
-    + kabel('M150 118 C170 134 184 110 195 104', MODRA, 3)
-    + '<rect x="56" y="106" width="96" height="22" rx="3" fill="#3B4A63"/>'
-    + '<text x="104" y="121" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">2× AA</text>'
-    + '<rect x="132" y="103" width="7" height="28" rx="2" fill="none" stroke="#E8487A" stroke-width="2"/>'
-    + vypinac_bok(164, 114)
-    + kabel('M148 108 C152 96 160 100 166 112', '#E0402B', 3)
-    + kabel('M184 112 C188 100 190 92 195 92', '#E0402B', 3)
+    # kryt na baterie s posuvným vypínačem nahoře, dráty vedou z čela přímo k motorku
+    + kabel('M156 113 C174 113 180 92 195 92', '#E0402B', 3) + kabel('M156 121 C178 121 182 104 195 104', CERNA, 3)
+    + kryt_bok(56, 100, 100, 28)
     # podložka a motorek, excentr se šroubkem končí před okrajem kartáče
     + '<rect x="204" y="112" width="48" height="16" rx="2" fill="#D9B98C" stroke="#9C7442" stroke-width="1.2"/>'
     + motor_bok(200, 84)
@@ -592,11 +603,12 @@ vibrobot = (
     + f'<rect x="262" y="93" width="8" height="10" rx="1" fill="{EXCENTR}"/><rect x="263" y="72" width="6" height="29" rx="3" fill="{EXCENTR}"/>'
     + '<rect x="258" y="75" width="22" height="5" fill="#9AA3AE"/><rect x="279" y="72" width="4" height="11" rx="1" fill="#7D8794"/>'
     # oko a tykadlo z chlupatého drátku
-    + '<path d="M60 106 C54 88 38 86 34 72 C32 64 42 62 42 70" fill="none" stroke="#E8487A" stroke-width="3.5" stroke-linecap="round"/>'
+    + '<path d="M62 100 C54 88 38 86 34 72 C32 64 42 62 42 70" fill="none" stroke="#E8487A" stroke-width="3.5" stroke-linecap="round"/>'
     + '<circle cx="50" cy="120" r="8" fill="#fff" stroke="#1B2B4B" stroke-width="1.5"/><circle cx="47" cy="122" r="3.5" fill="#1B2B4B"/>'
     + '<line x1="110" y1="50" x2="44" y2="50" stroke="#1B2B4B" stroke-width="2" marker-end="url(#sip{n})"/>'
     + '<text class="lbl" x="116" y="54">jede tam</text>'
-    + note(174, 108, 150, 88, 'vypínač', 'end') + note(226, 84, 214, 64, 'motorek', 'end')
+    + note(143, 96, 128, 78, 'vypínač', 'end') + note(226, 84, 214, 64, 'motorek', 'end')
+    + '<text x="100" y="118" text-anchor="middle" font-size="10" font-weight="700" fill="#B7C0CB">2× AA</text>'
     + note(281, 72, 300, 56, 'excentr') + '<text class="lbl" x="304" y="74">se šroubkem</text>'
     + note(252, 122, 300, 140, 'podložka')
     + '<text class="lbl" x="150" y="193" text-anchor="middle">štětiny skloněné dozadu</text>'
@@ -628,23 +640,23 @@ excentr_zepredu = (
 
 NAKRESY.update({
  'vibrobot': svg(31, vibrobot,
-    'Hotový vibrobot z boku: na kartáči je držák baterií, vypínač a na podložce motorek. Excentr se šroubkem se točí nad kartáčem a nepřečnívá přes jeho okraj.',
+    'Hotový vibrobot z boku: na kartáči je kryt na baterie s vypínačem a na podložce motorek. Excentr se šroubkem se točí nad kartáčem a nepřečnívá přes jeho okraj.',
     '0 30 360 172'),
  'vibrobot-excentr': svg(32, excentr_zepredu,
     'Pohled zepředu na hřídel: šroubek v excentru opisuje kružnici. Podložka zvedne motorek tak, aby šroubek nikdy neškrtl o kartáč.',
     '0 50 340 152'),
  'vibrobot-zapojeni': svg(33,
-    drzak_2aa + vypinac_bok(182, 58, 36, 18, 14)
+    kryt_shora(20, 52, 150, 76)
     + motor_bok(244, 58, 60, 44)
     + '<line x1="314" y1="80" x2="330" y2="80" stroke="#7D8794" stroke-width="2.5"/>'
-    + kabel('M162 77 C178 77 186 90 191 90', '#E0402B', 3.5) + spoj(162, 77) + spoj(191, 90)
-    + kabel('M209 90 C224 90 228 65 239 65', '#E0402B', 3.5) + spoj(209, 90) + spoj(239, 65)
-    + kabel('M162 123 C200 123 222 95 239 95', MODRA, 3.5) + spoj(162, 123) + spoj(239, 95)
-    + note(200, 50, 200, 40, 'vypínač', 'middle') + note(282, 58, 282, 40, 'motorek', 'middle')
+    + kabel('M170 100 C204 100 214 65 239 65', '#E0402B', 3.5) + kabel('M170 112 C208 112 220 95 239 95', CERNA, 3.5)
+    + spoj(239, 65) + spoj(239, 95)
+    + note(150, 61, 164, 36, 'vypínač', 'start', odstup=3) + note(282, 58, 282, 40, 'motorek', 'middle')
+    + '<text class="hint" x="95" y="148" text-anchor="middle">kryt na baterie</text>'
     + '<text class="hint" x="282" y="124" text-anchor="middle">vývody motorku</text>'
     + '<text class="hint" x="282" y="137" text-anchor="middle">lze prohodit</text>',
-    'Zapojení: plus baterie přes vypínač k jednomu vývodu motorku, mínus baterie k druhému. Tečky jsou pájené spoje.',
-    '0 8 340 172'),
+    'Zapojení: kryt na baterie má vypínač i dráty. Červený drát připájejte k jednomu vývodu motorku, černý k druhému. Tečky jsou pájené spoje, jsou jen dva.',
+    '0 20 340 136'),
 })
 
 

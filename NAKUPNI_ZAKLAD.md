@@ -88,7 +88,7 @@ Odpájecí knot Dratek nemá; bere se z Laskakitu (odsávací lícna 2 mm, 1,5 m
 
 Relé, krokosvorky a držáky zůstávají v dílně.
 
-**5. Papírnictví, hobby, lékárna:** ochranné brýle dětské 4 ks (~250 Kč), stahovací pásky (~30), pohyblivá očička a chlupaté drátky (~100), gel na popáleniny (~100). Ventilátor a kolíčky z domu.
+**5. Papírnictví, hobby, lékárna:** ochranné brýle dětské 4 ks (~250 Kč), stahovací pásky (~30), pohyblivá očička a chlupaté drátky (~100), **gel na popáleniny (~100), po hlavolamu potvrzeno: koupit**. Ventilátor a kolíčky z domu.
 
 **Zásada: kupovat u českých prodejců** (Drátek, Laskakit, GME a podobně), i když jsou o něco dražší. Zboží je stejně většinou z Číny, ale vydělá na něm někdo v ČR. AliExpress jen na to, co tu opravdu není k dostání (např. relé s cívkou na 3 V `SRD-03VDC-SL-C`).
 

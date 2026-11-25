@@ -3,7 +3,7 @@ adresa: vibrobot
 barva: blue
 nazev: Vibrobot
 popis: Robot z kartáče, kterého rozhýbe motorek se závažím. Kam pojede, záleží na štětinách, vyvážení a ozdobách.
-perex: Kartáč, motorek a šroubek jako závaží. Motorek kartáčem třese a šikmé štětiny z třesení udělají jízdu. Spoje si každý zapájí sám.
+perex: Kartáč, motorek a šroubek jako závaží. Motorek kartáčem třese a šikmé štětiny z třesení udělají jízdu. Dva spoje k motorku si každý zapájí sám.
 kdy: termín upřesníme
 jak_dlouho: 2 hodiny
 domu: robot bez baterií, doma stačí vložit 2 tužkové baterie
@@ -30,7 +30,7 @@ Pájí se stejně jako u hlavolamu. Pravidla u páječky najdete v [návodu na d
 - **Než robota upravíte, vypněte ho.** Než posunete motorek nebo přilepíte ozdobu, cvakněte vypínačem.
 - **Zaseknutý motorek vypněte.** Když je zapnutý a netočí se, hřeje se. Uvolněte, co ho drží, a pak zapněte znovu.
 - **Tavná pistole pálí.** Lepí se jen u stolu s vedoucím. Na trysku ani na čerstvé lepidlo nesahejte a pistoli vracejte do stojánku.
-- **Baterie nezkratujte.** Plus a mínus držáku nikdy nespojujte drátem napřímo, bez motorku. Drát i baterie se rozpálí.
+- **Baterie nezkratujte.** Holé konce vodičů od krytu na baterie nikdy nespojujte napřímo, bez motorku. Drát i baterie se rozpálí.
 
 ### Když se něco stane
 
@@ -42,9 +42,7 @@ Pájí se stejně jako u hlavolamu. Pravidla u páječky najdete v [návodu na d
 - Kartáč na boty nebo rýžák, asi 15 cm dlouhý
 - Malý motorek na 3 až 5 V s hřídelí 2 mm
 - Excentr z 3D tiskárny (model je níže) a šroubek M3, k tomu pár matic M3
-- Malý kolébkový vypínač
-- Držák na 2 tužkové baterie (AA), 2 baterie a gumičku
-- Ohebné lanko, 2 kousky po 10 cm
+- Kryt na 2 tužkové baterie (AA) s vypínačem a vodiči, 2 baterie
 - Podložku pod motorek: špalík, kus korku nebo 2–3 slepená víčka
 - Tavnou pistoli a stahovací pásku
 - Na ozdoby: pohyblivá očička, chlupaté drátky, velké sponky, plastelínu
@@ -62,9 +60,9 @@ Na kroužku mají motorky excentr nasazený od vedoucího. Doma: excentr natlač
 
 > Motorek se točí stovkykrát za vteřinu, takže excentr musí držet pevně. Krátce ho roztočte a zkontrolujte, že nehází. Kdo nemá 3D tiskárnu, přilepí šroubek tavným lepidlem napříč přes hřídel. Hřídel předtím očistěte lihem a zdrsněte smirkovým papírem.
 
-### Zapájejte elektriku
+### Připájejte motorek
 
-Plus držáku baterií spojte kouskem lanka s jedním kontaktem vypínače. Druhý kontakt vypínače spojte s jedním vývodem motorku. Mínus držáku spojte s druhým vývodem motorku. Pájí se stejně jako u [hlavolamu](/drateny-hlavolam/#pajeni). Holé spoje zaizolujte.
+Kryt na baterie má vypínač i vodiče. Stačí dva spoje: jeden vodič připájejte k jednomu vývodu motorku, druhý k druhému. Pájí se stejně jako u [hlavolamu](/drateny-hlavolam/#pajeni).
 
 {{nakres vibrobot-zapojeni}}
 
@@ -78,15 +76,15 @@ Na jeden konec hřbetu kartáče přilepte podložku a na ni motorek. Hřídel m
 
 Motorek přilepte tavnou pistolí a pro jistotu ho přitáhněte stahovací páskou.
 
-### Přilepte baterie a vypínač
+### Přilepte kryt na baterie
 
-Držák baterií přilepte na hřbet kartáče a vypínač vedle něj tak, aby se dal snadno zapnout. Kolem držáku natáhněte gumičku, jinak baterie při třesení vyskakují.
+Kryt přilepte na hřbet kartáče tak, aby šel otevřít a vypínač byl po ruce.
 
 {{nakres vibrobot}}
 
 ### První jízda
 
-Vložte baterie: plochý konec baterie (mínus) patří k pružince. Postavte robota na stůl nebo na podlahu a zapněte ho. Měl by se rozjet. Jestli se jen točí nebo stojí, podívejte se do [rad níže](#opravy).
+Vložte baterie: plochý konec baterie (mínus) patří k pružince. Postavte robota na stůl nebo na podlahu a zapněte vypínač na krytu. Měl by se rozjet. Jestli se jen točí nebo stojí, podívejte se do [rad níže](#opravy).
 
 ### Ozdobte a vylaďte
 
@@ -105,13 +103,12 @@ Kdo dojede rovně nejdál? Kdo objede kruh? A jede líp kartáč na boty, nebo r
 
 ## Když to nejede {opravy #opravy}
 
-- **Motorek se netočí** Vypínač je vypnutý, oba dráty vedou na stejný kontakt vypínače, některý spoj nevede, nebo jsou vybité baterie. Zkuste motorek připojit k baterii napřímo.
+- **Motorek se netočí** Vypínač na krytu je vypnutý, některý spoj nevede, nebo jsou vybité baterie. Zkuste motorek připojit k baterii napřímo.
 - **Motorek se točí, ale robot stojí** Závaží je malé nebo kartáč těžký. Dejte delší šroubek nebo matici navíc a posuňte motorek blíž ke konci kartáče.
 - **Robot se jen točí dokola** Štětiny jsou rovné, nebo je motorek na boku. Posuňte motorek doprostřed šířky kartáče, štětiny přejeďte dlaní jedním směrem, nebo přidejte plastelínu na druhou stranu.
 - **Robot jede pozpátku nebo bokem** Zkuste prohodit dráty u motorku, nebo štětiny přejeďte dlaní na druhou stranu.
 - **Excentr tluče do kartáče nebo do ozdob** Podložte motorek víc a ozdoby dejte dál od hřídele.
 - **Excentr odletěl** Nasaďte ho zpátky a hřídel u něj zalepte vteřinovým lepidlem. Plastelínu na hřídel nedávejte, odletí.
-- **Baterie vyskakují** Kolem držáku natáhněte gumičku, nebo dvě.
 
 ## Excentr z 3D tiskárny {#excentr}
 

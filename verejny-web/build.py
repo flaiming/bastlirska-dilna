@@ -5,7 +5,8 @@ Lekce je jeden Markdown soubor: hlavička mezi --- a pod ní oddíly ## Nadpis {
 Druhy oddílů: galerie, princip, bezpecnost, potreby, postup, opravy, pribeh; bez druhu je obyčejný oddíl.
 Postupů může být víc, každý si vezme potřeby z oddílu těsně před sebou.
 V textu: ### podnadpis, > tip nebo poznámka, ![popisek](fotka.jpg), {{nakres jmeno}}, {{model ...}}, {{stahnout ...}}.
-{{tisk soubor | Nadpis | nakres nakres}} dá tlačítko na PDF /tisk/soubor.pdf: jedna strana A4 s nadpisem a nákresy pod sebou,
+{{tisk soubor | Nadpis | nakres nakres}} dá tlačítko na PDF /tisk/soubor.pdf: jedna strana A4 s nadpisem a nákresy pod sebou
+(jeden nákres je na stránce dvakrát, A4 se rozstřihne napůl),
 třeba nápověda k zapojení, kterou si vedoucí vytiskne pro každého.
 
 Lekce bez fotek má místo `prehled_fotky` v hlavičce `prehled_nakres: jmeno`, karta pak ukáže nákres.
@@ -465,10 +466,14 @@ h1 { font-size: 26pt; margin: 1mm 0 4mm; }
 .diagram { max-width: none; margin: 0 0 5mm; padding: 0; break-inside: avoid; }
 .diagram + .diagram { width: 72%; margin: 0 auto; }
 .diagram figcaption { font-size: 10pt; padding-top: 2mm; }
+/* jeden nákres: dvakrát na stránku, ať se dá A4 rozstřihnout napůl */
+.pul { height: 134mm; overflow: hidden; }
+.pul + .pul { border-top: 1pt dashed #9AA6B8; padding-top: 5mm; height: 129mm; }
+.pul h1 { font-size: 18pt; margin: 0 0 2mm; }
+.pul .diagram { width: 80%; margin: 0 auto; }
+.pul .diagram figcaption { font-size: 9pt; }
 </style></head><body>
-<p class="web">Bastlířská dílna · bastleni.oram.cz</p>
-<h1>{nadpis}</h1>
-{nakresy}
+{obsah}
 </body></html>"""
 
 
@@ -481,7 +486,10 @@ def vytvor_tisky():
     with chrome() as spust:
         for soubor, (nadpis, nakresy) in TISKY.items():
             html, pdf = slozka / f'{soubor}.html', slozka / f'{soubor}.pdf'
-            html.write_text(TISK.replace('{nadpis}', nadpis).replace('{nakresy}', ''.join(NAKRESY[n] for n in nakresy)))
+            obsah = f'<p class="web">Bastlířská dílna · bastleni.oram.cz</p>\n<h1>{nadpis}</h1>\n' + ''.join(NAKRESY[n] for n in nakresy)
+            if len(nakresy) == 1:
+                obsah = f'<div class="pul">{obsah}</div>' * 2
+            html.write_text(TISK.replace('{obsah}', obsah))
             spust(f'/tisk/{soubor}.html', '--no-pdf-header-footer', f'--print-to-pdf={pdf}')
             html.unlink()
             if (stran := len(re.findall(rb'/Type\s*/Page[^s]', pdf.read_bytes()))) != 1:

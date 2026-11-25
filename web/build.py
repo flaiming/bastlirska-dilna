@@ -22,7 +22,7 @@ PLAN = [
     {"n": "3", "title": "Elektrická dílna I: drátěný hlavolam", "card": "06", "status": "prep",
      "note": "První pájení. Stanoviště: pájení · stavba hlavolamu · Voltík."},
     {"n": "4", "title": "Vibrobot z kartáče", "card": "05", "status": "prep",
-     "note": "Prototyp funguje. Pájení k motorku a vypínači, zdobení a závody."},
+     "note": "Prototyp funguje. Kryt na baterie s vypínačem, děti pájí jen 2 spoje k motorku; zdobení a závody."},
     {"n": "5", "title": "Podle hlasování dětí", "card": None, "status": "idea",
      "note": "Něco bez elektriky: balónky a vznášedlo z CD (karta 02), nebo zvuková dílna s kytarou (karta 14)."},
     {"n": "6", "title": "Součástky I: LED a odpor", "card": "15", "status": "idea",

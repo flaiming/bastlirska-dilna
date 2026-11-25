@@ -2,13 +2,13 @@
 adresa: drateny-hlavolam-2
 barva: spaghetti
 nazev: Drátěný hlavolam 2
-popis: Dokončení drátěného hlavolamu: dráha, očko a hra. Pro rychlé světlo k pípání a hlavolam s pamětí.
-perex: Obvod s bzučákem máme zapájený z minula. Teď ohneme dráhu, připájíme očko a zahrajeme si. Kdo bude hotový dřív, přidá k pípání světlo.
+popis: Dokončení drátěného hlavolamu: dráha, očko, modul s pamětí a hra. Pro rychlé světlo k pípání a paměť s relé.
+perex: Obvod s bzučákem máme zapájený z minula. Teď ohneme dráhu, připájíme očko, připojíme modul s pamětí a zahrajeme si. Kdo bude hotový dřív, přidá k pípání světlo.
 kdy: skupina B 24. listopadu, skupina A 1. prosince 2026
 jak_dlouho: 2 hodiny
 domu: hotový hlavolam bez baterií, doma stačí vložit 2 tužkové baterie
 zverejnit: 2026-11-23
-prehled: Obvod s bzučákem z minulé lekce dostane dráhu a očko a hlavolam je hotový. Kdo je rychlý, přidá k bzučáku LED, která se při dotyku rozsvítí.
+prehled: Obvod s bzučákem z minulé lekce dostane dráhu, očko a modul s pamětí, takže po dotyku pípá, dokud ho nevypnete. Kdo je rychlý, přidá k bzučáku LED, která se při dotyku rozsvítí.
 prehled_kdy: Skupina B 24. listopadu, skupina A 1. prosince 2026.
 prehled_nakres: hlavolam-led
 tlacitko: Návod na pokračování
@@ -29,6 +29,7 @@ Přímo na baterii by LED vzala tolik proudu, že by se přehřála a zničila. 
 - Tavnou pistoli
 - Kleště a štípačky
 - Fixu na namotání očka
+- Modul s pamětí, dostanete ho hotový od vedoucího
 - Páječku a cín, viz [návod na pájení](/drateny-hlavolam/#pajeni)
 
 ## Dokončení hlavolamu {postup}
@@ -59,9 +60,17 @@ Konce dráhy zastrčte do otvorů v prkénku a zalepte tavnou pistolí. Červen�
 
 {{nakres zapojeni}}
 
+### Připojte modul s pamětí
+
+S modulem hlavolam po dotyku pípá dál, i když očko z dráhy zvednete. Nikdo tak nezapře, že se dotkl. Modul dostanete hotový od vedoucího a připojíte ho třemi lanky. Červené (+) patří na delší nožku bzučáku. Oranžové (X) patří na kratší nožku bzučáku, kde začíná lanko k dráze. Modré (−) patří na mínus krytu baterií, kde začíná lanko k očku.
+
+{{nakres hlavolam-tranzistory-zapojeni}}
+
+{{tisk napoveda-tranzistory | Nápověda k připojení modulu | hlavolam-tranzistory-zapojeni}}
+
 ### Zahrajte si
 
-Zapněte vypínač a dotkněte se očkem dráhy. Bzučák musí pípnout. Pak očko položte na izolepu na startu a zkuste dojet do cíle bez pípnutí. Kdo to dá nejrychleji? A kdo projede bez jediného pípnutí?
+Zapněte vypínač a dotkněte se očkem dráhy. Bzučák pípne a pípá dál. Vypněte a zapněte vypínač, a je ticho. Pak očko položte na izolepu na startu a zkuste dojet do cíle bez pípnutí. Kdo to dá nejrychleji? A kdo projede bez jediného pípnutí?
 
 ## Na světlo budete potřebovat {potreby}
 
@@ -95,11 +104,26 @@ Dotkněte se očkem dráhy. Bzučák pípne a LED se rozsvítí. Když nesvítí
 
 > Bez bzučáku jde hlavolam postavit jen se světlem: LED s odporem se zapojí místo bzučáku. Hlavolam pak nepípá, ale svítí.
 
-## Bonus: hlavolam s pamětí {#bonus}
+## Jak funguje modul s pamětí {#pamet}
 
-Pro ty, kdo budou hotoví dřív. Obyčejný hlavolam pípá jen během dotyku. Hlavolam s pamětí pípá dál, dokud ho nevypnete, takže nikdo nezapře, že se dotkl. Paměť umí relé, nebo dva tranzistory. Relé máme jen šest, ostatní dostanou modul s tranzistory.
+Tranzistor je elektronický vypínač bez pohyblivých částí. Malý proud do jeho prostřední nožky, báze, pustí velký proud mezi dvěma dalšími nožkami. Modul paměti má dva tranzistory, které se po dotyku navzájem drží otevřené. Stačí mu dvě baterie a v klidu nebere skoro nic.
 
-### S relé
+{{nakres hlavolam-tranzistory}}
+
+- **Čeká:** odpory 10 kΩ drží oba tranzistory zavřené a neteče nic.
+- **Dotyk:** očko spojí X s mínusem a bzučák pípne. Zároveň přes odpor 4,7 kΩ teče malý proud z báze tranzistoru PNP a ten se otevře.
+- **Drží:** otevřený PNP pustí proud do báze tranzistoru NPN. Ten se otevře a spojí X s mínusem místo očka. Tranzistory se pak drží otevřené navzájem, i když očko zvednete.
+- **Reset:** vypínač proud přeruší a oba tranzistory se zavřou.
+
+Kdo si bude modul pájet sám, pozná nožky tranzistoru podle ploché strany s nápisem:
+
+{{nakres tranzistor-nozky}}
+
+> Vyzkoušeli jsme to na dvou bateriích: modul čeká, po dotyku drží a bzučák pípá naplno.
+
+## Bonus: paměť s relé {#bonus}
+
+Pro ty, kdo budou hotoví dřív. Paměť jde udělat i s relé, které při dotyku hlasitě cvakne. Relé máme jen šest. Zapojuje se místo modulu s tranzistory a potřebuje baterii navíc.
 
 Relé je vypínač, který ovládá elektromagnet. Když cívkou relé teče proud, přitáhne kovový jazýček a ten sepne kontakt. Je to slyšet jako cvaknutí.
 
@@ -123,36 +147,9 @@ Hlavolam s relé se zapojuje podle schématu, tedy trochu jinak než základní:
 
 {{nakres hlavolam-rele-zapojeni}}
 
-{{tisk napoveda-rele | Nápověda k zapojení s relé | hlavolam-rele-zapojeni hlavolam-rele}}
+{{tisk napoveda-rele | Nápověda k zapojení s relé | hlavolam-rele-zapojeni}}
 
 > Vyzkoušeli jsme to: relé SRD-05VDC na 4,5 V spolehlivě cvakne a bzučák vydrží i 5 V. Na samotné dvě baterie relé nesepne. Cívka bere hodně proudu, takže hlavolam s relé po hře vypínejte.
-
-### S tranzistory
-
-Tranzistor je elektronický vypínač bez pohyblivých částí. Malý proud do jeho prostřední nožky, báze, pustí velký proud mezi dvěma dalšími nožkami. Modul paměti má dva tranzistory, které se po dotyku navzájem drží otevřené. Stačí mu dvě baterie a v klidu nebere skoro nic.
-
-Modul má hodně drobných spojů, proto ho připraví vedoucí. Vy ho připojíte třemi lanky nebo krokosvorkami:
-
-- **+ (červené):** na delší nožku bzučáku. Je za vypínačem, takže vypínač funguje jako reset.
-- **X (oranžové):** na kratší nožku bzučáku, kde začíná lanko k dráze.
-- **− (modré):** na mínus krytu baterií, kde začíná lanko k očku.
-
-{{nakres hlavolam-tranzistory}}
-
-{{nakres hlavolam-tranzistory-zapojeni}}
-
-{{tisk napoveda-tranzistory | Nápověda k zapojení s tranzistory | hlavolam-tranzistory-zapojeni hlavolam-tranzistory}}
-
-- **Čeká:** odpory 10 kΩ drží oba tranzistory zavřené a neteče nic.
-- **Dotyk:** očko spojí X s mínusem a bzučák pípne. Zároveň přes odpor 4,7 kΩ teče malý proud z báze tranzistoru PNP a ten se otevře.
-- **Drží:** otevřený PNP pustí proud do báze tranzistoru NPN. Ten se otevře a spojí X s mínusem místo očka. Tranzistory se pak drží otevřené navzájem, i když očko zvednete.
-- **Reset:** vypínač proud přeruší a oba tranzistory se zavřou.
-
-Nožky tranzistoru poznáte podle ploché strany s nápisem:
-
-{{nakres tranzistor-nozky}}
-
-> Vyzkoušeli jsme to na dvou bateriích: modul čeká, po dotyku drží a bzučák pípá naplno.
 
 ## Když to nefunguje {opravy #opravy}
 
